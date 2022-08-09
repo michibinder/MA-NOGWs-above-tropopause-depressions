@@ -1,0 +1,177 @@
+\section{Models and methods}
+
+The following subsections provide a sufficient overview on the numerical model and analysis tools used for the presented work to allow a conclusive interpretation of the results thereafter.
+
+%%%%% EULAG %%%%%
+\subsection{The EULAG numerical solver}
+\label{sec:EULAG}
+
+The nonlinear numerical simulations are conducted with the EUlerian/semi- LAGrangian fluid solver (EULAG). The model is set up solving the soundproof anelastic set of equations (\cite{lipps_scale_1982}) consisting of the three components of the momentum equation (\ref{equ:momEqu}), the thermodynamic equation (\ref{equ:potTemp}) for the potential temperature perturbation $\theta$'=$\theta-\theta_e$ and the mass continuity equation (\ref{equ:continuityEqu}):
+%
+\begin{equation}
+\begin{aligned}
+    \frac{d \Vec{v}}{dt} = -G \Vec{\nabla} (\frac{p'}{\bar{\rho}}) +  \Vec{g} \frac{\theta'}{\bar{\theta}} - 2 \Vec{\Omega} \times (\Vec{v}-\Vec{v_e}) \\
+    - \Tilde{\alpha} (\Vec{v}-\Vec{v_e}) \equiv R^{v},
+    \label{equ:momEqu}
+\end{aligned}
+\end{equation}
+%
+\begin{equation}
+    \frac{d \theta'}{dt} = -\Vec{v} \cdot \Vec{\nabla} \theta_e - \Tilde{\beta} (\theta-\theta_e) \equiv R^{\theta},
+    \label{equ:potTemp}
+\end{equation}
+%
+\begin{equation}
+    \Vec{\nabla} \cdot (\bar{\rho} \Vec{v}) = 0.
+    \label{equ:continuityEqu}
+\end{equation}
+%
+Here, $\frac{d}{dt}$, $\Vec{\nabla}$ and $\Vec{\nabla} \cdot$ represent the total derivative, the gradient and the divergence respectively. $p'$ is the pressure perturbation with respect to the environmental state, g the gravitational acceleration and $\Vec{\Omega}$ the angular velocity of the Earth. The matrix G represents geometric terms, which result from the general, time-dependent coordinate transformation and the symbol $R^{\Psi}$ stands for the right-hand side of the corresponding equations for the variables $\Psi = (u,v,w,\theta')$.
+%
+\begin{equation}
+    \bar{\theta}(z) = \theta_0 \textrm{ exp}(-\frac{N^2}{g} z) 
+    \label{equ:thetaScale}
+\end{equation}
+%
+and the anelastic density 
+%
+\begin{equation}
+    \bar{\rho}(z) = \rho_0 \textrm{ exp}(-\frac{z}{H_{\rho}})
+    \label{equ:densityScale}
+\end{equation}
+% with $H_{/rho} = 7314m$. 
+refer to the hydrostatic reference state around a constant stability profile as introduced by \textcite{bacmeister_breakdown_1989} with stability $\frac{N^2}{g}$, a density scale height $H_{\rho}$ that corresponds to a deep atmosphere and $\rho_0$, $\theta_0$ set to appropriate reference constants. With (\ref{equ:thetaScale}) and (\ref{equ:densityScale}) being the basic state of equations (\ref{equ:momEqu}-\ref{equ:continuityEqu}), a more general environmental state, which reflects the initial and boundary conditions, enters the equations via the variables with subscript e. In that sense, $\alpha(\Vec{v}-\Vec{v_e})$ and $\beta(\theta-\theta_e)$ represent relaxation terms, which enable the radiation of wave energy across the model boundaries and force the solutions at the model boundaries to the prescribed environmental profiles. These ambient states like $u_e$, $\rho_e$ or $\theta_e$ can be time-dependent to replicate transient flow conditions, but are stationary within the scope of this thesis. On the other hand, transient boundaries like a propagating tropopause fold almost demand for time-dependent terrain-following vertical coordinates as introduced by \textcite{wedi_extending_2003}, so this option may be considered at a later stage. Furthermore, EULAG is noteworthy for its robust elliptic solver (\cite{smolarkiewicz_forward--time_1993}) and generalized coordinate formulation enabling grid adaptivity technology (\cite{prusa_eulag_2008}, \cite{kuhnlein_modelling_2012}).
+
+As the name suggests, EULAG is capable of solving the equations of motion (\ref{equ:momEqu}-\ref{equ:continuityEqu}) in an Eulerian (flux form) or in a semi-Lagrangian (advective form) mode (\cite{smolarkiewicz_forward--time_1997}). For the numerical approximation it utilizes a non-oscillatory forward-in-time (NFT) approach compactly formulated as
+%
+\begin{equation}
+\begin{aligned}
+    \Psi^{n+1} = LE(\Tilde{\Psi}, V^{n+1}, G^n, G^{n+1}) \\
+    + \frac{1}{2} \Delta t R^{\Psi} |^{n+1}
+    \label{equ:NFTscheme}
+\end{aligned}
+\end{equation}
+%
+with $LE$ representing the corresponding semi-Lagrangian/Eulerian transport operator. The NFT scheme belongs to the class of second-order-accurate two-time-level algorithms that are build on nonlinear advection techniques (\cite{prusa_eulag_2008}). These schemes have the property to suppress and control numerical oscillations that are often found in higher order linear schemes. As a result, transporting the auxiliary field $\Tilde{\Psi} = \Psi^n + \frac{1}{2} \Delta t R^{\Psi}|^n$ instead of the specific variable $\Psi$, results from a thorough truncation error analysis and ensures second order accuracy. (\cite{smolarkiewicz_forward--time_1997}).
+
+Within the scope of this Master's thesis all simulations utilize the Eulerian option by applying the multidimensional positive definite advection transport algorithm MPDATA (\cite{smolarkiewicz_mpdata_1998} and  and \cite{smolarkiewicz_multidimensional_2006}).
+
+EULAG has a proven itself as a reliable tool for simulating thermo-fluid flows across the wide range from turbulent to global scales (\cite{prusa_all-scale_2003}) and in a variety of of physical scenarios like e.g. turbulence, GW dynamics, flows past complex/moving boundaries, micrometeorology or cloud microphysics (\cite{prusa_eulag_2008}). A comparison between different well-established numerical models (including EULAG) and their capability to model flow over steep terrain, which is relevant for the investigations within this thesis, appears in \textcite{doyle_intercomparison_2011}.
+
+%%%%% NOTES %%%%%
+% Prusa 2008 also has good description of perturbation form and points out importance of correct environmental/initial state!! 
+
+% \cite{smolarkiewicz_multidimensional_2006}
+
+% \begin{equation}
+%    \frac{\partial G \rho \Psi}{\partial t} + \nabla \cdot G \rho \Vec{v} = G \rho R
+%    \label{equ:statMeshAdapt}
+% \end{equation}
+
+
+% he elliptic pressure equation is solved via a preconditioned non-symmetric Krylov sub- space solver (Smolarkiewicz and Margolin; 1994; 1997, Skamarock et al., 1997).
+
+% imlicit /explicit elliptic pressure solver / krylov sub space solver
+
+% There, governing equations are formulated in general- ized time-dependent curvi-linear coordinates to enable mesh adaptivity (Prusa and Smolarkiewicz 2003; Wedi and Smolarkiewicz 2004; Kühnlein et al. 2012; Smolarkiewicz and Charbonneau 2013) and continuous mappings of the Earth’s topography by using terrain-following coordinates (Gal-Chen and Somerville 1975; Clark 1977)
+
+
+% anelastic -> elastic energy is not allowed -> sound waves are filtered since they are based on pressure difference rather then temperature
+
+
+\subsection{EULAG setup for idealized Q3D and 3D simulations}
+
+EULAG provides multiple options to define background states of the atmosphere. For the presented simulations vertical ambient profiles define an isothermal atmosphere with constant stability as described by \textcite{bacmeister_breakdown_1989}. These exponential profiles of potential temperature and density avoid physical restrictions towards higher altitudes and are thus well suited for the investigation of deep gravity wave propagation. Defining a potential temperature and density scale height $H_{\Theta}$ and $H_{\rho}$ leads to
+
+\begin{equation}
+\begin{aligned}
+    p_0(z) &= p_{00} e^{-\frac{z}{H_{\rho}}} \quad \textrm{with} \quad H_{\rho} = \frac{R_d}{c_p} H_{\Theta} = \frac{R_d T_{00}}{g} \\
+    \rho_0(z) &= \frac{p_0(z)}{R_d T_{00}} = \rho_{00} e^{-\frac{z}{H_{\rho}}} \\
+    T_0(z) &= \frac{p_{00}}{R_d \rho_{00}} \\
+    \Theta_0(z) &= T_{00} \frac{p_{00}}{p}^{\kappa} \\
+    \Theta_0(z) &= T_{00} e^{\frac{z}{H_{\Theta}}} \quad \textrm{with} \quad H_{\Theta} = \frac{g}{N^2} \\
+    \label{equ:ambient-Profiles}
+\end{aligned}
+\end{equation}
+% based on hydrostatic approximation dp/dz = -rho*g -> pressure with density scale height
+
+with the Brunt-Vaisala frequency $N$, the specific gas constant $R_d$ and the specific heat capacity at constant pressure $c_p$. $p_0$, $\rho_0$ and $T_0$ represent a reference state of the atmosphere.
+
+\begin{table*}[h]
+\centering
+\caption{Ambient profile parameters and reference state of the atmosphere for simulations of the troposphere for model validation and of the stratosphere}
+
+
+Include Figure of environmental profiles for simulations of stratosphere!!!
+
+
+\begin{tabular}{@{}cccc@{}}
+\toprule
+ & Unit & Troposphere & Stratosphere \\ \midrule[1pt]
+
+$g$ & m s$^{-2}$ & 9.80616 & 9.80616 \\
+$R$ & J kg$^{-1}$ K$^{-1}$ & 287.04 & 287.04 \\
+$c_p$ & J kg$^{-1}$ K$^{-1}$ & $3.5 R$ & $3.5 R$ \\
+$p_{00}$ & Pa & $1.01 \cdot 10^5$ & $0.235 \cdot 10^5$ \\
+$\rho_{00}$ & kg m$^{-3}$ & 0.3676 (1.2856) & 0.3454 \\
+$T_{00}$ & K & 957.17 (273.69) & 239.39 \\
+$N$ & s$^{-1}$ & 0.01 & 0.02 \\
+$H_{\rho}$ & m & 28017.6 (8011.3)  & 7004.4 \\
+$H_{\Theta}$ & m & 98061.6 & 24515.4  \\
+
+\bottomrule
+\end{tabular}
+\label{tab:ambientProfiles}
+\end{table*}
+
+Should density scale height fit to reference state or should it rather relate correctly to stability / theta scale height based on two atomic gases? This results in temperature around 900K...
+Value of density scale height effects
+
+For stratosphere simulations it s fully consistent!!! 
+
+- full 3D simulations (cite zhang.. 2005 together with Alexander/Durran...) extend those simulations to upper stratosphere.
+
+
+\subsection{Spectral filtering using FFT}
+
+refer to filtering described in \cite{Kruse} and from Vera
+but mention equations
+
+\subsection{Wavelet Analysis}
+
+
+Mithilfe der Wavelet-Transformation können aus einer Datenreihe nicht nur die auftre- tenden Frequenzen extrahiert werden, sondern auch Informationen darüber, in welchen Abschnitten der Datenreihe welche Frequenzen dominant sind. Als Basisfunktionen wer- den dabei räumlich lokalisierte Wellen, sogenannte Wavelets, verwendet.
+
+m Folgenden wird die Wavelet-Analyse anhand einer Datenreihe f(z) erläutert, die ent- lang einer räumlichen Achse z variiert. Dabei wird auf die Beschreibung in Torrence & Compo (1998) zurück gegriffen. Die Autoren stellen auf der Website http://atoc.colorado.edu/research/wavelets/ Software zur Anwendung der Wavelet-Ana- lyse zur Verfügung, die in dieser Arbeit verwendet wurde.
+Hier wurde das Morlet-Wavelet ψ0(η) benutzt, das von einem dimensionslosen Ortspa- rameter η abhängt und als
+ψ0(η) = π−1/4 ei ω0η e−η2/2 (3.39)
+definiert ist. Real- und Imaginärteil von ψ0 sind in Abbildung 3.6a dargestellt. Wird f(z) als eine Datenreihe fj diskretisiert, die bei konstanter Intervallgröße ∆z auf einem Gitter mit Index j = 0,...,N−1 definiert ist, kann daraus die kontinuierliche Wavelet- Transformation Wn(s) ermittelt werden. Diese ist definiert als Faltung von fj mit einer skalierten und verschobenen Version der Wavelet-Funktion:
+N−1 Wj(s) = �� fj′ ψ∗
+��(j′ −j)∆z�� s
+(3.40) die komplex konjugierte normierte Wavelet-Funktion ψ0.
+ Hierbei ist ψ
+∗
+���� ∆z ��1/2 ��∗ = s ψ0
+j′=0
+ Indem die Wavelet-Skala s variiert und ψ∗ entlang des Ortsindex j verschoben wird, kann ein Bild rekonstruiert werden, das sowohl die Amplitude einzelner Merkmale des Signals zeigt als auch die Variation der Amplitude mit dem Ort.
+Für jede Skala s muss Gleichung (3.40) N-mal angewandt werden, damit die kontinu- ierliche Wavelet-Transformation approximiert wird. Diese Berechnung erfolgt deutlich schneller im Fourier-Raum, wo die Wavelet-Transformation gleichzeitig für alle N durch- geführt werden kann. Für die Skalen s empfiehlt sich eine Wahl von M Skalen, die als Vielfache von 2 ausgedrückt werden:
+sm = s0 2m∆m mit m = 0,1,...,M und M = ∆m−1 log2(N ∆m/s0)
+Die kleinste Skala s0 sollte dabei so gewählt werden, dass die entsprechende Fourier-
+Periode etwa 2∆z beträgt. Aus der komplexen Wavelet-Transformierten Wj(s) kann
+das reelle Wavelet-Leistungsspektrum |Wj(s)| berechnet werden. Bei der Interpretation
+dieses Spektrums muss beachtet werden, dass bei der Fourier-Transformation eine An-
+nahme bezüglich zyklischer Daten gemacht wird, die nicht unbedingt erfüllt ist. An den
+Rändern des Datensatzes können deshalb Fehler auftreten. Der Einflusskegel (engl.: cone
+of influence) gibt an, in welchen Bereichen des Spektrums Randeffekte wichtig werden.
+Er ist definiert als e-Abklingzeit τs der Wavelet-Leistung zu jeder Skala s und für das √
+Morlet-Wavelet gilt τs = 2 s.
+Im rechten Bildteil von Abbildung 3.6c ist ein Wavelet-Leistungsspektrum dargestellt, in dem auch der Einflusskegel als weiße Linie markiert ist. Die schwarze Kontur gibt ein Konfidenzniveau von 95 % an, bezogen auf ein Spektrum roten Rauschens mit lag-
+
+1-Koeffizient 0.72 (siehe Torrence & Compo, 1998). Es zeigt die Wavelet-Analyse ei- nes Profils des Vertikalwinds (mittlerer Bildteil von Abbildung 3.6c) aus einer EU- LAG-Simulation. Der Vertikalschnitt durch das Windfeld ist in Abbildung 3.6b als rot-gestrichelte Linie dargestellt. Im Wavelet-Leistungsspektrum, das mit dem Morlet- Wavelet (Abbildung 3.6a) erstellt wurde, können einzelne Bereiche als dominante Signale ausgemacht werden. Im unteren Bereich bis zu einer Höhe von z = 10 km ist eine ver- tikale Wellenlänge λz zwischen etwa 2 000 m und 3 000 m verstärkt vorhanden, während in größeren Höhen kleinere Wellenlängen von unter 1000m das Spektrum bestimmen. Dieser Fall ist in Abschnitt 4.2.1 ausführlich besprochen.
+
+
+% include figure from wavelet analysis for one line in 2D data, show line in T' plot..
+
+Figure: wavelet + cut + power spectrum 
+
+spectral resolution was \cite{torrence_practical_1998}

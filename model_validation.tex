@@ -1,0 +1,73 @@
+\section{Model validation}
+
+Refer to work of Grogger that investigated deep propagating GWs, individual spectral forcings, linear analysis vs numerical results...
+
+Grogger also showed EULAG simulations for transient lower boundary, more specifically growing amplitude / rising topography 
+
+extend with the comparing numerical to analytical results of GWD for different MW regimes...
+and show transient lower boundary moving in x-direction
+
+
+\subsection{Reproducing results from linear theory for different MW regimes with non-linear numerical simulation}
+
+% Show analysis plots for one simulation and then result of drag for all
+
+One established approach to validate a numerical model is the comparison of non-linear numerical simulations to results from linear theory. For the investigation of GWs and corresponding processes drag values and momentum flux distributions are suitable.
+
+- \textcite{blumen} (Blumen 1965a, Fig. I)
+
+- \textcite{bretherton_momentum_1969}
+
+- \textcite{smith_influence_1979} looked circular bell-shaped mountain? only looks at 2D flow of stratified rotating fluid! Flow is independent of y coordinate! 
+
+- Smith assumes symmetric mountain and only looks at one dimension in spectral space?? assumes geostrophic flow? uses gaussian quadrature or bessel functions...
+
+- dimensionless drag is specified differently for Smith and miranda due to additional dimension
+
+- \textcite{miranda_non-linear_1992} obtained the wave drag in a more general non-hydrostatic rotating case and derived an analytic solution for the hydrostatic rotating limit circular bell-shaped mountain. 
+
+- integrate over two dimensions and assume a cross-section with V=0 to calculate drag. Keeps 3D problem first -> equations different to Smith, ...?
+
+- W.K.B
+
+
+\begin{table*}[h]
+\centering
+\caption{Parameters for numerical simulations of different MW regimes: mountain width L, spatial increments $\Delta$x and $\Delta$z in the horizontal and vertical directions, time step $\Delta$t, thickness $\delta$x$_{ab}$ and time scale $\tau_x$ of the horizontal and altitude z$_{ab}$ and time scale $\tau_z$ of the vertical absorbers.}
+
+\begin{tabular}{@{}cccccccc@{}}
+\toprule
+L/km & $\Delta$x/m & $\Delta$z/m & $\Delta$t/s & $\delta$x$_{ab}$/km & $\tau_x$/s  & z$_{ab}$/km & $\tau_z$/s \\ \midrule[1pt]
+
+1   & 50  & 50 & 5   & 15  & 300  & 24 & 300   \\
+2   & 100  & 50 & 5   & 30  & 600  & 24 & 450   \\
+5   & 250  & 50 & 10  & 75  & 1200 & 24 & 600  \\
+10  & 500 & 50 & 20  & 100 & 1800 & 24 & 900  \\
+25  & 1000 & 50 & 40  & 200 & 3600 & 24 & 2400  \\
+50  & 1500 & 50 & 60  & 300 & 4500 & 24 & 5400  \\
+75  & 2000 & 50 & 60  & 400 & 6000 & 24 & 10500 \\
+100 & 2500 & 50 & 75  & 500 & 7500 & 24 & 12000 \\
+150 & 3500 & 50 & 180 & 700 & 9000 & 24 & 21000 \\
+
+\bottomrule
+\end{tabular}
+\label{tab:linearRegimes}
+\end{table*}
+
+
+\begin{figure*}[]
+    \centering
+    \includegraphics[width=0.99\textwidth]{figures_3D/waveletAna_fluxes_obs.png}
+    \caption{Horizontal cross sections at 40km above the tropopause for five simulations with horizontal and meridional shear in a barotropic environment. Shown are $\theta$', $\lambda_x$ and $\lambda_y$ at 72h into the simulation. Dominant zonal and meridional wavelengths for each grid point are determined from wavelet analysis.}
+    \label{fig:waveletAna_dudy}
+\end{figure*}
+
+
+\subsection{Transient lower surface boundary in quiescent fluid}
+% simulations without Coriolis in 2D
+
+move and stop 
+
+show how wave propagate -> observe energy propagation / phase lines... 
+
+
