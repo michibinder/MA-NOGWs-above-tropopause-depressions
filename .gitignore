@@ -1,0 +1,14 @@
+# Ignore Mac system files
+.DS_store
+
+# Ignore other library stuff folder
+__pycache__
+*.ipynb_checkpoints
+
+# Latex stuff
+*.fdb_latexmk
+*.aux
+*.fls
+*.log
+*.pdf
+*.synctex.gz
