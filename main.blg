@@ -1,20 +1,18 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[58] biber-darwin:340> INFO - === Tue Aug  9, 2022, 15:23:01
-[71] Biber.pm:418> INFO - Reading 'main.bcf'
-[194] Biber.pm:972> INFO - Found 72 citekeys in bib section 0
-[207] Biber.pm:4383> INFO - Processing section 0
-[215] Biber.pm:4574> INFO - Looking for bibtex file 'refs.bib' for section 0
-[222] bibtex.pm:1713> INFO - LaTeX decoding ...
-[343] bibtex.pm:1518> INFO - Found BibTeX data source 'refs.bib'
-[847] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[847] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[848] Biber.pm:4203> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[848] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[926] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[1028] bbl.pm:757> INFO - Output to main.bbl
-[1028] Biber.pm:130> WARN - I didn't find a database entry for 'ehard_horizontal_2017' (section 0)
-[1028] Biber.pm:130> WARN - I didn't find a database entry for 'Kruse' (section 0)
-[1028] Biber.pm:130> WARN - I didn't find a database entry for 'blumen' (section 0)
-[1028] Biber.pm:130> WARN - I didn't find a database entry for 'ern...' (section 0)
-[1028] Biber.pm:132> INFO - WARNINGS: 4
+[62] biber-darwin:340> INFO - === Sun Aug 14, 2022, 18:22:13
+[76] Biber.pm:418> INFO - Reading 'main.bcf'
+[203] Biber.pm:972> INFO - Found 70 citekeys in bib section 0
+[216] Biber.pm:4383> INFO - Processing section 0
+[224] Biber.pm:4574> INFO - Looking for bibtex file 'refs.bib' for section 0
+[232] bibtex.pm:1713> INFO - LaTeX decoding ...
+[357] bibtex.pm:1518> INFO - Found BibTeX data source 'refs.bib'
+[919] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[919] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[919] Biber.pm:4203> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[919] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[1004] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1111] bbl.pm:757> INFO - Output to main.bbl
+[1111] Biber.pm:130> WARN - I didn't find a database entry for 'ehard_horizontal_2017' (section 0)
+[1111] Biber.pm:130> WARN - I didn't find a database entry for 'ern...' (section 0)
+[1111] Biber.pm:132> INFO - WARNINGS: 2

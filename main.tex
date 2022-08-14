@@ -1,62 +1,181 @@
-
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
-\documentclass[a4paper, singlecolumn]{article}
-%
+% ==== BEGIN OF PREAMBLE =======================================================
+% ---- document class (use appropriate driver for DIV to PS/PDF conversion):
+\documentclass[12pt,a4paper]{book}
 %\includeonly{intro,methods,results2D,results3D}
 %\includeonly{methods, model_validation}
-%
+% option+z  for formatting tex file in vscode
+
 \usepackage{custompackage}
-%----------------------------------------------------------------------------------------
-%	TITLE SECTION
-%----------------------------------------------------------------------------------------
+% ==== END OF PREAMBLE =========================================================
 
-\setlength{\droptitle}{-4\baselineskip} % Move the title up
-
-%\pretitle{\begin{center}\Huge\bfseries} % Article title formatting
-%\posttitle{\end{center}} % Article title closing formatting
-\title{NOGWs above Propagating Tropopause Depressions - Idealized Numerical Simulations} % Article title
-\author{%
-\textsc{Michael Binder}%\thanks{Corresponding author}
-\\[1ex] % Second author's name
-\normalsize University Innsbruck \\ % Second author's institution
-\normalsize Advisors: \\
-Assoc. Prof. Alexander Gohm \\
-Dr. Andreas Dörnbrack (DLR) \\
-Dr. Bernd Kaifler (DLR)
-}
-
-\date{\today} % Leave empty to omit a date
-\renewcommand{\maketitlehookd}{%
-\begin{abstract}
-\noindent This proposal introduces the Master's thesis on gravity waves (GWs) above propagating tropopause depressions by describing its motivation and the planned methods to approach the topic. The excitation of GWs above tropopause depressions is a proposed non-orographic GW source that could explain important GW observations in the southern hemisphere winter stratosphere above the Southern Ocean. After clarifying the relevance and potential of the mechanism, planned idealized simulations with the EULAG model are explained. To avoid over-complicated simulations with complex results, possible simplifications for first simulations have been identified. It is the goal of this thesis to provide first answers on the relevance of the mechanism and a good baseline for final complex simulations.
-
-\end{abstract}
-}
-
-%----------------------------------------------------------------------------------------
-
+% ==== BEGIN OF BODY ===========================================================
 \begin{document}
 
-% Print the title
-\maketitle
+% ==== START FRONT MATTER (use ROMAN numerals) =================================
+\frontmatter
 
+% ==== TITLE PAGE ==============================================================
+% ---- include tex-file (CHOOSE APPROPRIATE FILE):
+\include{pre-and-post/titlepage_master}    % activate this line for Master's Thesis
+% \include{titlepage_diploma}   % activate this line for Diploma Thesis
 \newpage
+~\thispagestyle{empty}
+\newpage
+% ---- start page numbering again:
+\setcounter{page}{1}
+
+% ==== DEDICATION ==============================================================
+% ---- include tex-file:
+\include{pre-and-post/dedication}
+\newpage
+\thispagestyle{plain}
+
+% ==== PREFACE =================================================================
+% ---- include tex-file:
+\include{pre-and-post/preface}
+\newpage
+\thispagestyle{plain}
+
+% ==== ABSTRACT ================================================================
+% ---- set some counters to zero:
+\setcounter{equation}{0}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+% ---- include tex-file:
+%\include{abstract}
+\newpage
+\thispagestyle{plain}
+
+% ==== TABLE OF CONTENTS =======================================================
+~
+\newpage
+\addcontentsline{toc}{chapter}{Contents}
 \tableofcontents
+\newpage
+\thispagestyle{plain}
 
-\include{intro}
-% \include{theory}
-\include{methods}
-\include{model_validation}
-\include{resultsQ3D}
-\include{results3D}
-\include{lidar_obs}
-\include{conclusion_outlook}
+% ==== START MAIN MATTER (use ARABIC numerals) =================================
+\mainmatter
 
+% ==== CHAPTER 1: INTRODUCTION =================================================
+% ---- set some counters to zero:
+\setcounter{equation}{0}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+% ---- include tex-file:
+\include{chapters/intro}
+\newpage
+\thispagestyle{plain}
+
+% ==== CHAPTER 2 ===============================================================
+% ---- set some counters to zero:
+\setcounter{equation}{0}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+% ---- include tex-file:
+\include{chapters/methods}
+\newpage
+\thispagestyle{plain}
+
+% ==== CHAPTER 3 ===============================================================
+% ---- set some counters to zero:
+\setcounter{equation}{0}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+% ---- include tex-file:
+\include{chapters/model_validation}
+\newpage
+\thispagestyle{plain}
+
+% ==== CHAPTER 4 ===============================================================
+% ---- set some counters to zero:
+\setcounter{equation}{0}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+% ---- include tex-file:
+\include{chapters/resultsQ3D}
+\newpage
+\thispagestyle{plain}
+
+% ==== CHAPTER 5 ==============================================================
+% ---- set some counters to zero:
+\setcounter{equation}{0}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+% ---- include tex-file:
+\include{chapters/results3D}
+\newpage
+\thispagestyle{plain}
+
+% ==== CHAPTER 6 ==============================================================
+% ---- set some counters to zero:
+\setcounter{equation}{0}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+% ---- include tex-file:
+\include{chapters/lidar_obs}
+\newpage
+\thispagestyle{plain}
+
+% ==== CONCLUSIONS =============================================================
+% ---- set some counters to zero:
+\setcounter{equation}{0}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+% ---- include tex-file:
+\include{chapters/conclusion_outlook}
+\newpage
+\thispagestyle{plain}
+
+
+% ==== APPENDIX ================================================================
+% ---- start appendix:
+\appendix
+% ---- set some counters to zero:
+\setcounter{equation}{0}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+% ---- include tex-file:
+\include{chapters/appendix}
+\newpage
+\thispagestyle{plain}
+
+
+% ==== START BACK MATTER (this has no visual effect)============================
+\backmatter 
+
+% ==== BIBLIOGRAPHY ============================================================
 \printbibliography
-% \bibliography{expose_lake_abaya}
-% \bibliographystyle{apalike}
+% \addcontentsline{toc}{chapter}{Bibliography}
+% ---- use AMS reference format (use file ametsoc.bst included in ...
+%      ... http://www.ametsoc.org/pubs/journals/AMS_Latex_V3.0.tar.gz):s
+% \bibliographystyle{./ametsoc}   % ametsoc.bst in local directory
+% ---- use BibTeX database file:
+% \bibliography{./refs}      % mybibfile.bib in local directory
+\newpage
+\thispagestyle{plain}
+
+
+% ==== ACKNOWLEDGMENTS =========================================================
+% ---- include tex-file:
+\include{pre-and-post/thanks}
+\newpage
+\thispagestyle{plain}
+
+
+% ==== CURRICULUM VITAE ========================================================
+% ---- include tex-file:
+% \include{curricv}
+% \newpage
+% \thispagestyle{plain}
+
+
+% ==== EPILOGUE ================================================================
+% ---- include tex-file:
+% \include{epilogue}
+% \newpage
+% \thispagestyle{plain}
+
 
 \end{document}
+% ==== END OF BODY =============================================================

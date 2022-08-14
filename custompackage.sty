@@ -1,28 +1,26 @@
-\usepackage[table]{xcolor}
-\usepackage{blindtext} % Package to generate dummy text throughout this template 
+% --- Fonts / Symbols / Mathmode
 \usepackage[utf8]{inputenc}
-\usepackage{mathptmx} % use times roman font
-%\usepackage[sc]{mathpazo} % Use the Palatino font
 \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
-\linespread{1.05} % Line spacing - Palatino needs more space between lines
-\usepackage{microtype} % Slightly tweak font spacing for aesthetics
-
-\usepackage{svg}
-%\usepackage[demo]{graphicx,wrapfig,lipsum}
-\usepackage{subfig}
-\usepackage{listings}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+% \usepackage{gensymb}
+\usepackage{textcomp, gensymb}
 \usepackage{csquotes}
-\usepackage{gensymb}
-\usepackage{verbatim} % for multi-line comments
 \usepackage{siunitx}
-\usepackage{layouts}
+% \usepackage{mathptmx} % use times roman font
+% %\usepackage[sc]{mathpazo} % Use the Palatino font
+% \linespread{1.05} % Line spacing - Palatino needs more space between lines
+% \usepackage{microtype} % Slightly tweak font spacing for aesthetics
 
+% --- Useful / new commands
+\newcommand{\spaceTitlepage}{11mm}
+\usepackage{verbatim} % for multi-line comments
+
+% --- Language setup
 \usepackage[english]{babel} % Language hyphenation and typographical rules
 
-% ---References stuff---
+% --- Reference / Citation
 \usepackage[
     backend=biber,
     style=apa, % apa, authoryear
@@ -30,56 +28,131 @@
 \setlength\bibhang{12pt}
 \setlength\bibitemsep{6pt}
 \addbibresource{refs.bib}
+
+% --- natbib package:
 % \usepackage{natbib}
-% ---References stuff---
+% \bibpunct{(}{)}{;}{a}{}{,}  % adjust author-year citation format 
 
-\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins textwidth=5.788in < 15cm
-\usepackage{caption} % Custom captions under/above floats in tables or figures
-\captionsetup[figure]{font=small}
-%\usepackage{subcaption}
+% --- graphicx package
+\usepackage{graphicx}
+% \usepackage{svg}
+% \usepackage[demo]{graphicx,wrapfig,lipsum}
+% \usepackage{subfig}
 
-\usepackage{enumitem} % Customized lists
-\setlist[itemize]{noitemsep} % Make itemize lists more compact
+% --- Lists
+% \usepackage{enumitem} % Customized lists
+% \setlist[itemize]{noitemsep} % Make itemize lists more compact
+% \usepackage{listings}
 
-\usepackage{abstract} % Allows abstract customization
-\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
-\renewcommand{\abstracttextfont}{\normalfont\small\rmfamily} % Set the abstract itself to small italic text
+% --- hyperref package for cross-references:
+\usepackage{hyperref}
+% -- USE BLACK LINKS IN PRINTOUT (uncomment the following lines if necessary):
+%\hypersetup{colorlinks,%
+%            linktocpage,%
+%            breaklinks,%
+%            citecolor=black,%
+%            filecolor=black,%
+%            linkcolor=black,%
+%            urlcolor=black,}
+% -- use color links in pdf version (comment the following lines if necessary):
+\hypersetup{colorlinks,
+            linktocpage,%  make page number, not text, be link on TOC, LOF & LOT
+            breaklinks,%
+            citecolor=blue,%
+            filecolor=blue,%
+            linkcolor=blue,%
+            urlcolor=blue,}
 
-\usepackage{titlesec} % Allows customization of titles
-%\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
-%\renewcommand\thesubsection{\roman{subsection}} % roman numerals for subsections
-\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
-\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
-
-\usepackage{fancyhdr} % Headers and footers
-\pagestyle{fancy} % All pages have headers and footers
-\fancyhead{} % Blank out the default header
-\fancyfoot{} % Blank out the default footer
-\fancyhead[C]{GWs above Propagating TDs - Idealized Numerical Simulations $\bullet$ University of Innsbruck} % Custom header text
-\fancyfoot[C]{\thepage} % Custom footer text
-
-
-\usepackage{titling} % Customizing the title section
-
-\usepackage{hyperref} % For hyperlinks in the PDF
-
-% --- TABLE %%%
+% --- Tables
 \usepackage{booktabs}
 \usepackage{multirow}
+
+% ---- caption package:
+\usepackage[font=small,labelfont=bf]{caption}
+% \captionsetup[figure]{font=small}
+%\usepackage{subcaption}
+
+% --- subfigure package:
+\usepackage[tight,nooneline,FIGTOPCAP,bf]{subfigure}
+% \setlength{\subfigcaptopadj}{-6pt}  % vertical position of subfigure labels
+\renewcommand{\thesubfigure}{\alph{subfigure}}
+\makeatletter
+    \renewcommand{\@thesubfigure}{(\thesubfigure)}  % subfigure labels:     (a)
+    \renewcommand{\@@thesubfigure}{\thesubfigure}   % produced by \subref:   a
+    \renewcommand{\p@subfigure}{\thefigure}         % produced by \ref:   3.1a
+\makeatother
+
+
+% --- fancyhdr package:
+\usepackage{fancyhdr}
+
+% --- some other useful packages:
+% \usepackage{showkeys}  % show all keys (labels) in pdf
+% \usepackage{times}     % use times new roman instead of computer modern font
+
+% --- page layout:
+\setlength{\textheight}{24cm}
+\setlength{\textwidth}{15cm}
+\setlength{\topmargin}{-0.9cm}
+\setlength{\headheight}{0.6cm}
+\setlength{\headsep}{1cm}
+\setlength{\footskip}{1cm}
+\setlength{\oddsidemargin}{9.1mm}
+\setlength{\evensidemargin}{-0.2mm}
+\setlength{\marginparwidth}{2cm}
+\setlength{\paperheight}{11in}
+% \setlength{\stockheight}{11in}
+% \usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins textwidth=5.788in < 15cm
+% use package showframe or showframe option of geometry
+% \usepackage{layouts}
+
+% --- paragraph and line properties:
+\setlength{\parindent}{0.8cm}
+\setlength{\parskip}{0pt}
+\linespread{1.2}
+\sloppy % reduce number of word divisions and use more space between words
+
+% --- header format: use fancyhdr page style:
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{\slshape \small \rightmark}
+\fancyhead[RE]{\slshape \small \leftmark}
+\renewcommand{\headrulewidth}{0pt}
+% \fancyhead[C]{GWs above Propagating TDs - Idealized Numerical Simulations $\bullet$ University of Innsbruck} % Custom header text
+% \fancyfoot[C]{\thepage} % Custom footer text
+
+% --- define label format for equations, figures, and tables:
+\renewcommand{\theequation}{\thechapter.\arabic{equation}}
+\renewcommand{\thefigure}{\thechapter.\arabic{figure}}
+\renewcommand{\thetable}{\thechapter.\arabic{table}}
+
+% --- colors
+\usepackage[table]{xcolor}
+\definecolor{LightCyan}{rgb}{0.8,0.7,1}
+
+% --- Other
+% \usepackage{abstract} % Allows abstract customization
+% \renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+% \renewcommand{\abstracttextfont}{\normalfont\small\rmfamily} % Set the abstract itself to small italic text
+
+% \usepackage{titlesec} % Allows customization of titles
+% %\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+% %\renewcommand\thesubsection{\roman{subsection}} % roman numerals for subsections
+% \titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+% \titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+% \usepackage{titling} % Customizing the title section
 
 %\usepackage{cellspace}
 %\setlength\cellspacetoplimit{1.5ex}
 %\setlength\cellspacebottomlimit{1.5ex}
 
-% ---ADDED---
-
-%%%%%%% Timetable %%%%%%%%%%
-\usepackage{cals, ragged2e, lmodern}
-\usepackage{pdflscape}
+% --- Timetable
+% \usepackage{cals, ragged2e, lmodern}
+% \usepackage{pdflscape}
 %\usepackage[sgvnames]{xcolor}
-
-\let\nc=\nullcell                                                  % Shortcuts
-\let\sc=\spancontent
-%%%%%%% Timetable %%%%%%%%%%
-
-\definecolor{LightCyan}{rgb}{0.8,0.7,1}
+% \let\nc=\nullcell                                                  
+% \let\sc=\spancontent

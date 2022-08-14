@@ -1,9 +1,9 @@
-\section{Models and methods}
+\chapter{Models and methods}
 
 The following subsections provide a sufficient overview on the numerical model and analysis tools used for the presented work to allow a conclusive interpretation of the results thereafter.
 
 %%%%% EULAG %%%%%
-\subsection{The EULAG numerical solver}
+\section{The EULAG numerical solver}
 \label{sec:EULAG}
 
 The nonlinear numerical simulations are conducted with the EUlerian/semi- LAGrangian fluid solver (EULAG). The model is set up solving the soundproof anelastic set of equations (\cite{lipps_scale_1982}) consisting of the three components of the momentum equation (\ref{equ:momEqu}), the thermodynamic equation (\ref{equ:potTemp}) for the potential temperature perturbation $\theta$'=$\theta-\theta_e$ and the mass continuity equation (\ref{equ:continuityEqu}):
@@ -79,7 +79,7 @@ EULAG has a proven itself as a reliable tool for simulating thermo-fluid flows a
 % anelastic -> elastic energy is not allowed -> sound waves are filtered since they are based on pressure difference rather then temperature
 
 
-\subsection{EULAG setup for idealized Q3D and 3D simulations}
+\section{EULAG setup for idealized Q3D and 3D simulations}
 
 EULAG provides multiple options to define background states of the atmosphere. For the presented simulations vertical ambient profiles define an isothermal atmosphere with constant stability as described by \textcite{bacmeister_breakdown_1989}. These exponential profiles of potential temperature and density avoid physical restrictions towards higher altitudes and are thus well suited for the investigation of deep gravity wave propagation. Defining a potential temperature and density scale height $H_{\Theta}$ and $H_{\rho}$ leads to
 
@@ -97,7 +97,7 @@ EULAG provides multiple options to define background states of the atmosphere. F
 
 with the Brunt-Vaisala frequency $N$, the specific gas constant $R_d$ and the specific heat capacity at constant pressure $c_p$. $p_0$, $\rho_0$ and $T_0$ represent a reference state of the atmosphere.
 
-\begin{table*}[h]
+\begin{table*}[ht]
 \centering
 \caption{Ambient profile parameters and reference state of the atmosphere for simulations of the troposphere for model validation and of the stratosphere}
 
@@ -132,12 +132,12 @@ For stratosphere simulations it s fully consistent!!!
 - full 3D simulations (cite zhang.. 2005 together with Alexander/Durran...) extend those simulations to upper stratosphere.
 
 
-\subsection{Spectral filtering using FFT}
+\section{Spectral filtering using FFT}
 
-refer to filtering described in \cite{Kruse} and from Vera
+refer to filtering described in Kruse paper and from Vera
 but mention equations
 
-\subsection{Wavelet Analysis}
+\section{Wavelet Analysis}
 
 
 % Mithilfe der Wavelet-Transformation können aus einer Datenreihe nicht nur die auftre- tenden Frequenzen extrahiert werden, sondern auch Informationen darüber, in welchen Abschnitten der Datenreihe welche Frequenzen dominant sind. Als Basisfunktionen wer- den dabei räumlich lokalisierte Wellen, sogenannte Wavelets, verwendet.

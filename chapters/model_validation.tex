@@ -1,4 +1,4 @@
-\section{Model validation}
+\chapter{Model validation}
 
 Refer to work of Grogger that investigated deep propagating GWs, individual spectral forcings, linear analysis vs numerical results...
 
@@ -8,13 +8,13 @@ extend with the comparing numerical to analytical results of GWD for different M
 and show transient lower boundary moving in x-direction
 
 
-\subsection{Reproducing results from linear theory for different MW regimes with non-linear numerical simulation}
+\section{Reproducing results from linear theory for different MW regimes with non-linear numerical simulation}
 
 % Show analysis plots for one simulation and then result of drag for all
 
 One established approach to validate a numerical model is the comparison of non-linear numerical simulations to results from linear theory. For the investigation of GWs and corresponding processes drag values and momentum flux distributions are suitable.
 
-- \textcite{blumen} (Blumen 1965a, Fig. I)
+% - \textcite{blumen} (Blumen 1965a, Fig. I)
 
 - \textcite{bretherton_momentum_1969}
 
@@ -31,7 +31,7 @@ One established approach to validate a numerical model is the comparison of non-
 - W.K.B
 
 
-\begin{table*}[h]
+\begin{table*}[ht]
 \centering
 \caption{Parameters for numerical simulations of different MW regimes: mountain width L, spatial increments $\Delta$x and $\Delta$z in the horizontal and vertical directions, time step $\Delta$t, thickness $\delta$x$_{ab}$ and time scale $\tau_x$ of the horizontal and altitude z$_{ab}$ and time scale $\tau_z$ of the vertical absorbers.}
 
@@ -55,7 +55,7 @@ L/km & $\Delta$x/m & $\Delta$z/m & $\Delta$t/s & $\delta$x$_{ab}$/km & $\tau_x$/
 \end{table*}
 
 
-\begin{figure*}[]
+\begin{figure*}[tbp]
     \centering
     \includegraphics[width=0.99\textwidth]{figures_3D/waveletAna_fluxes_obs.png}
     \caption{Horizontal cross sections at 40km above the tropopause for five simulations with horizontal and meridional shear in a barotropic environment. Shown are $\theta$', $\lambda_x$ and $\lambda_y$ at 72h into the simulation. Dominant zonal and meridional wavelengths for each grid point are determined from wavelet analysis.}
@@ -63,7 +63,7 @@ L/km & $\Delta$x/m & $\Delta$z/m & $\Delta$t/s & $\delta$x$_{ab}$/km & $\tau_x$/
 \end{figure*}
 
 
-\subsection{Transient lower surface boundary in quiescent fluid}
+\section{Transient lower surface boundary in quiescent fluid}
 % simulations without Coriolis in 2D
 
 move and stop 

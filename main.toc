@@ -1,31 +1,35 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Atmospheric GWs and their representation in general circulation models}{3}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}The gravity wave belt around 60°S and the cold pole problem}{4}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}The excitation of GWs above tropopause depressions}{6}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}The propagation of GWs above tropopause depressions}{7}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}Research goals and outline}{8}{subsection.1.5}%
-\contentsline {section}{\numberline {2}Models and methods}{10}{section.2}%
-\contentsline {subsection}{\numberline {2.1}The EULAG numerical solver}{10}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}EULAG setup for idealized Q3D and 3D simulations}{11}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Spectral filtering using FFT}{11}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Wavelet Analysis}{12}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Model validation}{13}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Reproducing results from linear theory for different MW regimes with non-linear numerical simulation}{13}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Transient lower surface boundary in quiescent fluid}{13}{subsection.3.2}%
-\contentsline {section}{\numberline {4}The sensitivity of GWs excited by tropopause depressions}{15}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Quasi-3D reference Simulation}{15}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Influence of tropopause shape}{15}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Influence of background zonal wind ambient}{15}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Influence of Coriolis force and stratification}{15}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Influence of tropopause speed / propagation}{15}{subsection.4.5}%
-\contentsline {section}{\numberline {5}Meridional propagation of GWs excited by tropopause depressions}{17}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Effects of TD orientation in atmosphere}{17}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Variations of the TD's zonal width and its effect on the meridional propagation of GWs}{17}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}The impact of rotating the TD with respect to the zonal}{17}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Momentum fluxes from a simulation-based and observational perspective}{17}{subsection.5.4}%
-\contentsline {section}{\numberline {6}NOGWs in ground-based Lidar observations}{21}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Lidar observations in idealized numerical simulations}{21}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Coral observation of a transient GW source}{21}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Conclusion}{23}{section.7}%
-\contentsline {section}{\numberline {8}Outlook}{23}{section.8}%
+\contentsline {chapter}{Preface}{iii}{chapter*.1}%
+\contentsline {chapter}{Contents}{v}{chapter*.1}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Atmospheric GWs and their representation in general circulation models}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}The gravity wave belt around 60°S and the cold pole problem}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}The excitation of GWs above tropopause depressions}{5}{section.1.3}%
+\contentsline {section}{\numberline {1.4}The propagation of GWs above tropopause depressions}{6}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Research goals and outline}{7}{subsection.1.4.1}%
+\contentsline {chapter}{\numberline {2}Models and methods}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}The EULAG numerical solver}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}EULAG setup for idealized Q3D and 3D simulations}{15}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Spectral filtering using FFT}{16}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Wavelet Analysis}{16}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Model validation}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Reproducing results from linear theory for different MW regimes with non-linear numerical simulation}{17}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Transient lower surface boundary in quiescent fluid}{18}{section.3.2}%
+\contentsline {chapter}{\numberline {4}The sensitivity of GWs excited by tropopause depressions}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Quasi-3D reference Simulation}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Influence of tropopause shape}{21}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Influence of background zonal wind ambient}{21}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Influence of Coriolis force and stratification}{21}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Influence of tropopause speed / propagation}{21}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Meridional propagation of GWs excited by tropopause depressions}{23}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Effects of TD orientation in atmosphere}{23}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Variations of the TD's zonal width and its effect on the meridional propagation of GWs}{23}{section.5.2}%
+\contentsline {section}{\numberline {5.3}The impact of rotating the TD with respect to the zonal}{23}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Momentum fluxes from a simulation-based and observational perspective}{25}{section.5.4}%
+\contentsline {chapter}{\numberline {6}NOGWs in ground-based Lidar observations}{29}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Lidar observations in idealized numerical simulations}{29}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Coral observation of a transient GW source}{30}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Conclusion}{33}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Outlook}{35}{chapter.8}%
+\contentsline {chapter}{\numberline {A}Large Quantities of Data}{37}{appendix.A}%
+\contentsline {chapter}{Acknowledgments}{47}{appendix*.15}%
