@@ -2,10 +2,20 @@
 % ---- document class (use appropriate driver for DIV to PS/PDF conversion):
 \documentclass[12pt,a4paper]{book}
 %\includeonly{intro,methods,results2D,results3D}
-%\includeonly{methods, model_validation}
+% \includeonly{chapters/lidar_obs}
 % option+z  for formatting tex file in vscode
 
 \usepackage{custompackage}
+
+% --- Reference / Citation
+\usepackage[
+    backend=biber,
+    style=apa, % apa, authoryear
+  ]{biblatex}
+\setlength\bibhang{12pt}
+\setlength\bibitemsep{6pt}
+\addbibresource{refs.bib}
+
 % ==== END OF PREAMBLE =========================================================
 
 % ==== BEGIN OF BODY ===========================================================
