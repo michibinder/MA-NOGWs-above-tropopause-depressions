@@ -1,4 +1,4 @@
-% --- Fonts / Symbols / Mathmode
+%% --- Fonts / Symbols / Mathmode
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
 \usepackage{amsmath}
@@ -13,29 +13,29 @@
 % \linespread{1.05} % Line spacing - Palatino needs more space between lines
 % \usepackage{microtype} % Slightly tweak font spacing for aesthetics
 
-% --- Useful / new commands
+%% --- Useful / new commands
 \newcommand{\spaceTitlepage}{11mm}
 \usepackage{verbatim} % for multi-line comments
 
-% --- Language setup
+%% --- Language setup
 \usepackage[english]{babel} % Language hyphenation and typographical rules
 
-% --- natbib package:
+%% --- natbib package:
 % \usepackage{natbib}
 % \bibpunct{(}{)}{;}{a}{}{,}  % adjust author-year citation format 
 
-% --- graphicx package
+%% --- graphicx package
 \usepackage{graphicx}
 % \usepackage{svg}
 % \usepackage[demo]{graphicx,wrapfig,lipsum}
 % \usepackage{subfig}
 
-% --- Lists
+%% --- Lists
 % \usepackage{enumitem} % Customized lists
 % \setlist[itemize]{noitemsep} % Make itemize lists more compact
 % \usepackage{listings}
 
-% --- hyperref package for cross-references:
+%% --- hyperref package for cross-references:
 \usepackage{hyperref}
 % -- USE BLACK LINKS IN PRINTOUT (uncomment the following lines if necessary):
 %\hypersetup{colorlinks,%
@@ -54,16 +54,16 @@
             linkcolor=blue,%
             urlcolor=blue,}
 
-% --- Tables
+%% --- Tables
 \usepackage{booktabs}
 \usepackage{multirow}
 
-% ---- caption package:
+%% ---- caption package:
 \usepackage[font=small,labelfont=bf]{caption}
 % \captionsetup[figure]{font=small}
 %\usepackage{subcaption}
 
-% --- subfigure package:
+%% --- subfigure package:
 \usepackage[tight,nooneline,FIGTOPCAP,bf]{subfigure}
 % \setlength{\subfigcaptopadj}{-6pt}  % vertical position of subfigure labels
 \renewcommand{\thesubfigure}{\alph{subfigure}}
@@ -74,14 +74,14 @@
 \makeatother
 
 
-% --- fancyhdr package:
+%% --- fancyhdr package:
 \usepackage{fancyhdr}
 
-% --- some other useful packages:
+%% --- some other useful packages:
 % \usepackage{showkeys}  % show all keys (labels) in pdf
 % \usepackage{times}     % use times new roman instead of computer modern font
 
-% --- page layout:
+%% --- page layout:
 \setlength{\textheight}{24cm}
 \setlength{\textwidth}{15cm}
 \setlength{\topmargin}{-0.9cm}
@@ -97,13 +97,15 @@
 % use package showframe or showframe option of geometry
 % \usepackage{layouts}
 
-% --- paragraph and line properties:
+%% --- paragraph and line properties:
 \setlength{\parindent}{0.8cm}
-\setlength{\parskip}{0pt}
+% \setlength{\parindent}{0cm}
+\setlength{\parskip}{5.5pt}
+% \setlength{\parskip}{0pt}
 \linespread{1.2}
 \sloppy % reduce number of word divisions and use more space between words
 
-% --- header format: use fancyhdr page style:
+%% --- header format: use fancyhdr page style:
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
@@ -115,16 +117,17 @@
 % \fancyhead[C]{GWs above Propagating TDs - Idealized Numerical Simulations $\bullet$ University of Innsbruck} % Custom header text
 % \fancyfoot[C]{\thepage} % Custom footer text
 
-% --- define label format for equations, figures, and tables:
+%% --- define label format for equations, figures, and tables:
 \renewcommand{\theequation}{\thechapter.\arabic{equation}}
 \renewcommand{\thefigure}{\thechapter.\arabic{figure}}
 \renewcommand{\thetable}{\thechapter.\arabic{table}}
 
-% --- colors
+%% --- colors
 \usepackage[table]{xcolor}
 \definecolor{LightCyan}{rgb}{0.8,0.7,1}
+\usepackage{tcolorbox}
 
-% --- Other
+%% --- Other
 % \usepackage{abstract} % Allows abstract customization
 % \renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
 % \renewcommand{\abstracttextfont}{\normalfont\small\rmfamily} % Set the abstract itself to small italic text
@@ -141,7 +144,7 @@
 %\setlength\cellspacetoplimit{1.5ex}
 %\setlength\cellspacebottomlimit{1.5ex}
 
-% --- Timetable
+%% --- Timetable
 % \usepackage{cals, ragged2e, lmodern}
 % \usepackage{pdflscape}
 %\usepackage[sgvnames]{xcolor}

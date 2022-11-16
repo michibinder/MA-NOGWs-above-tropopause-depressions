@@ -2,14 +2,26 @@
 % ---- document class (use appropriate driver for DIV to PS/PDF conversion):
 \documentclass[12pt,a4paper]{book}
 %\includeonly{intro,methods,results2D,results3D}
-% \includeonly{chapters/lidar_obs}
+%\includeonly{chapters/methods,chapters/lidar_obs}
+\includeonly{chapters/methods,chapters/model_validation,chapters/resultsQ3D}
 % option+z  for formatting tex file in vscode
 
+%%% If bib compilation fails - run in terminal %%%
+% rm -rf `biber --cache`
+% biber main
+
+% rm main.aux main.bbl
+% pdflatex main
+% biber main
+% pdflatex main
+% pdflatex main
+
+%% do empty line for paragraph with indent and '\\' for new line without indent
 \usepackage{custompackage}
 
 % --- Reference / Citation
 \usepackage[
-    backend=biber,
+    backend=biber, % backend=biber,
     style=apa, % apa, authoryear
   ]{biblatex}
 \setlength\bibhang{12pt}

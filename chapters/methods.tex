@@ -3,82 +3,11 @@
 The following subsections provide a sufficient overview on the numerical model and analysis tools used for the presented work to allow a conclusive interpretation of the results thereafter.
 
 %%%%% EULAG %%%%%
-\section{The EULAG numerical solver}
-\label{sec:EULAG}
-
-The nonlinear numerical simulations are conducted with the EUlerian/semi- LAGrangian fluid solver (EULAG). The model is set up solving the soundproof anelastic set of equations (\cite{lipps_scale_1982}) consisting of the three components of the momentum equation (\ref{equ:momEqu}), the thermodynamic equation (\ref{equ:potTemp}) for the potential temperature perturbation $\theta$'=$\theta-\theta_e$ and the mass continuity equation (\ref{equ:continuityEqu}):
-%
-\begin{equation}
-\begin{aligned}
-    \frac{d \Vec{v}}{dt} = -G \Vec{\nabla} (\frac{p'}{\bar{\rho}}) +  \Vec{g} \frac{\theta'}{\bar{\theta}} - 2 \Vec{\Omega} \times (\Vec{v}-\Vec{v_e}) \\
-    - \Tilde{\alpha} (\Vec{v}-\Vec{v_e}) \equiv R^{v},
-    \label{equ:momEqu}
-\end{aligned}
-\end{equation}
-%
-\begin{equation}
-    \frac{d \theta'}{dt} = -\Vec{v} \cdot \Vec{\nabla} \theta_e - \Tilde{\beta} (\theta-\theta_e) \equiv R^{\theta},
-    \label{equ:potTemp}
-\end{equation}
-%
-\begin{equation}
-    \Vec{\nabla} \cdot (\bar{\rho} \Vec{v}) = 0.
-    \label{equ:continuityEqu}
-\end{equation}
-%
-Here, $\frac{d}{dt}$, $\Vec{\nabla}$ and $\Vec{\nabla} \cdot$ represent the total derivative, the gradient and the divergence respectively. $p'$ is the pressure perturbation with respect to the environmental state, g the gravitational acceleration and $\Vec{\Omega}$ the angular velocity of the Earth. The matrix G represents geometric terms, which result from the general, time-dependent coordinate transformation and the symbol $R^{\Psi}$ stands for the right-hand side of the corresponding equations for the variables $\Psi = (u,v,w,\theta')$.
-%
-\begin{equation}
-    \bar{\theta}(z) = \theta_0 \textrm{ exp}(-\frac{N^2}{g} z) 
-    \label{equ:thetaScale}
-\end{equation}
-%
-and the anelastic density 
-%
-\begin{equation}
-    \bar{\rho}(z) = \rho_0 \textrm{ exp}(-\frac{z}{H_{\rho}})
-    \label{equ:densityScale}
-\end{equation}
-% with $H_{/rho} = 7314m$. 
-refer to the hydrostatic reference state around a constant stability profile as introduced by \textcite{bacmeister_breakdown_1989} with stability $\frac{N^2}{g}$, a density scale height $H_{\rho}$ that corresponds to a deep atmosphere and $\rho_0$, $\theta_0$ set to appropriate reference constants. With (\ref{equ:thetaScale}) and (\ref{equ:densityScale}) being the basic state of equations (\ref{equ:momEqu}-\ref{equ:continuityEqu}), a more general environmental state, which reflects the initial and boundary conditions, enters the equations via the variables with subscript e. In that sense, $\alpha(\Vec{v}-\Vec{v_e})$ and $\beta(\theta-\theta_e)$ represent relaxation terms, which enable the radiation of wave energy across the model boundaries and force the solutions at the model boundaries to the prescribed environmental profiles. These ambient states like $u_e$, $\rho_e$ or $\theta_e$ can be time-dependent to replicate transient flow conditions, but are stationary within the scope of this thesis. On the other hand, transient boundaries like a propagating tropopause fold almost demand for time-dependent terrain-following vertical coordinates as introduced by \textcite{wedi_extending_2003}, so this option may be considered at a later stage. Furthermore, EULAG is noteworthy for its robust elliptic solver (\cite{smolarkiewicz_forward--time_1993}) and generalized coordinate formulation enabling grid adaptivity technology (\cite{prusa_eulag_2008}, \cite{kuhnlein_modelling_2012}).
-
-As the name suggests, EULAG is capable of solving the equations of motion (\ref{equ:momEqu}-\ref{equ:continuityEqu}) in an Eulerian (flux form) or in a semi-Lagrangian (advective form) mode (\cite{smolarkiewicz_forward--time_1997}). For the numerical approximation it utilizes a non-oscillatory forward-in-time (NFT) approach compactly formulated as
-%
-\begin{equation}
-\begin{aligned}
-    \Psi^{n+1} = LE(\Tilde{\Psi}, V^{n+1}, G^n, G^{n+1}) \\
-    + \frac{1}{2} \Delta t R^{\Psi} |^{n+1}
-    \label{equ:NFTscheme}
-\end{aligned}
-\end{equation}
-%
-with $LE$ representing the corresponding semi-Lagrangian/Eulerian transport operator. The NFT scheme belongs to the class of second-order-accurate two-time-level algorithms that are build on nonlinear advection techniques (\cite{prusa_eulag_2008}). These schemes have the property to suppress and control numerical oscillations that are often found in higher order linear schemes. As a result, transporting the auxiliary field $\Tilde{\Psi} = \Psi^n + \frac{1}{2} \Delta t R^{\Psi}|^n$ instead of the specific variable $\Psi$, results from a thorough truncation error analysis and ensures second order accuracy. (\cite{smolarkiewicz_forward--time_1997}).
-
-Within the scope of this Master's thesis all simulations utilize the Eulerian option by applying the multidimensional positive definite advection transport algorithm MPDATA (\cite{smolarkiewicz_mpdata_1998} and  and \cite{smolarkiewicz_multidimensional_2006}).
-
-EULAG has a proven itself as a reliable tool for simulating thermo-fluid flows across the wide range from turbulent to global scales (\cite{prusa_all-scale_2003}) and in a variety of of physical scenarios like e.g. turbulence, GW dynamics, flows past complex/moving boundaries, micrometeorology or cloud microphysics (\cite{prusa_eulag_2008}). A comparison between different well-established numerical models (including EULAG) and their capability to model flow over steep terrain, which is relevant for the investigations within this thesis, appears in \textcite{doyle_intercomparison_2011}.
-
-%%%%% NOTES %%%%%
-% Prusa 2008 also has good description of perturbation form and points out importance of correct environmental/initial state!! 
-
-% \cite{smolarkiewicz_multidimensional_2006}
-
-% \begin{equation}
-%    \frac{\partial G \rho \Psi}{\partial t} + \nabla \cdot G \rho \Vec{v} = G \rho R
-%    \label{equ:statMeshAdapt}
-% \end{equation}
-
-
-% he elliptic pressure equation is solved via a preconditioned non-symmetric Krylov sub- space solver (Smolarkiewicz and Margolin; 1994; 1997, Skamarock et al., 1997).
-
-% imlicit /explicit elliptic pressure solver / krylov sub space solver
-
-% There, governing equations are formulated in general- ized time-dependent curvi-linear coordinates to enable mesh adaptivity (Prusa and Smolarkiewicz 2003; Wedi and Smolarkiewicz 2004; Kühnlein et al. 2012; Smolarkiewicz and Charbonneau 2013) and continuous mappings of the Earth’s topography by using terrain-following coordinates (Gal-Chen and Somerville 1975; Clark 1977)
-
-
-% anelastic -> elastic energy is not allowed -> sound waves are filtered since they are based on pressure difference rather then temperature
 
 \section{CORAL temperature measurements} 
+\label{sec:coral}
+
+\textcite{kaifler_compact_2021} provide a more extensive summary on CORAL's setup and observation,
 
 
 \section{(ERA5 reanalysis data)}
