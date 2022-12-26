@@ -1,16 +1,11 @@
 \chapter{The numerical model EULAG}
-
-Refer to work of Grogger that investigated deep propagating GWs, individual spectral forcings, linear analysis vs numerical results...
-
-Grogger also showed EULAG simulations for transient lower boundary, more specifically growing amplitude / rising topography 
-
-extend with the comparing numerical to analytical results of GWD for different MW regimes...
-and show transient lower boundary moving in x-direction
+\label{sec:EULAG}
+The nonlinear numerical simulations are conducted with the EUlerian/semi- LAGrangian fluid solver (EULAG). EULAG was written by Piotr Smolarkiewicz, but many others contributed to the code. The research code is comprised in one file combining two programming languages, shell script and FORTRAN (mostly FORTRAN 77), to create a very fast executable program. A comprehensive description of the algorithm is given in \textcite[]{smolarkiewicz_forward--time_1997} and \textcite[]{smolarkiewicz_mpdata_1998}. \\
+The underlying setup of EULAG for this work is described in the first section of this chapter. It follows a more detailed description of relevant atmospheric background conditions in section \ref{sec:ambient-profiles} and the implementation of a transient lower boundary for the idealized simulations is explained in section \ref{sec:trans-boundary}. Section \ref{sec:linear-MWs} completes this chapter with a comparison of non-linear simulations with EULAG to analytic results of simplified MW scenarios. It serves as an additional validation of EULAG before using it for the investigation of NOGWs above propagating tropopause folds.
 
 \section{General setup}
-\label{sec:EULAG}
-
-The nonlinear numerical simulations are conducted with the EUlerian/semi- LAGrangian fluid solver (EULAG). The model is set up solving the soundproof anelastic set of equations (\cite{lipps_scale_1982}) consisting of the three components of the momentum equation (\ref{equ:momEqu}), the thermodynamic equation (\ref{equ:potTemp}) for the potential temperature perturbation $\theta$'=$\theta-\theta_e$ and the mass continuity equation (\ref{equ:continuityEqu}):
+\label{sec:eulag-setup}
+The model is set up solving the soundproof anelastic set of equations (\cite{lipps_scale_1982}) consisting of the three components of the momentum equation (\ref{equ:momEqu}), the thermodynamic equation (\ref{equ:potTemp}) for the potential temperature perturbation $\theta$'=$\theta-\theta_e$ and the mass continuity equation (\ref{equ:continuityEqu}):
 %
 \begin{equation}
 \begin{aligned}
@@ -31,18 +26,6 @@ The nonlinear numerical simulations are conducted with the EUlerian/semi- LAGran
 \end{equation}
 %
 Here, $\frac{d}{dt}$, $\Vec{\nabla}$ and $\Vec{\nabla} \cdot$ represent the total derivative, the gradient and the divergence respectively. $p'$ is the pressure perturbation with respect to the environmental state, g the gravitational acceleration and $\Vec{\Omega}$ the angular velocity of the Earth. The matrix G represents geometric terms, which result from the general, time-dependent coordinate transformation and the symbol $R^{\Psi}$ stands for the right-hand side of the corresponding equations for the variables $\Psi = (u,v,w,\theta')$.
-%
-\begin{equation}
-    \bar{\theta}(z) = \theta_0 \textrm{ exp}(-\frac{N^2}{g} z) 
-    \label{equ:thetaScale}
-\end{equation}
-%
-and the anelastic density 
-%
-\begin{equation}
-    \bar{\rho}(z) = \rho_0 \textrm{ exp}(-\frac{z}{H_{\rho}})
-    \label{equ:densityScale}
-\end{equation}
 % with $H_{/rho} = 7314m$. 
 refer to the hydrostatic reference state around a constant stability profile as introduced by \textcite{bacmeister_breakdown_1989} with stability $\frac{N^2}{g}$, a density scale height $H_{\rho}$ that corresponds to a deep atmosphere and $\rho_0$, $\theta_0$ set to appropriate reference constants. With (\ref{equ:thetaScale}) and (\ref{equ:densityScale}) being the basic state of equations (\ref{equ:momEqu}-\ref{equ:continuityEqu}), a more general environmental state, which reflects the initial and boundary conditions, enters the equations via the variables with subscript e. In that sense, $\alpha(\Vec{v}-\Vec{v_e})$ and $\beta(\theta-\theta_e)$ represent relaxation terms, which enable the radiation of wave energy across the model boundaries and force the solutions at the model boundaries to the prescribed environmental profiles. These ambient states like $u_e$, $\rho_e$ or $\theta_e$ can be time-dependent to replicate transient flow conditions, but are stationary within the scope of this thesis. On the other hand, transient boundaries like a propagating tropopause fold almost demand for time-dependent terrain-following vertical coordinates as introduced by \textcite{wedi_extending_2003}, so this option may be considered at a later stage. Furthermore, EULAG is noteworthy for its robust elliptic solver (\cite{smolarkiewicz_forward--time_1993}) and generalized coordinate formulation enabling grid adaptivity technology (\cite{prusa_eulag_2008}, \cite{kuhnlein_modelling_2012}).
 
@@ -84,11 +67,26 @@ EULAG has a proven itself as a reliable tool for simulating thermo-fluid flows a
 
 
 \section{Ambient profiles of idealized simulations}
+\label{sec:ambient-profiles}
 % mark variables to be defined in table!! like in isentropic paper lightcyan
 profile of potential temperature (definition of N) sets up background profiles
 
 
 choice of kappa is not relevant for simulations with using the soundproof anelastic equations similar to \textcite[]{lipps_scale_1982}. The correct value for diatomic gases is $\kappa=\frac{2}{7}$. For simulations of the stratosphere with N=0.02 This leads to a reasonable temperature of 239K, but for N=0.01, a reasonable value for the troposphere, ambient profiles following \textcite{bacmeister_breakdown_1989} would result in T=900k. Therefore, T = 290K... with K=
+
+\begin{figure*}[tbp]
+    \centering
+    \includegraphics[]{figures_model/bac-schoeber-ambient-profiles.png}
+    \caption{Hssss}
+    \label{fig:ambient_profs}
+\end{figure*} 
+
+\begin{figure*}[tbp]
+    \centering
+    \includegraphics[]{figures_model/eulag-wind-profiles.png}
+    \caption{Vertical profiles of the background wind for EULAG simulations with no meridional shear (a) and with meridional shear (b). The black line in (a) is a superposition of the tropopause jet (purple) and the PNJ (yellow). Both individual wind profiles are based on equation... The 2-D wind profiles in (b) are obtained by combining the vertical profiles from (a) with a meridional distribution (red curve in (b) for the PNJ at 60°S) based on equation..., too.}
+    \label{fig:wind_profs}
+\end{figure*} 
 
 
 EULAG provides multiple options to define background states of the atmosphere. For the presented simulations vertical ambient profiles define an isothermal atmosphere with constant stability as described by \textcite{bacmeister_breakdown_1989}. These exponential profiles of potential temperature and density avoid physical restrictions towards higher altitudes and are thus well suited for the investigation of deep gravity wave propagation. Defining a potential temperature and density scale height $H_{\Theta}$ and $H_{\rho}$ leads to
@@ -161,22 +159,45 @@ For stratosphere simulations it s fully consistent!!!
 
 
 \section{Transient lower boundary of idealized simulations}
-% simulations without Coriolis in 2D
+\label{sec:trans-boundary}
+\begin{figure*}[tbp]
+    \centering
+    \includegraphics[width=0.67\textwidth]{figures_model/topo-transient-boundary.png}
+    \caption{Shown are different variations of a $(1+cos(x))$ mountain (black solid and dotted lines) and a Witch of Agnesi (red dashed line). The vertical dimension is scaled by the mountain height $h_m$, the horizontal dimension by the mountain half width $a$. It allows a comparison of all shapes independent of $h_m$ and $a$.}
+    \label{fig:topo_trans}
+\end{figure*} 
+The Witch of Agnesi
+\begin{equation}
+    h_{Agnesi}(x) = h_m \frac{a^2}{x^2+a^2}
+    \label{equ:agnesi}
+\end{equation}
+is an established shape to describe isolated mountains in idealized simulations with the crest height $h_m$ and half width $a$. It was already used by \textcite{queney_problem_1948} to derive linear analytic solutions to simplified MW scenarios. EULAG simulations with the Witch of Agnesi are compared to Queney's solution in the next section to validate the model. \\
+However, the topography following equation \ref{equ:agnesi} is non-zero for the whole domain of a discrete simulation. We recap that it is the goal of this work to conduct simulations with a transient lower boundary that mimics a propagating tropopause fold. In these simulations a Witch of Agnesi would lead to a constantly changing surface at the domain's horizontal borders and impact the boundary conditions. This makes it a less appropriate shape for a moving topography or transient boundary in simulations. \\
+A suitable alternative is a $1+cos(\frac{\pi}{4a}x)$ function. It drops to 0 for $|\frac{x}{4a}| = 1$, so the sorrounding topography can be set to 0 for $|\frac{x}{4a}| \leq 1$ without sacrificing its continuity and differentiability. This is essential for the implementation of a transient boundary in the model. It exists a variation of the $(1+cos(x))$ function  
+\begin{equation}
+    h_{cos}(x) = 
+    \begin{cases}
+        & \frac{h_m}{16} (1+cos(\frac{\pi}{4a}x))^4, |\frac{x}{4a}| < 1 \\
+        & 0, |\frac{x}{4a}| \geq 1 \\
+      \end{cases}
+    \label{equ:cosMtn}
+\end{equation}
+with a quite comparable shape to the Witch of Agnesi (Equation \ref{equ:agnesi}). Figure \ref{fig:topo_trans} shows how the shapes compare for a similar half-width and crest height and makes evident that Equation \ref{equ:cosMtn} is closest to the Witch of Agnesi. As long as the cosine mountain or depression is not too close to the edges the topography does not interfere with horizontal boundary conditions and all contributions to the surface pressure drag are now confined to a small neighbourhood around the peak. \textcite[]{epifanio_three-dimensional_2001} and \textcite{metz_are_2021} already used Equation \ref{equ:cosMtn} for prescribing idealized topographies and \textcite{metz_are_2021} state that the linear pressure drag across the cosine mountain is a factor of 1.3 higher compared to a corresponding Witch of Agnesi for a constant $N$ and $U$ environment.
 
-move and stop 
+Growing mountain/valley used to circumvent potential flow initialization.
 
-
-Describe cos function and derivative of lower boundary (similar as in papers)
-
-
-
-
-show how wave propagate -> observe energy propagation / phase lines...
-
+% Implementation of surface boundary in EULAG (at least show its derivative with x_0,...)
+% show how wave propagate -> observe energy propagation / phase lines... simulations without Coriolis in 2D
 
 \section{Non-linear simulations of MW regimes with linear analytic solutions}
 \label{sec:linear-MWs}
 % for different MW regimes with non-linear numerical simulation}
+
+In his master's thesis Herwig Grogger sho
+Grogger also showed EULAG simulations for transient lower boundary, more specifically growing amplitude / rising topography 
+Refer to work of Grogger that investigated deep propagating GWs, individual spectral forcings, linear analysis vs numerical results...
+
+% with a constant background flow and stratification
 
 % use small amplitude of 100m to avoid non-linear effect
 % Show analysis plots for one simulation and then result of drag for all
@@ -226,10 +247,85 @@ L/km & $\Delta$x/m & $\Delta$z/m & $\Delta$t/s & $\delta$x$_{ab}$/km & $\tau_x$/
 \label{tab:linearRegimes}
 \end{table*}
 
+In that sense, it is the goal to reproduce some fundamental analytic results based on linear theory with nonlinear EULAG simulations. \textcite{queney_problem_1948} was the first to summarize different flow regimes over mountains based on the method of small adiabatic perturbations. His results can be compared to simulations from a visual perspective by looking at the perturbations and fluxes in the atmosphere and from a mathematical one by comparing the wave drag
+%
+\begin{equation}
+    \mathcal{F} = \int_{}^{} p^{'} \frac{\partial h}{\partial x} dx
+    \label{equ:waveDrag}
+\end{equation}
+
+
+As described in \textcite{smith_influence_1979}, using the identity
+\begin{equation}
+    \omega' = U \frac{\partial \eta'}{\partial x}
+    % \label{equ:waveDrag}
+\end{equation}
+together with the linearized streamwise momentum equation for a rotating fluid in the Boussinesq approximation
+\begin{equation}
+    \rho_0 U \frac{\partial u'}{\partial x} - \rho_0 f v'= -\frac{\partial p'}{\partial x}
+    % \label{equ:waveDrag}
+\end{equation}
+allows a reformulation of the vertical flux of angular momentum (Equation 20 in \textcite[]{bretherton_momentum_1969}) to
+\begin{equation}
+    \mathcal{F}_x =  \rho_0 \int_{-\infty}^{\infty} (u'\omega' + f v' \eta') dx
+    \label{equ:angular_momentum}
+\end{equation}
+
+However, Figure ... shows how the GWD from Equation \ref{equ:angular_momentum} deviates from the GWD based on pressure disturbances for MW regimes with larger a mountain width $a$, where the Coriolis effect becomes relevant.
+% low frequency waves
+Broad 1995 was the first to derive the a linear solution to the GWD by dropping the Boussinesq approximation. An additional term takes the density fluctuations into account resulting in a compressible solution for the streamwise GWD
+\begin{equation}
+    \mathcal{F}_x =  \rho_0 \int_{-\infty}^{\infty} (u'\omega' + f v' \eta') dx + f \int_{-\infty}^{\infty} \rho' v' \eta' dx
+    \label{equ:angular_momentum_compressible}
+\end{equation}
+
+The normalized contribution of the compressible part $f \rho' v' \eta'$ was at maximum $\mathcal{O}(10^{-5})$ and can not explain the difference between the GWD from pressure and from the angular momentum.
+% \cite[]{teixeira_physics_2014}
+
+Unlike at the surface, where $\eta'=z_{topo}$ it is not possible to calculate Equation \ref{equ:angular_momentum} directly from model data in the free atmosphere. We utilize the approximation
+\begin{equation}
+    \theta' =  \eta' \frac{\partial \theta}{\partial z}
+    \label{equ:thprime}
+\end{equation}
+to estimate $\eta'$
+to its analytic solution in a linear framework (\cite{gill_atmosphere-ocean_1982}). Assuming an impermeable tropopause at the lower boundary of the simulations results in a TD that acts like a flipped mountain (valley) on the stratosphere, so a comparison of our model to Queney's solutions for different mountain wave regimes (non-hydrostatic, hydrostatic, inertia-gravity) provides a reasonable baseline and validation of the model for the planned simulations.
 
 \begin{figure*}[tbp]
     \centering
-    \includegraphics[width=0.99\textwidth]{figures_3D/waveletAna_fluxes_obs.png}
-    \caption{Horizontal cross sections at 40km above the tropopause for five simulations with horizontal and meridional shear in a barotropic environment. Shown are $\theta$', $\lambda_x$ and $\lambda_y$ at 72h into the simulation. Dominant zonal and meridional wavelengths for each grid point are determined from wavelet analysis.}
-    \label{fig:waveletAna_dudy}
-\end{figure*} 
+    \includegraphics[width=0.99\textwidth]{figures_model/GWD-linearTheory-Q3D.png}
+    \caption{The force $\mathcal{F}$ is the GWD normalized by ($\rho_0$ N U h$_m^2$)$^{-1}$ for a Witch of Agnesi with half width $L$. Thicker faded lines indicate that the linear solution is based on Bessel functions (\cite[]{blumen_momentum_1965} and \cite[]{smith_influence_1979}). \textcite[]{miranda_non-linear_1992} provide an analytical solution for the low frequency GWs or IGWs. Buoyancy frequency $N$ and flow speed $U$ are uniform and the Coriolis parameter $f=0.01N$. Purple hashes represent the GWD from pressure perturbations, red crosses the Reynolds Stress and green crosses the angular momentum as described in \textcite[]{bretherton_momentum_1969}, \textcite[]{smith_influence_1979} and Broad for different MW simulations.}
+    \label{fig:GWD-MWs}
+\end{figure*}
+
+% include lessons learned from model validation with vertical resolution for GWD necessary and full 3D simulations required for inertia-gravity waves... though low resolution in cross stream direction good enough.
+
+Focus is on vertical flux of horizontal momentum and energy
+
+For completeness horizontal energy flux and and potential energy are shown. Ep at higher altitudes clearly decreases for increasing mountain widths $a$, but at the surface a minimum exists for the hydrostatic regime with $a \approx \SI{10}{\kilo\meter}$. The horizontal energy flux transitions from being exceptionally increasing to a decreasing $EF_x$ close to the surface for $ 25 < a < \SI{50}{\kilo\meter}$. 
+
+vertical flux of angular momentum is the wave drag in rotating fluid
+
+\begin{figure*}[tbp]
+    \centering
+    \includegraphics[width=0.99\textwidth]{figures_model/Queney-MWs-zprofiles.pdf}
+    \caption{}
+    \label{fig:Queney-MWs-zprofiles}
+\end{figure*}
+
+% Following \textcite[]{fritts_gravity_2003}... + mid frequency approximation
+
+reynolds stress and the momentum flux in a non-rotational environment or under the mid-frequency approximation.
+
+vertical flux horizontal momentum (flux across a flat horizontal surface )
+\begin{equation}
+    (\mathrm{MF}_x, \mathrm{MF}_y) = \bar{\rho}  (\overbar{u'w'},\overbar{v'w'})
+    \label{equ:mf}
+\end{equation}
+
+One aspect
+
+
+\section*{Lessons learned from non-linear simulations of MW cases}
+
+high vertical resolution important for correct calculation of perturbations at surface
+

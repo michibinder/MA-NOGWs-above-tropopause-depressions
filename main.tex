@@ -2,8 +2,9 @@
 % ---- document class (use appropriate driver for DIV to PS/PDF conversion):
 \documentclass[12pt,a4paper]{book}
 %\includeonly{intro,methods,results2D,results3D}
-%\includeonly{chapters/methods,chapters/lidar_obs}
-\includeonly{chapters/methods,chapters/model_validation,chapters/resultsQ3D}
+%\includeonly{chapters/lidar_obs}
+%\includeonly{chapters/eulag_model,chapters/resultsQ3D}
+\includeonly{chapters/eulag_model,chapters/results3D}
 % option+z  for formatting tex file in vscode
 
 %%% If bib compilation fails - run in terminal %%%
@@ -27,6 +28,7 @@
 \setlength\bibhang{12pt}
 \setlength\bibitemsep{6pt}
 \addbibresource{refs.bib}
+
 
 % ==== END OF PREAMBLE =========================================================
 
@@ -105,7 +107,7 @@
 \setcounter{table}{0}
 \setcounter{figure}{0}
 % ---- include tex-file:
-\include{chapters/model_validation}
+\include{chapters/eulag_model}
 \newpage
 \thispagestyle{plain}
 

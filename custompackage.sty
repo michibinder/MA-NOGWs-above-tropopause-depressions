@@ -25,7 +25,7 @@
 % \bibpunct{(}{)}{;}{a}{}{,}  % adjust author-year citation format 
 
 %% --- graphicx package
-\usepackage{graphicx}
+\usepackage{graphicx,wrapfig}
 % \usepackage{svg}
 % \usepackage[demo]{graphicx,wrapfig,lipsum}
 % \usepackage{subfig}
@@ -126,6 +126,10 @@
 \usepackage[table]{xcolor}
 \definecolor{LightCyan}{rgb}{0.8,0.7,1}
 \usepackage{tcolorbox}
+
+
+%% --- New commands
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
 
 %% --- Other
 % \usepackage{abstract} % Allows abstract customization
