@@ -13,17 +13,17 @@
 \contentsline {section}{\numberline {2.3}Spectral filtering}{13}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Wavelet Analysis}{13}{section.2.4}%
 \contentsline {chapter}{\numberline {3}The numerical model EULAG}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}General setup}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.1}General setup}{16}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Ambient profiles of idealized simulations}{17}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Transient lower boundary of idealized simulations}{20}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Non-linear simulations of MW regimes with linear analytic solutions}{21}{section.3.4}%
-\contentsline {chapter}{\numberline {4}NOGWs excited by tropopause depressions in a 2D plane}{27}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Quasi-3D reference Simulation}{27}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Influence of tropopause shape}{27}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Influence of background zonal wind}{27}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Influence of Coriolis force and stratification}{30}{section.4.4}%
-\contentsline {section}{\numberline {4.5}The influence of the fold's propagation speed}{30}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Summary and answer to research question (R1)}{31}{section.4.6}%
+\contentsline {section}{\numberline {3.3}Transient lower boundary of idealized simulations}{21}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Non-linear simulations of MW regimes with linear analytic solutions}{24}{section.3.4}%
+\contentsline {chapter}{\numberline {4}NOGWs excited by tropopause depressions in a 2D plane}{31}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Quasi-3D reference Simulation}{31}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Influence of tropopause shape}{31}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Influence of background zonal wind}{31}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Influence of Coriolis force and stratification}{34}{section.4.4}%
+\contentsline {section}{\numberline {4.5}The influence of the fold's propagation speed}{34}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Summary and answer to research question (R1)}{35}{section.4.6}%
 \contentsline {chapter}{\numberline {5}NOGWs excited by tropopause depressions in 3D}{33}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Rotating the major axis of the tropopause depression}{33}{section.5.1}%
 \contentsline {section}{\numberline {5.2}The influence of meridional shear}{33}{section.5.2}%

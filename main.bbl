@@ -19,64 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{apa/global//global/global}
-    \entry{andrews_wave-action_1978}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=d11e0e602d4c22288d791342c8ffdc14}{%
-           family={Andrews},
-           familyi={A\bibinitperiod},
-           given={D.\bibnamedelimi G.},
-           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8d53413e831b1c2a620d1cf696a9406d}{%
-           family={Mcintyre},
-           familyi={M\bibinitperiod},
-           given={M.\bibnamedelimi E.},
-           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{35894a79b9698509542235bb377b3c85}
-      \strng{fullhash}{35894a79b9698509542235bb377b3c85}
-      \strng{bibnamehash}{35894a79b9698509542235bb377b3c85}
-      \strng{authorbibnamehash}{35894a79b9698509542235bb377b3c85}
-      \strng{authornamehash}{35894a79b9698509542235bb377b3c85}
-      \strng{authorfullhash}{35894a79b9698509542235bb377b3c85}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Conservable quantities measuring ‘wave activity’ are discussed. The equation for the most fundamental such quantity, wave-action, is derived in a simple but very general form which does not depend on the approximations of slow amplitude modulation, linearization, or conservative motion. The derivation is elementary , in the sense that a variational formulation of the equations of fluid motion is not used. The result depends, however, on a description of the disturbance in terms of particle displacements rather than velocities. A corollary is an elementary but general derivation of the approximate form of the wave-action equation found by Bretherton \& Garrett (1968) for slowlyvarying, linear waves. The sense in which the general wave-action equation follows from the classical ‘energy-momentum-tensor’ formalism is discussed, bringing in the concepts of pseudomomentum and pseudoenergy, which in turn are related to special cases such as Blokhintsev's conservation law in acoustics. Wave-action, pseudomomentum and pseudoenergy are the appropriate conservable measures of wave activity when ‘waves’ are defined respectively as departures from ensemble-, space- and time-averaged flows. The relationship between the wave drag on a moving boundary and the fluxes of momentum and pseudomomentum is discussed.}
-      \field{issn}{0022-1120, 1469-7645}
-      \field{journaltitle}{Journal of Fluid Mechanics}
-      \field{month}{12}
-      \field{number}{4}
-      \field{title}{On wave-action and its relatives}
-      \field{urlday}{21}
-      \field{urlmonth}{12}
-      \field{urlyear}{2022}
-      \field{volume}{89}
-      \field{year}{1978}
-      \field{urldateera}{ce}
-      \field{pages}{647\bibrangedash 664}
-      \range{pages}{18}
-      \verb{doi}
-      \verb 10.1017/S0022112078002785
-      \endverb
-      \verb{file}
-      \verb Andrews and Mcintyre - 1978 - On wave-action and its relatives.pdf:/Users/tennismichel/Zotero/storage/ZHPK89YX/Andrews and Mcintyre - 1978 - On wave-action and its relatives.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.cambridge.org/core/product/identifier/S0022112078002785/type/journal_article
-      \endverb
-      \verb{url}
-      \verb https://www.cambridge.org/core/product/identifier/S0022112078002785/type/journal_article
-      \endverb
-    \endentry
     \entry{bacmeister_breakdown_1989}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=fa975a8a7a1bfc501b7006946aa2ceab}{%
@@ -208,6 +150,124 @@
       \endverb
       \verb{url}
       \verb https://onlinelibrary.wiley.com/doi/10.1002/qj.49709540402
+      \endverb
+    \endentry
+    \entry{broad_linear_1995}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f6fe31a422b0952410cb4a8f0c5ad663}{%
+           family={Broad},
+           familyi={B\bibinitperiod},
+           given={Adrian\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{f6fe31a422b0952410cb4a8f0c5ad663}
+      \strng{fullhash}{f6fe31a422b0952410cb4a8f0c5ad663}
+      \strng{bibnamehash}{f6fe31a422b0952410cb4a8f0c5ad663}
+      \strng{authorbibnamehash}{f6fe31a422b0952410cb4a8f0c5ad663}
+      \strng{authornamehash}{f6fe31a422b0952410cb4a8f0c5ad663}
+      \strng{authorfullhash}{f6fe31a422b0952410cb4a8f0c5ad663}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00359009, 1477870X}
+      \field{journaltitle}{Quarterly Journal of the Royal Meteorological Society}
+      \field{month}{10}
+      \field{number}{528}
+      \field{title}{Linear theory of momentum fluxes in 3-{D} flows with turning of the mean wind with height}
+      \field{urlday}{22}
+      \field{urlmonth}{11}
+      \field{urlyear}{2022}
+      \field{volume}{121}
+      \field{year}{1995}
+      \field{urldateera}{ce}
+      \field{pages}{1891\bibrangedash 1902}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1002/qj.49712152806
+      \endverb
+      \verb{file}
+      \verb Broad - 1995 - Linear theory of momentum fluxes in 3-D flows with.pdf:/Users/tennismichel/Zotero/storage/GLT2AXKF/Broad - 1995 - Linear theory of momentum fluxes in 3-D flows with.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/qj.49712152806
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/qj.49712152806
+      \endverb
+    \endentry
+    \entry{dornbrack_stratospheric_2022}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=4aa53d2623aa8ab18bce41737010a8ad}{%
+           family={Dörnbrack},
+           familyi={D\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b0885fbc43c2f5cadff3b5f08cad8ab}{%
+           family={Eckermann},
+           familyi={E\bibinitperiod},
+           given={Stephen\bibnamedelima D.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=191ca8856eddf821eb3fd2f9657c8d7c}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Bifford\bibnamedelima P.},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=18b6aafa0352085a3d613b057b31718e}{%
+           family={Haggerty},
+           familyi={H\bibinitperiod},
+           given={Julie},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3fc9f2ba1f2dcb4a84e2cea255e813f1}
+      \strng{fullhash}{5cf9577913754da430dfd44caf55f099}
+      \strng{bibnamehash}{5cf9577913754da430dfd44caf55f099}
+      \strng{authorbibnamehash}{5cf9577913754da430dfd44caf55f099}
+      \strng{authornamehash}{3fc9f2ba1f2dcb4a84e2cea255e813f1}
+      \strng{authorfullhash}{5cf9577913754da430dfd44caf55f099}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract Stratospheric gravity waves observed during the DEEPWAVE research flight RF25 over the Southern Ocean are analyzed and compared with numerical weather prediction (NWP) model results. The quantitative agreement of the NWP model output and the tropospheric and lower-stratospheric observations is remarkable. The high-resolution NWP models are even able to reproduce qualitatively the observed upper-stratospheric gravity waves detected by an airborne Rayleigh lidar. The usage of high-resolution ERA5 data—partially capturing the long internal gravity waves—enabled a thorough interpretation of the particular event. Here, the observed and modeled gravity waves are excited by the stratospheric flow past a deep tropopause depression belonging to an eastward-propagating Rossby wave train. In the reference frame of the propagating Rossby wave, vertically propagating hydrostatic gravity waves appear stationary; in reality, of course, they are transient and propagate horizontally at the phase speed of the Rossby wave. The subsequent refraction of these transient gravity waves into the polar night jet explains their observed and modeled patchy stratospheric occurrence near 60°S. The combination of both unique airborne observations and high-resolution NWP output provides evidence for the one case investigated in this paper. As the excitation of such gravity waves persists during the quasi-linear propagation phase of the Rossby wave’s life cycle, a hypothesis is formulated that parts of the stratospheric gravity wave belt over the Southern Ocean might be generated by such Rossby wave trains propagating along the midlatitude waveguide.}
+      \field{issn}{0022-4928, 1520-0469}
+      \field{journaltitle}{Journal of the Atmospheric Sciences}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Stratospheric {Gravity} {Waves} {Excited} by a {Propagating} {Rossby} {Wave} {Train}—{A} {DEEPWAVE} {Case} {Study}}
+      \field{urlday}{20}
+      \field{urlmonth}{3}
+      \field{urlyear}{2022}
+      \field{volume}{79}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{567\bibrangedash 591}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1175/JAS-D-21-0057.1
+      \endverb
+      \verb{file}
+      \verb Full Text:/Users/tennismichel/Zotero/storage/7RRBWCPH/Dörnbrack et al. - 2022 - Stratospheric Gravity Waves Excited by a Propagati.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.ametsoc.org/view/journals/atsc/79/2/JAS-D-21-0057.1.xml
+      \endverb
+      \verb{url}
+      \verb https://journals.ametsoc.org/view/journals/atsc/79/2/JAS-D-21-0057.1.xml
       \endverb
     \endentry
     \entry{doyle_intercomparison_2011}{article}{}
@@ -346,6 +406,91 @@
       \verb http://journals.ametsoc.org/doi/10.1175/MWR-D-10-05042.1
       \endverb
     \endentry
+    \entry{durran_lee_2003}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=e70a681578dd574e5cdcd7388e03825a}{%
+           family={Durran},
+           familyi={D\bibinitperiod},
+           given={D.R.},
+           giveni={D\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e70a681578dd574e5cdcd7388e03825a}
+      \strng{fullhash}{e70a681578dd574e5cdcd7388e03825a}
+      \strng{bibnamehash}{e70a681578dd574e5cdcd7388e03825a}
+      \strng{authorbibnamehash}{e70a681578dd574e5cdcd7388e03825a}
+      \strng{authornamehash}{e70a681578dd574e5cdcd7388e03825a}
+      \strng{authorfullhash}{e70a681578dd574e5cdcd7388e03825a}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Encyclopedia of {Atmospheric} {Sciences}}
+      \field{isbn}{978-0-12-227090-1}
+      \field{title}{{LEE} {WAVES} {AND} {MOUNTAIN} {WAVES}}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{year}{2003}
+      \field{urldateera}{ce}
+      \field{pages}{1161\bibrangedash 1169}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/B0-12-227090-8/00202-5
+      \endverb
+      \verb{file}
+      \verb Durran_2003_LEE WAVES AND MOUNTAIN WAVES.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Durran_2003_LEE WAVES AND MOUNTAIN WAVES.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/B0122270908002025
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/B0122270908002025
+      \endverb
+    \endentry
+    \entry{eliassen_transfer_1960}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=c1288ec3a0c744336e4dff1e83cd1d4c}{%
+           family={Eliassen},
+           familyi={E\bibinitperiod},
+           given={Arnd},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8482a01e044214e0da1e40d3f79fe71c}{%
+           family={Palm},
+           familyi={P\bibinitperiod},
+           given={Enok},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dafb0dcebcc4a555b3a4c4c1ca04cfbd}
+      \strng{fullhash}{dafb0dcebcc4a555b3a4c4c1ca04cfbd}
+      \strng{bibnamehash}{dafb0dcebcc4a555b3a4c4c1ca04cfbd}
+      \strng{authorbibnamehash}{dafb0dcebcc4a555b3a4c4c1ca04cfbd}
+      \strng{authornamehash}{dafb0dcebcc4a555b3a4c4c1ca04cfbd}
+      \strng{authorfullhash}{dafb0dcebcc4a555b3a4c4c1ca04cfbd}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{On the {Transfer} of {Energy} in {Stationary} {Mountain} {Waves}}
+      \field{year}{1960}
+      \verb{file}
+      \verb Eliassen_Palm_1960_On the Transfer of Energy in Stationary Mountain Waves.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Eliassen_Palm_1960_On the Transfer of Energy in Stationary Mountain Waves.pdf:application/pdf
+      \endverb
+    \endentry
     \entry{epifanio_three-dimensional_2001}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=3a9baed1e832879f550358ab7c513d7c}{%
@@ -354,12 +499,12 @@
            given={Craig\bibnamedelima C},
            giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=cbd3f98db952dd6b2aa064dd3ac2c5a1}{%
+        {{un=1,uniquepart=given,hash=cbd3f98db952dd6b2aa064dd3ac2c5a1}{%
            family={Durran},
            familyi={D\bibinitperiod},
            given={Dale\bibnamedelima R},
            giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
       }
       \strng{namehash}{5e9b7786fec22dbebc8f82107841b76e}
       \strng{fullhash}{5e9b7786fec22dbebc8f82107841b76e}
@@ -384,434 +529,6 @@
       \range{pages}{15}
       \verb{file}
       \verb Epifanio_Durran_2001_Three-dimensional effects in high-drag-state flows over long ridges.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Epifanio_Durran_2001_Three-dimensional effects in high-drag-state flows over long ridges.pdf:application/pdf
-      \endverb
-    \endentry
-    \entry{ern_directional_2017}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=2284622a5998940984aefac940464050}{%
-           family={Ern},
-           familyi={E\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=802f2ddae662406d32148bb5c45a6c7c}{%
-           family={Hoffmann},
-           familyi={H\bibinitperiod},
-           given={L.},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=0f0e18c94ce525b9f00287389888a49d}{%
-           family={Preusse},
-           familyi={P\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{a4458d8b2384e9a7d66e2e8acee8b639}
-      \strng{fullhash}{7caef24b423dd38d6116333859a62a81}
-      \strng{bibnamehash}{7caef24b423dd38d6116333859a62a81}
-      \strng{authorbibnamehash}{7caef24b423dd38d6116333859a62a81}
-      \strng{authornamehash}{a4458d8b2384e9a7d66e2e8acee8b639}
-      \strng{authorfullhash}{7caef24b423dd38d6116333859a62a81}
-      \field{extraname}{1}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{issn}{00948276}
-      \field{journaltitle}{Geophysical Research Letters}
-      \field{month}{1}
-      \field{number}{1}
-      \field{shorttitle}{Directional gravity wave momentum fluxes in the stratosphere derived from high-resolution {AIRS} temperature data}
-      \field{title}{Directional gravity wave momentum fluxes in the stratosphere derived from high-resolution {AIRS} temperature data: {NET} {GRAVITY} {WAVE} {MOMENTUM} {FLUX} {FROM} {AIRS}}
-      \field{urlday}{19}
-      \field{urlmonth}{11}
-      \field{urlyear}{2022}
-      \field{volume}{44}
-      \field{year}{2017}
-      \field{urldateera}{ce}
-      \field{pages}{475\bibrangedash 485}
-      \range{pages}{11}
-      \verb{doi}
-      \verb 10.1002/2016GL072007
-      \endverb
-      \verb{file}
-      \verb Ern et al_2017_Directional gravity wave momentum fluxes in the stratosphere derived from.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Ern et al_2017_Directional gravity wave momentum fluxes in the stratosphere derived from.pdf:application/pdf;grl55360-sup-0001-texts1.pdf:/Users/tennismichel/Zotero/storage/HJ4N3JB5/grl55360-sup-0001-texts1.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb http://doi.wiley.com/10.1002/2016GL072007
-      \endverb
-      \verb{url}
-      \verb http://doi.wiley.com/10.1002/2016GL072007
-      \endverb
-    \endentry
-    \entry{ern_absolute_2004}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=77ea030d90965d51d1029ccd432eb804}{%
-           family={Ern},
-           familyi={E\bibinitperiod},
-           given={Manfred},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{77ea030d90965d51d1029ccd432eb804}
-      \strng{fullhash}{77ea030d90965d51d1029ccd432eb804}
-      \strng{bibnamehash}{77ea030d90965d51d1029ccd432eb804}
-      \strng{authorbibnamehash}{77ea030d90965d51d1029ccd432eb804}
-      \strng{authornamehash}{77ea030d90965d51d1029ccd432eb804}
-      \strng{authorfullhash}{77ea030d90965d51d1029ccd432eb804}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0148-0227}
-      \field{journaltitle}{Journal of Geophysical Research}
-      \field{number}{D20}
-      \field{title}{Absolute values of gravity wave momentum flux derived from satellite data}
-      \field{urlday}{4}
-      \field{urlmonth}{9}
-      \field{urlyear}{2021}
-      \field{volume}{109}
-      \field{year}{2004}
-      \field{urldateera}{ce}
-      \field{pages}{D20103}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1029/2004JD004752
-      \endverb
-      \verb{file}
-      \verb Ern_2004_Absolute values of gravity wave momentum flux derived from satellite data.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Ern_2004_Absolute values of gravity wave momentum flux derived from satellite data.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb http://doi.wiley.com/10.1029/2004JD004752
-      \endverb
-      \verb{url}
-      \verb http://doi.wiley.com/10.1029/2004JD004752
-      \endverb
-    \endentry
-    \entry{ern_intermittency_2022}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=77ea030d90965d51d1029ccd432eb804}{%
-           family={Ern},
-           familyi={E\bibinitperiod},
-           given={Manfred},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8a790b38b7248a23e88abd0364236110}{%
-           family={Preusse},
-           familyi={P\bibinitperiod},
-           given={Peter},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=dc49bf8243ff71a936f117c6f9338979}{%
-           family={Riese},
-           familyi={R\bibinitperiod},
-           given={Martin},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{908bdcada60f5503247b4577d13ce96f}
-      \strng{fullhash}{d9fa53cde403ae6a645c324b7266b79a}
-      \strng{bibnamehash}{d9fa53cde403ae6a645c324b7266b79a}
-      \strng{authorbibnamehash}{d9fa53cde403ae6a645c324b7266b79a}
-      \strng{authornamehash}{908bdcada60f5503247b4577d13ce96f}
-      \strng{authorfullhash}{d9fa53cde403ae6a645c324b7266b79a}
-      \field{extraname}{2}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Abstract. Atmospheric gravity waves contribute significantly to the driving of the global atmospheric circulation. Because of their small spatial scales, their effect on the circulation is usually parameterized in general circulation models. These parameterizations, however, are strongly simplified. One important but often neglected characteristic of the gravity wave distribution is the fact that gravity wave sources and, thus, the global distribution of gravity waves are both very intermittent. Therefore, time series of global observations of gravity waves are needed to study the distribution, seasonal variation, and strength of this effect. For gravity wave absolute momentum fluxes and potential energies observed by the High-Resolution Dynamics Limb Sounder (HIRDLS) and Sounding of the Atmosphere using Broadband Emission Radiometry (SABER) limb sounding satellite instruments, we investigate the global distribution of gravity wave intermittency by deriving probability density functions (PDFs) in different regions as well as global distributions of Gini coefficients. In the stratosphere, we find that intermittency is strongest in mountain wave regions, followed by the polar night jets and by regions of deep convection in the summertime subtropics. Intermittency is weakest in the tropics. A better comparability of intermittency in different years and regions is achieved by normalizing observations by their spatially and temporally varying monthly median distributions. Our results are qualitatively in agreement with previous findings from satellite observations and quantitatively in good agreement with previous findings from superpressure balloons and high-resolution models. Generally, momentum fluxes exhibit stronger intermittency than potential energies, and lognormal distributions are often a reasonable approximation of the PDFs. In the tropics, we find that, for monthly averages, intermittency increases with altitude, which might be a consequence of variations in the atmospheric background and, thus, varying gravity wave propagation conditions. Different from this, in regions of stronger intermittency, particularly in mountain wave regions, we find that intermittency decreases with altitude, which is likely related to the dissipation of large-amplitude gravity waves during their upward propagation.}
-      \field{issn}{1680-7324}
-      \field{journaltitle}{Atmospheric Chemistry and Physics}
-      \field{month}{11}
-      \field{number}{22}
-      \field{title}{Intermittency of gravity wave potential energies and absolute momentum fluxes derived from infrared limb sounding satellite observations}
-      \field{urlday}{16}
-      \field{urlmonth}{12}
-      \field{urlyear}{2022}
-      \field{volume}{22}
-      \field{year}{2022}
-      \field{urldateera}{ce}
-      \field{pages}{15093\bibrangedash 15133}
-      \range{pages}{41}
-      \verb{doi}
-      \verb 10.5194/acp-22-15093-2022
-      \endverb
-      \verb{file}
-      \verb Full Text:/Users/tennismichel/Zotero/storage/I6ZI3D7P/Ern et al. - 2022 - Intermittency of gravity wave potential energies a.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://acp.copernicus.org/articles/22/15093/2022/
-      \endverb
-      \verb{url}
-      \verb https://acp.copernicus.org/articles/22/15093/2022/
-      \endverb
-    \endentry
-    \entry{ern_gracile_2018}{article}{}
-      \name{author}{7}{}{%
-        {{un=0,uniquepart=base,hash=77ea030d90965d51d1029ccd432eb804}{%
-           family={Ern},
-           familyi={E\bibinitperiod},
-           given={Manfred},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=c1f58d03dc5c1ab658a5a7a089776ac4}{%
-           family={Trinh},
-           familyi={T\bibinitperiod},
-           given={Quang\bibnamedelima Thai},
-           giveni={Q\bibinitperiod\bibinitdelim T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8a790b38b7248a23e88abd0364236110}{%
-           family={Preusse},
-           familyi={P\bibinitperiod},
-           given={Peter},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f63b2eeb7be763429ad64fedf101183f}{%
-           family={Gille},
-           familyi={G\bibinitperiod},
-           given={John\bibnamedelima C.},
-           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ac4e27c5c3dea548faf55d23c7450e35}{%
-           family={Mlynczak},
-           familyi={M\bibinitperiod},
-           given={Martin\bibnamedelima G.},
-           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=51f8886f1b0c456b04671b2307b98337}{%
-           family={Russell\bibnamedelima III},
-           familyi={R\bibinitperiod\bibinitdelim I\bibinitperiod},
-           given={James\bibnamedelima M.},
-           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=dc49bf8243ff71a936f117c6f9338979}{%
-           family={Riese},
-           familyi={R\bibinitperiod},
-           given={Martin},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{908bdcada60f5503247b4577d13ce96f}
-      \strng{fullhash}{3aba68166f401a7ee3f96b6ad2a3792e}
-      \strng{bibnamehash}{3aba68166f401a7ee3f96b6ad2a3792e}
-      \strng{authorbibnamehash}{3aba68166f401a7ee3f96b6ad2a3792e}
-      \strng{authornamehash}{908bdcada60f5503247b4577d13ce96f}
-      \strng{authorfullhash}{3aba68166f401a7ee3f96b6ad2a3792e}
-      \field{extraname}{3}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Abstract. Gravity waves are one of the main drivers of atmospheric dynamics. The spatial resolution of most global atmospheric models, however, is too coarse to properly resolve the small scales of gravity waves, which range from tens to a few thousand kilometers horizontally, and from below 1 km to tens of kilometers vertically. Gravity wave source processes involve even smaller scales. Therefore, general circulation models (GCMs) and chemistry climate models (CCMs) usually parametrize the effect of gravity waves on the global circulation. These parametrizations are very simplified. For this reason, comparisons with global observations of gravity waves are needed for an improvement of parametrizations and an alleviation of model biases. We present a gravity wave climatology based on atmospheric infrared limb emissions observed by satellite (GRACILE). GRACILE is a global data set of gravity wave distributions observed in the stratosphere and the mesosphere by the infrared limb sounding satellite instruments High Resolution Dynamics Limb Sounder (HIRDLS) and Sounding of the Atmosphere using Broadband Emission Radiometry (SABER). Typical distributions (zonal averages and global maps) of gravity wave vertical wavelengths and along-track horizontal wavenumbers are provided, as well as gravity wave temperature variances, potential energies and absolute momentum fluxes. This global data set captures the typical seasonal variations of these parameters, as well as their spatial variations. The GRACILE data set is suitable for scientific studies, and it can serve for comparison with other instruments (ground-based, airborne, or other satellite instruments) and for comparison with gravity wave distributions, both resolved and parametrized, in GCMs and CCMs. The GRACILE data set is available as supplementary data at https://doi.org/10.1594/PANGAEA.879658.}
-      \field{issn}{1866-3516}
-      \field{journaltitle}{Earth System Science Data}
-      \field{month}{4}
-      \field{number}{2}
-      \field{shorttitle}{{GRACILE}}
-      \field{title}{{GRACILE}: a comprehensive climatology of atmospheric gravity wave parameters based on satellite limb soundings}
-      \field{urlday}{19}
-      \field{urlmonth}{11}
-      \field{urlyear}{2022}
-      \field{volume}{10}
-      \field{year}{2018}
-      \field{urldateera}{ce}
-      \field{pages}{857\bibrangedash 892}
-      \range{pages}{36}
-      \verb{doi}
-      \verb 10.5194/essd-10-857-2018
-      \endverb
-      \verb{file}
-      \verb Ern et al_2018_GRACILE.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Ern et al_2018_GRACILE.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://essd.copernicus.org/articles/10/857/2018/
-      \endverb
-      \verb{url}
-      \verb https://essd.copernicus.org/articles/10/857/2018/
-      \endverb
-    \endentry
-    \entry{fritts_gravity_2003}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=06a4ee819ac11ee0191421ca0195f8ae}{%
-           family={Fritts},
-           familyi={F\bibinitperiod},
-           given={David\bibnamedelima C.},
-           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{06a4ee819ac11ee0191421ca0195f8ae}
-      \strng{fullhash}{06a4ee819ac11ee0191421ca0195f8ae}
-      \strng{bibnamehash}{06a4ee819ac11ee0191421ca0195f8ae}
-      \strng{authorbibnamehash}{06a4ee819ac11ee0191421ca0195f8ae}
-      \strng{authornamehash}{06a4ee819ac11ee0191421ca0195f8ae}
-      \strng{authorfullhash}{06a4ee819ac11ee0191421ca0195f8ae}
-      \field{sortinit}{F}
-      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{8755-1209}
-      \field{journaltitle}{Reviews of Geophysics}
-      \field{number}{1}
-      \field{title}{Gravity wave dynamics and effects in the middle atmosphere}
-      \field{urlday}{22}
-      \field{urlmonth}{3}
-      \field{urlyear}{2021}
-      \field{volume}{41}
-      \field{year}{2003}
-      \field{urldateera}{ce}
-      \field{pages}{1003}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1029/2001RG000106
-      \endverb
-      \verb{file}
-      \verb Fritts_2003_Gravity wave dynamics and effects in the middle atmosphere.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Fritts_2003_Gravity wave dynamics and effects in the middle atmosphere.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb http://doi.wiley.com/10.1029/2001RG000106
-      \endverb
-      \verb{url}
-      \verb http://doi.wiley.com/10.1029/2001RG000106
-      \endverb
-    \endentry
-    \entry{geller_comparison_2013}{article}{}
-      \name{author}{11}{}{%
-        {{un=0,uniquepart=base,hash=51ea1bb8a155340f145dd4a0b3d39810}{%
-           family={Geller},
-           familyi={G\bibinitperiod},
-           given={Marvin\bibnamedelima A.},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9f7a8fe87b1ec00f00134141c2e2e3cc}{%
-           family={Alexander},
-           familyi={A\bibinitperiod},
-           given={M.\bibnamedelimi Joan},
-           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4945af751a75a988f6242ef7db58c7a4}{%
-           family={Love},
-           familyi={L\bibinitperiod},
-           given={Peter\bibnamedelima T.},
-           giveni={P\bibinitperiod\bibinitdelim T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=fa975a8a7a1bfc501b7006946aa2ceab}{%
-           family={Bacmeister},
-           familyi={B\bibinitperiod},
-           given={Julio},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=77ea030d90965d51d1029ccd432eb804}{%
-           family={Ern},
-           familyi={E\bibinitperiod},
-           given={Manfred},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=e372cdb462c7d187b67c89b525ff030d}{%
-           family={Hertzog},
-           familyi={H\bibinitperiod},
-           given={Albert},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=deb9bab8a3030cd9570922c7ce8d0339}{%
-           family={Manzini},
-           familyi={M\bibinitperiod},
-           given={Elisa},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8a790b38b7248a23e88abd0364236110}{%
-           family={Preusse},
-           familyi={P\bibinitperiod},
-           given={Peter},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4a466617a4be9ed7ed089c326e49a330}{%
-           family={Sato},
-           familyi={S\bibinitperiod},
-           given={Kaoru},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8137583a909a66ab9a426ad560df4ec4}{%
-           family={Scaife},
-           familyi={S\bibinitperiod},
-           given={Adam\bibnamedelima A.},
-           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9a879ed325cd437cb4cdafc00583ecf3}{%
-           family={Zhou},
-           familyi={Z\bibinitperiod},
-           given={Tiehan},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{5b8e1f7fe064a3711848cf0378f5322d}
-      \strng{fullhash}{77e3021eb6298533b4fd85fd2854a2a6}
-      \strng{bibnamehash}{77e3021eb6298533b4fd85fd2854a2a6}
-      \strng{authorbibnamehash}{77e3021eb6298533b4fd85fd2854a2a6}
-      \strng{authornamehash}{5b8e1f7fe064a3711848cf0378f5322d}
-      \strng{authorfullhash}{77e3021eb6298533b4fd85fd2854a2a6}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Abstract For the first time, a formal comparison is made between gravity wave momentum fluxes in models and those derived from observations. Although gravity waves occur over a wide range of spatial and temporal scales, the focus of this paper is on scales that are being parameterized in present climate models, sub-1000-km scales. Only observational methods that permit derivation of gravity wave momentum fluxes over large geographical areas are discussed, and these are from satellite temperature measurements, constant-density long-duration balloons, and high-vertical-resolution radiosonde data. The models discussed include two high-resolution models in which gravity waves are explicitly modeled, Kanto and the Community Atmosphere Model, version 5 (CAM5), and three climate models containing gravity wave parameterizations, MAECHAM5, Hadley Centre Global Environmental Model 3 (HadGEM3), and the Goddard Institute for Space Studies (GISS) model. Measurements generally show similar flux magnitudes as in models, except that the fluxes derived from satellite measurements fall off more rapidly with height. This is likely due to limitations on the observable range of wavelengths, although other factors may contribute. When one accounts for this more rapid fall off, the geographical distribution of the fluxes from observations and models compare reasonably well, except for certain features that depend on the specification of the nonorographic gravity wave source functions in the climate models. For instance, both the observed fluxes and those in the high-resolution models are very small at summer high latitudes, but this is not the case for some of the climate models. This comparison between gravity wave fluxes from climate models, high-resolution models, and fluxes derived from observations indicates that such efforts offer a promising path toward improving specifications of gravity wave sources in climate models.}
-      \field{issn}{0894-8755, 1520-0442}
-      \field{journaltitle}{Journal of Climate}
-      \field{month}{9}
-      \field{number}{17}
-      \field{title}{A {Comparison} between {Gravity} {Wave} {Momentum} {Fluxes} in {Observations} and {Climate} {Models}}
-      \field{urlday}{3}
-      \field{urlmonth}{5}
-      \field{urlyear}{2021}
-      \field{volume}{26}
-      \field{year}{2013}
-      \field{urldateera}{ce}
-      \field{pages}{6383\bibrangedash 6405}
-      \range{pages}{23}
-      \verb{doi}
-      \verb 10.1175/JCLI-D-12-00545.1
-      \endverb
-      \verb{file}
-      \verb Geller et al_2013_A Comparison between Gravity Wave Momentum Fluxes in Observations and Climate2.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Geller et al_2013_A Comparison between Gravity Wave Momentum Fluxes in Observations and Climate2.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb http://journals.ametsoc.org/doi/10.1175/JCLI-D-12-00545.1
-      \endverb
-      \verb{url}
-      \verb http://journals.ametsoc.org/doi/10.1175/JCLI-D-12-00545.1
       \endverb
     \endentry
     \entry{gill_atmosphere-ocean_1982}{book}{}
@@ -848,293 +565,37 @@
       \field{year}{1982}
       \keyw{Ocean-atmosphere interaction}
     \endentry
-    \entry{hindley_18year_2020}{article}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=cdf4221a6a1f1a35ac7ac0932c305d4b}{%
-           family={Hindley},
-           familyi={H\bibinitperiod},
-           given={N.\bibnamedelimi P.},
-           giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8b5c42fd0fb6250d4b7cdbc6118ea5b0}{%
-           family={Wright},
-           familyi={W\bibinitperiod},
-           given={C.\bibnamedelimi J.},
-           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=802f2ddae662406d32148bb5c45a6c7c}{%
-           family={Hoffmann},
-           familyi={H\bibinitperiod},
-           given={L.},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=dfcddc0abf6319b41d00c3f8625c4709}{%
-           family={Moffat‐Griffin},
-           familyi={M\bibinithyphendelim G\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=e6774581f37c71c4d41ec3b30665c32a}{%
-           family={Mitchell},
-           familyi={M\bibinitperiod},
-           given={N.\bibnamedelimi J.},
-           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+    \entry{grogger_simulation_2022}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fd7c632639aefdd216a678b5c52ed712}{%
+           family={Grogger},
+           familyi={G\bibinitperiod},
+           given={Herwig},
+           giveni={H\bibinitperiod},
            givenun=0}}%
       }
-      \list{language}{1}{%
-        {en}%
+      \list{institution}{1}{%
+        {University of Innsbruck}%
       }
-      \strng{namehash}{ba6d7465f3d5e439e5b7e0237420c2d6}
-      \strng{fullhash}{47e0308df2f863cefe1f2ec774ccadf0}
-      \strng{bibnamehash}{47e0308df2f863cefe1f2ec774ccadf0}
-      \strng{authorbibnamehash}{47e0308df2f863cefe1f2ec774ccadf0}
-      \strng{authornamehash}{ba6d7465f3d5e439e5b7e0237420c2d6}
-      \strng{authorfullhash}{47e0308df2f863cefe1f2ec774ccadf0}
-      \field{extraname}{1}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0094-8276, 1944-8007}
-      \field{journaltitle}{Geophysical Research Letters}
-      \field{month}{11}
-      \field{number}{22}
-      \field{title}{An 18‐{Year} {Climatology} of {Directional} {Stratospheric} {Gravity} {Wave} {Momentum} {Flux} {From} 3‐{D} {Satellite} {Observations}}
-      \field{urlday}{15}
-      \field{urlmonth}{12}
-      \field{urlyear}{2020}
-      \field{volume}{47}
-      \field{year}{2020}
-      \field{urldateera}{ce}
-      \verb{doi}
-      \verb 10.1029/2020GL089557
-      \endverb
-      \verb{file}
-      \verb Hindley et al_2020_An 18‐Year Climatology of Directional Stratospheric Gravity Wave Momentum Flux.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Hindley et al_2020_An 18‐Year Climatology of Directional Stratospheric Gravity Wave Momentum Flux.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/10.1029/2020GL089557
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/10.1029/2020GL089557
-      \endverb
-    \endentry
-    \entry{hindley_gravity_2019}{article}{}
-      \name{author}{8}{}{%
-        {{un=0,uniquepart=base,hash=b764c965d1dfd568f077c24e557b1c1c}{%
-           family={Hindley},
-           familyi={H\bibinitperiod},
-           given={Neil\bibnamedelima P.},
-           giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7ff519ccd7f8e69af78ac52b63d889c7}{%
-           family={Wright},
-           familyi={W\bibinitperiod},
-           given={Corwin\bibnamedelima J.},
-           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=cc9ae1cea01e93ca5c5603cdcd91d968}{%
-           family={Smith},
-           familyi={S\bibinitperiod},
-           given={Nathan\bibnamedelima D.},
-           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f721c74d22df576042da5854fab00e31}{%
-           family={Hoffmann},
-           familyi={H\bibinitperiod},
-           given={Lars},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=194e69c672fd70590b741a213ac08ef8}{%
-           family={Holt},
-           familyi={H\bibinitperiod},
-           given={Laura\bibnamedelima A.},
-           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9f7a8fe87b1ec00f00134141c2e2e3cc}{%
-           family={Alexander},
-           familyi={A\bibinitperiod},
-           given={M.\bibnamedelimi Joan},
-           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f3760686fe6d6e016cc312a47d3e727b}{%
-           family={Moffat-Griffin},
-           familyi={M\bibinithyphendelim G\bibinitperiod},
-           given={Tracy},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b553a69ebb60c12d2ec190828d85753e}{%
-           family={Mitchell},
-           familyi={M\bibinitperiod},
-           given={Nicholas\bibnamedelima J.},
-           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{79bb4ff609790e1a3384d4cfd6474d61}
-      \strng{fullhash}{f50a0fecaec06f4be7ea8b56f52091cf}
-      \strng{bibnamehash}{f50a0fecaec06f4be7ea8b56f52091cf}
-      \strng{authorbibnamehash}{f50a0fecaec06f4be7ea8b56f52091cf}
-      \strng{authornamehash}{79bb4ff609790e1a3384d4cfd6474d61}
-      \strng{authorfullhash}{f50a0fecaec06f4be7ea8b56f52091cf}
-      \field{extraname}{2}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Abstract. Atmospheric gravity waves play a key role in the transfer of energy and momentum between layers of the Earth's atmosphere. However, nearly all general circulation models (GCMs) seriously under-represent the momentum fluxes of gravity waves at latitudes near 60∘ S, which can lead to significant biases. A prominent example of this is the “cold pole problem”, where modelled winter stratospheres are unrealistically cold. There is thus a need for large-scale measurements of gravity wave fluxes near 60∘ S, and indeed globally, to test and constrain GCMs. Such measurements are notoriously difficult, because they require 3-D observations of wave properties if the fluxes are to be estimated without using significant limiting assumptions. Here we use 3-D satellite measurements of stratospheric gravity waves from NASA's Atmospheric Infrared Sounder (AIRS) Aqua instrument. We present the first extended application of a 3-D Stockwell transform (3DST) method to determine localised gravity wave amplitudes, wavelengths and directions of propagation around the entire region of the Southern Ocean near 60∘ S during austral winter 2010. We first validate our method using a synthetic wavefield and two case studies of real gravity waves over the southern Andes and the island of South Georgia. A new technique to overcome wave amplitude attenuation problems in previous methods is also presented. We then characterise large-scale gravity wave occurrence frequencies, directional momentum fluxes and short-timescale intermittency over the entire Southern Ocean. Our results show that highest wave occurrence frequencies, amplitudes and momentum fluxes are observed in the stratosphere over the mountains of the southern Andes and Antarctic Peninsula. However, we find that around 60 \%–80 \% of total zonal-mean momentum flux is located over the open Southern Ocean during June–August, where a large “belt” of increased wave occurrence frequencies, amplitudes and fluxes is observed. Our results also suggest significant short-timescale variability of fluxes from both orographic and non-orographic sources in the region. A particularly striking result is a widespread convergence of gravity wave momentum fluxes towards latitudes around 60∘ S from the north and south. We propose that this convergence, which is observed at nearly all longitudes during winter, could account for a significant part of the under-represented flux in GCMs at these latitudes.}
-      \field{issn}{1680-7324}
-      \field{journaltitle}{Atmospheric Chemistry and Physics}
-      \field{month}{12}
-      \field{number}{24}
-      \field{shorttitle}{Gravity waves in the winter stratosphere over the {Southern} {Ocean}}
-      \field{title}{Gravity waves in the winter stratosphere over the {Southern} {Ocean}: high-resolution satellite observations and 3-{D} spectral analysis}
-      \field{urlday}{13}
-      \field{urlmonth}{5}
-      \field{urlyear}{2021}
-      \field{volume}{19}
-      \field{year}{2019}
-      \field{urldateera}{ce}
-      \field{pages}{15377\bibrangedash 15414}
-      \range{pages}{38}
-      \verb{doi}
-      \verb 10.5194/acp-19-15377-2019
-      \endverb
-      \verb{file}
-      \verb Hindley et al_2019_Gravity waves in the winter stratosphere over the Southern Ocean.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Hindley et al_2019_Gravity waves in the winter stratosphere over the Southern Ocean.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://acp.copernicus.org/articles/19/15377/2019/
-      \endverb
-      \verb{url}
-      \verb https://acp.copernicus.org/articles/19/15377/2019/
-      \endverb
-    \endentry
-    \entry{kaifler_compact_2021}{article}{}
-      \name{author}{2}{}{%
-        {{un=1,uniquepart=given,hash=0f2bb679ef95ffd2aeea3e9a9e691c69}{%
-           family={Kaifler},
-           familyi={K\bibinitperiod},
-           given={Bernd},
-           giveni={B\bibinitperiod},
-           givenun=1}}%
-        {{un=1,uniquepart=given,hash=646629742ad9636d0bf9e8085512b8e7}{%
-           family={Kaifler},
-           familyi={K\bibinitperiod},
-           given={Natalie},
-           giveni={N\bibinitperiod},
-           givenun=1}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{6c5d697ddda51630aa3bb8427561b845}
-      \strng{fullhash}{6c5d697ddda51630aa3bb8427561b845}
-      \strng{bibnamehash}{6c5d697ddda51630aa3bb8427561b845}
-      \strng{authorbibnamehash}{6c5d697ddda51630aa3bb8427561b845}
-      \strng{authornamehash}{6c5d697ddda51630aa3bb8427561b845}
-      \strng{authorfullhash}{6c5d697ddda51630aa3bb8427561b845}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \strng{namehash}{fd7c632639aefdd216a678b5c52ed712}
+      \strng{fullhash}{fd7c632639aefdd216a678b5c52ed712}
+      \strng{bibnamehash}{fd7c632639aefdd216a678b5c52ed712}
+      \strng{authorbibnamehash}{fd7c632639aefdd216a678b5c52ed712}
+      \strng{authornamehash}{fd7c632639aefdd216a678b5c52ed712}
+      \strng{authorfullhash}{fd7c632639aefdd216a678b5c52ed712}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Abstract. The Compact Rayleigh Autonomous Lidar (CORAL) is the first fully autonomous middle atmosphere lidar system to provide density and temperature profiles from 15 to approximately 90 km altitude. From October 2019 to October 2020, CORAL acquired temperature profiles on 243 out of the 365 nights (66 \%) above Río Grande, southern Argentina, a cadence which is 3–8 times larger as compared to conventional human-operated lidars. The result is an unprecedented data set with measurements on 2 out of 3 nights on average and high temporal (20 min) and vertical (900 m) resolution. The first studies using CORAL data have shown, for example, the evolution of a strong atmospheric gravity wave event and its impact on the stratospheric circulation. We describe the instrument and its novel software which enables automatic and unattended observations over periods of more than a year. A frequency-doubled diode-pumped pulsed Nd:YAG laser is used as the light source, and backscattered photons are detected using three elastic channels (532 nm wavelength) and one Raman channel (608 nm wavelength). Automatic tracking of the laser beam is realized by the implementation of the conical scan (conscan) method. The CORAL software detects blue sky conditions and makes the decision to start the instrument based on local meteorological measurements, detection of stars in all-sky images, and analysis of European Center for Medium-range Weather Forecasts Integrated Forecasting System data. After the instrument is up and running, the strength of the lidar return signal is used as additional information to assess sky conditions. Safety features in the software allow for the operation of the lidar even in marginal weather, which is a prerequisite to achieving the very high observation cadence.}
-      \field{issn}{1867-8548}
-      \field{journaltitle}{Atmospheric Measurement Techniques}
-      \field{month}{3}
-      \field{number}{2}
-      \field{title}{A {Compact} {Rayleigh} {Autonomous} {Lidar} ({CORAL}) for the middle atmosphere}
-      \field{urlday}{18}
-      \field{urlmonth}{5}
-      \field{urlyear}{2021}
-      \field{volume}{14}
-      \field{year}{2021}
-      \field{urldateera}{ce}
-      \field{pages}{1715\bibrangedash 1732}
-      \range{pages}{18}
-      \verb{doi}
-      \verb 10.5194/amt-14-1715-2021
-      \endverb
+      \field{month}{1}
+      \field{title}{Simulation of {Deep} {Gravity} {Wave} {Propagation} {Using} {EULAG}}
+      \field{type}{mathesis}
+      \field{year}{2022}
       \verb{file}
-      \verb Kaifler_Kaifler_2021_A Compact Rayleigh Autonomous Lidar (CORAL) for the middle atmosphere.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Kaifler_Kaifler_2021_A Compact Rayleigh Autonomous Lidar (CORAL) for the middle atmosphere.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://amt.copernicus.org/articles/14/1715/2021/
-      \endverb
-      \verb{url}
-      \verb https://amt.copernicus.org/articles/14/1715/2021/
-      \endverb
-    \endentry
-    \entry{kim_overview_2003}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=31bb30e64481f636172370f5016d0991}{%
-           family={Kim},
-           familyi={K\bibinitperiod},
-           given={Young‐Joon},
-           giveni={Y\bibinithyphendelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=6b0885fbc43c2f5cadff3b5f08cad8ab}{%
-           family={Eckermann},
-           familyi={E\bibinitperiod},
-           given={Stephen\bibnamedelima D.},
-           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=c49cc650657edbd5a855758154acff9e}{%
-           family={Chun},
-           familyi={C\bibinitperiod},
-           given={Hye‐Yeong},
-           giveni={H\bibinithyphendelim Y\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{8ea792557cd34dac8e5eba24f01ec40f}
-      \strng{fullhash}{932d04a9dda1fd2f20edf51cc3b1e9f8}
-      \strng{bibnamehash}{932d04a9dda1fd2f20edf51cc3b1e9f8}
-      \strng{authorbibnamehash}{932d04a9dda1fd2f20edf51cc3b1e9f8}
-      \strng{authornamehash}{8ea792557cd34dac8e5eba24f01ec40f}
-      \strng{authorfullhash}{932d04a9dda1fd2f20edf51cc3b1e9f8}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0705-5900, 1480-9214}
-      \field{journaltitle}{Atmosphere-Ocean}
-      \field{month}{3}
-      \field{number}{1}
-      \field{title}{An overview of the past, present and future of gravity‐wave drag parametrization for numerical climate and weather prediction models}
-      \field{urlday}{12}
-      \field{urlmonth}{5}
-      \field{urlyear}{2021}
-      \field{volume}{41}
-      \field{year}{2003}
-      \field{urldateera}{ce}
-      \field{pages}{65\bibrangedash 98}
-      \range{pages}{34}
-      \verb{doi}
-      \verb 10.3137/ao.410105
-      \endverb
-      \verb{file}
-      \verb Kim et al_2003_An overview of the past, present and future of gravity‐wave drag.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Kim et al_2003_An overview of the past, present and future of gravity‐wave drag.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb http://www.tandfonline.com/doi/abs/10.3137/ao.410105
-      \endverb
-      \verb{url}
-      \verb http://www.tandfonline.com/doi/abs/10.3137/ao.410105
+      \verb Grogger, Herwig_2022_Simulation of Deep Gravity Wave Propagation Using EULAG.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Grogger, Herwig_2022_Simulation of Deep Gravity Wave Propagation Using EULAG.pdf:application/pdf
       \endverb
     \endentry
     \entry{kuhnlein_modelling_2012}{article}{}
@@ -1200,88 +661,6 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0021999111007224
       \endverb
     \endentry
-    \entry{lehmann_consistency_2012}{article}{}
-      \name{author}{6}{}{%
-        {{un=0,uniquepart=base,hash=0e12a03ad99658f3f21222c63eac6538}{%
-           family={Lehmann},
-           familyi={L\bibinitperiod},
-           given={C.\bibnamedelimi I.},
-           giveni={C\bibinitperiod\bibinitdelim I\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=af546ac84b32fa03441c4d692772e8b5}{%
-           family={Kim},
-           familyi={K\bibinitperiod},
-           given={Y.-H.},
-           giveni={Y\bibinithyphendelim H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=0f0e18c94ce525b9f00287389888a49d}{%
-           family={Preusse},
-           familyi={P\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=03c094be3e0b5dab197ed501dd6dd882}{%
-           family={Chun},
-           familyi={C\bibinitperiod},
-           given={H.-Y.},
-           giveni={H\bibinithyphendelim Y\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2284622a5998940984aefac940464050}{%
-           family={Ern},
-           familyi={E\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=5e3a2f48145bda0f5f5a2d46fd6b140e}{%
-           family={Kim},
-           familyi={K\bibinitperiod},
-           given={S.-Y.},
-           giveni={S\bibinithyphendelim Y\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{12cbda5483c4eb03218584b59821617f}
-      \strng{fullhash}{72a76a22a549534241db11a09ba2f93a}
-      \strng{bibnamehash}{72a76a22a549534241db11a09ba2f93a}
-      \strng{authorbibnamehash}{72a76a22a549534241db11a09ba2f93a}
-      \strng{authornamehash}{12cbda5483c4eb03218584b59821617f}
-      \strng{authorfullhash}{72a76a22a549534241db11a09ba2f93a}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Abstract. Convective gravity wave (GW) sources are spatially localized and emit at the same time waves with a wide spectrum of phase speeds. Any wave analysis therefore compromises between spectral and spatial resolution. Future satellite borne limb imagers will for a first time provide real 3-D volumes of observations. These volumes will be however limited which will impose further constraints on the analysis technique. In this study a three dimensional few-wave approach fitting sinusoidal waves to limited 3-D volumes is introduced. The method is applied to simulated GWs above typhoon Ewiniar and GW momentum flux is estimated from temperature fluctuations. Phase speed spectra as well as average profiles of positive, negative and net momentum fluxes are compared to momentum flux estimated by Fourier transform as well as spatial averaging of wind fluctuations. The results agree within 10–20\%. The few-wave method can also reveal the spatial orientation of the GWs with respect to the source. The relevance of the results for different types of measurements as well as its applicability to model data is discussed.}
-      \field{issn}{1867-8548}
-      \field{journaltitle}{Atmospheric Measurement Techniques}
-      \field{month}{7}
-      \field{number}{7}
-      \field{title}{Consistency between {Fourier} transform and small-volume few-wave decomposition for spectral and spatial variability of gravity waves above a typhoon}
-      \field{urlday}{22}
-      \field{urlmonth}{12}
-      \field{urlyear}{2022}
-      \field{volume}{5}
-      \field{year}{2012}
-      \field{urldateera}{ce}
-      \field{pages}{1637\bibrangedash 1651}
-      \range{pages}{15}
-      \verb{doi}
-      \verb 10.5194/amt-5-1637-2012
-      \endverb
-      \verb{file}
-      \verb Full Text:/Users/tennismichel/Zotero/storage/IN2H7WLE/Lehmann et al. - 2012 - Consistency between Fourier transform and small-vo.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://amt.copernicus.org/articles/5/1637/2012/
-      \endverb
-      \verb{url}
-      \verb https://amt.copernicus.org/articles/5/1637/2012/
-      \endverb
-    \endentry
     \entry{lipps_scale_1982}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=501e3dc96a5dd39d5b53d6a0969c7963}{%
@@ -1328,12 +707,12 @@
            given={Johnathan\bibnamedelima J.},
            giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=cbd3f98db952dd6b2aa064dd3ac2c5a1}{%
+        {{un=1,uniquepart=given,hash=cbd3f98db952dd6b2aa064dd3ac2c5a1}{%
            family={Durran},
            familyi={D\bibinitperiod},
            given={Dale\bibnamedelima R.},
            giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
       }
       \list{language}{1}{%
         {en}%
@@ -1433,60 +812,185 @@
       \verb https://onlinelibrary.wiley.com/doi/10.1002/qj.49711850803
       \endverb
     \endentry
-    \entry{preusse_characteristics_2014}{article}{}
-      \name{author}{7}{}{%
-        {{un=0,uniquepart=base,hash=0f0e18c94ce525b9f00287389888a49d}{%
-           family={Preusse},
-           familyi={P\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod},
+    \entry{mixa_nonlinear_2021}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=60a003961d6ecdbb5127edf8bce4f90c}{%
+           family={Mixa},
+           familyi={M\bibinitperiod},
+           given={Tyler},
+           giveni={T\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=2284622a5998940984aefac940464050}{%
-           family={Ern},
-           familyi={E\bibinitperiod},
-           given={M.},
+        {{un=0,uniquepart=base,hash=4aa53d2623aa8ab18bce41737010a8ad}{%
+           family={Dörnbrack},
+           familyi={D\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3c959392a31dc963ae71e8be9e5040e6}{%
+           family={Rapp},
+           familyi={R\bibinitperiod},
+           given={Markus},
            giveni={M\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=587816b86d5cca3d63c8e2707175302a}{%
-           family={Bechtold},
+      }
+      \strng{namehash}{959d572972bde044cfe99abbfbfbda9f}
+      \strng{fullhash}{77ea9f5d580818d337ba4a630db7d31d}
+      \strng{bibnamehash}{77ea9f5d580818d337ba4a630db7d31d}
+      \strng{authorbibnamehash}{77ea9f5d580818d337ba4a630db7d31d}
+      \strng{authornamehash}{959d572972bde044cfe99abbfbfbda9f}
+      \strng{authorfullhash}{77ea9f5d580818d337ba4a630db7d31d}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract Horizontally dispersing gravity waves with horizontal wavelengths of 30–40 km were observed at mesospheric altitudes over Auckland Island by the airborne advanced mesospheric temperature mapper during a Deep Propagating Gravity Wave Experiment (DEEPWAVE) research flight on 14 July 2014. A 3D nonlinear compressible model is used to determine which propagation conditions enabled gravity wave penetration into the mesosphere and how the resulting instability characteristics led to widespread momentum deposition. Results indicate that linear tunneling through the polar night jet enabled quick gravity wave propagation from the surface up to the mesopause, while subsequent instability processes reveal large rolls that formed in the negative shear above the jet maximum and led to significant momentum deposition as they descended. This study suggests that gravity wave tunneling is a viable source for this case and other deep propagation events reaching the mesosphere and lower thermosphere.}
+      \field{issn}{0022-4928, 1520-0469}
+      \field{journaltitle}{Journal of the Atmospheric Sciences}
+      \field{month}{5}
+      \field{number}{5}
+      \field{title}{Nonlinear {Simulations} of {Gravity} {Wave} {Tunneling} and {Breaking} over {Auckland} {Island}}
+      \field{urlday}{4}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{78}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{1567\bibrangedash 1582}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1175/JAS-D-20-0230.1
+      \endverb
+      \verb{file}
+      \verb Accepted Version:/Users/tennismichel/Zotero/storage/DJS72FYC/Mixa et al. - 2021 - Nonlinear Simulations of Gravity Wave Tunneling an.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.ametsoc.org/view/journals/atsc/78/5/JAS-D-20-0230.1.xml
+      \endverb
+      \verb{url}
+      \verb https://journals.ametsoc.org/view/journals/atsc/78/5/JAS-D-20-0230.1.xml
+      \endverb
+    \endentry
+    \entry{pfister_gravity_1993}{article}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=3f08c190660fda57260a3cf91e5e204c}{%
+           family={Pfister},
+           familyi={P\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b49be550d40c68feb7247b4af0cffbd4}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={K.\bibnamedelimi R.},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=92ea69714e28ba84aef087a033a873fb}{%
+           family={Bui},
            familyi={B\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod},
+           given={T.\bibnamedelimi P.},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=fbf20c166da266a23950eb0e6b08093b}{%
-           family={Eckermann},
-           familyi={E\bibinitperiod},
-           given={S.\bibnamedelimi D.},
-           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f4d8afb9608ea95bb718656933215337}{%
-           family={Kalisch},
-           familyi={K\bibinitperiod},
+        {{un=0,uniquepart=base,hash=f1bd684dee09f5ad93770ea0550fba1e}{%
+           family={Bowen},
+           familyi={B\bibinitperiod},
            given={S.},
            giveni={S\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=1963de6cbff2af3c154a3146bf95649d}{%
-           family={Trinh},
-           familyi={T\bibinitperiod},
-           given={Q.\bibnamedelimi T.},
-           giveni={Q\bibinitperiod\bibinitdelim T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ec68c53e1386aa08c2bee9353c1a044f}{%
-           family={Riese},
-           familyi={R\bibinitperiod},
+        {{un=0,uniquepart=base,hash=01745e7beaa849e8d3888dc690ca39f1}{%
+           family={Legg},
+           familyi={L\bibinitperiod},
            given={M.},
            giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e8e43a4077037061fea825a4f7fe901d}{%
+           family={Gary},
+           familyi={G\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=708811d0c176cfddc9802a96cd73a95e}{%
+           family={Kelly},
+           familyi={K\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=979e11c63f54e025b23253dd20e4d430}{%
+           family={Proffitt},
+           familyi={P\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4363e5da8d23879b613c64fb4ee815d1}{%
+           family={Starr},
+           familyi={S\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
            givenun=0}}%
       }
       \list{language}{1}{%
         {en}%
       }
-      \strng{namehash}{4b57ed51305c578b251f4e94e36c9f95}
-      \strng{fullhash}{fcaea7976abba1384a0c8545e25849d9}
-      \strng{bibnamehash}{fcaea7976abba1384a0c8545e25849d9}
-      \strng{authorbibnamehash}{fcaea7976abba1384a0c8545e25849d9}
-      \strng{authornamehash}{4b57ed51305c578b251f4e94e36c9f95}
-      \strng{authorfullhash}{fcaea7976abba1384a0c8545e25849d9}
+      \strng{namehash}{1700ce759792f07a85766f50f47a6a78}
+      \strng{fullhash}{24c804c8a9e79dbb55865b4d93bd4397}
+      \strng{bibnamehash}{24c804c8a9e79dbb55865b4d93bd4397}
+      \strng{authorbibnamehash}{24c804c8a9e79dbb55865b4d93bd4397}
+      \strng{authornamehash}{1700ce759792f07a85766f50f47a6a78}
+      \strng{authorfullhash}{24c804c8a9e79dbb55865b4d93bd4397}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{01480227}
+      \field{journaltitle}{Journal of Geophysical Research: Atmospheres}
+      \field{month}{5}
+      \field{number}{D5}
+      \field{shorttitle}{Gravity waves generated by a tropical cyclone during the {STEP} tropical field program}
+      \field{title}{Gravity waves generated by a tropical cyclone during the {STEP} tropical field program: {A} case study}
+      \field{urlday}{22}
+      \field{urlmonth}{6}
+      \field{urlyear}{2021}
+      \field{volume}{98}
+      \field{year}{1993}
+      \field{urldateera}{ce}
+      \field{pages}{8611\bibrangedash 8638}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1029/92JD01679
+      \endverb
+      \verb{file}
+      \verb Pfister et al_1993_Gravity waves generated by a tropical cyclone during the STEP tropical field.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Pfister et al_1993_Gravity waves generated by a tropical cyclone during the STEP tropical field.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://doi.wiley.com/10.1029/92JD01679
+      \endverb
+      \verb{url}
+      \verb http://doi.wiley.com/10.1029/92JD01679
+      \endverb
+    \endentry
+    \entry{phillips_analytical_1984}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dfbdfa78b08b92a5b330b8894c5ec980}{%
+           family={Phillips},
+           familyi={P\bibinitperiod},
+           given={Doug\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{dfbdfa78b08b92a5b330b8894c5ec980}
+      \strng{fullhash}{dfbdfa78b08b92a5b330b8894c5ec980}
+      \strng{bibnamehash}{dfbdfa78b08b92a5b330b8894c5ec980}
+      \strng{authorbibnamehash}{dfbdfa78b08b92a5b330b8894c5ec980}
+      \strng{authornamehash}{dfbdfa78b08b92a5b330b8894c5ec980}
+      \strng{authorfullhash}{dfbdfa78b08b92a5b330b8894c5ec980}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{extradatescope}{labelyear}
@@ -1494,41 +998,85 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Abstract. Global model data from the European Centre for Medium-Range Weather Forecasts (ECMWF) are analyzed for resolved gravity waves (GWs). Based on fitted 3-D wave vectors of individual waves and using the ECMWF global scale background fields, backward ray tracing from 25 km altitude is performed. Different sources such as orography, convection and winter storms are identified. It is found that due to oblique propagation waves spread widely from narrow source regions. Gravity waves which originate from regions of strong convection are frequently excited around the tropopause and have in the ECMWF model low phase and group velocities as well as very long horizontal wavelengths compared to other models and to measurements. While the total amount of momentum flux for convective GWs changes little over season, GWs generated by storms and mountain waves show large day-to-day variability, which has a strong influence also on total hemispheric fluxes; from one day to the next the total hemispheric flux may increase by a factor of 3. Implications of these results for using the ECMWF model in predicting, analyzing and interpreting global GW distributions as well as implications for seamless climate prediction are discussed.}
-      \field{issn}{1680-7324}
-      \field{journaltitle}{Atmospheric Chemistry and Physics}
-      \field{month}{10}
-      \field{number}{19}
-      \field{title}{Characteristics of gravity waves resolved by {ECMWF}}
-      \field{urlday}{21}
-      \field{urlmonth}{11}
+      \field{issn}{0022-4928, 1520-0469}
+      \field{journaltitle}{Journal of the Atmospheric Sciences}
+      \field{month}{3}
+      \field{number}{6}
+      \field{title}{Analytical {Surface} {Pressure} and {Drag} for {Linear} {Hydrostatic} {Flow} over {Three}-{Dimensional} {Elliptical} {Mountains}}
+      \field{urlday}{30}
+      \field{urlmonth}{12}
       \field{urlyear}{2022}
-      \field{volume}{14}
-      \field{year}{2014}
+      \field{volume}{41}
+      \field{year}{1984}
       \field{urldateera}{ce}
-      \field{pages}{10483\bibrangedash 10508}
-      \range{pages}{26}
+      \field{pages}{1073\bibrangedash 1084}
+      \range{pages}{12}
       \verb{doi}
-      \verb 10.5194/acp-14-10483-2014
+      \verb 10.1175/1520-0469(1984)041<1073:ASPADF>2.0.CO;2
       \endverb
       \verb{file}
-      \verb Preusse et al_2014_Characteristics of gravity waves resolved by ECMWF.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Preusse et al_2014_Characteristics of gravity waves resolved by ECMWF.pdf:application/pdf
+      \verb Phillips_1984_Analytical Surface Pressure and Drag for Linear Hydrostatic Flow over.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Phillips_1984_Analytical Surface Pressure and Drag for Linear Hydrostatic Flow over.pdf:application/pdf
       \endverb
       \verb{urlraw}
-      \verb https://acp.copernicus.org/articles/14/10483/2014/
+      \verb http://journals.ametsoc.org/doi/10.1175/1520-0469(1984)041<1073:ASPADF>2.0.CO;2
       \endverb
       \verb{url}
-      \verb https://acp.copernicus.org/articles/14/10483/2014/
+      \verb http://journals.ametsoc.org/doi/10.1175/1520-0469(1984)041%3C1073:ASPADF%3E2.0.CO;2
+      \endverb
+    \endentry
+    \entry{prusa_propagation_1996}{article}{}
+      \name{author}{3}{}{%
+        {{un=1,uniquepart=given,hash=7c135a7301ec6f86e3ed6ceb231b3da9}{%
+           family={Prusa},
+           familyi={P\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=61051e37284cfac8618b92f854289eb3}{%
+           family={Smolarkiewicz},
+           familyi={S\bibinitperiod},
+           given={Piotr},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e74f3c3f49b55b70dd5e554a3277bf88}{%
+           family={Garcia},
+           familyi={G\bibinitperiod},
+           given={Rolando},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0704f2cd7545b0d8780c7667ace5b406}
+      \strng{fullhash}{2ae7b737a21c3b70eae84b1082bdef35}
+      \strng{bibnamehash}{2ae7b737a21c3b70eae84b1082bdef35}
+      \strng{authorbibnamehash}{2ae7b737a21c3b70eae84b1082bdef35}
+      \strng{authornamehash}{0704f2cd7545b0d8780c7667ace5b406}
+      \strng{authorfullhash}{2ae7b737a21c3b70eae84b1082bdef35}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the Atmospheric Sciences}
+      \field{month}{9}
+      \field{title}{Propagation and {Breaking} at {High} {Altitudes} of {Gravity} {Waves} {Excited} by {Tropospheric} {Forcing}}
+      \field{volume}{53}
+      \field{year}{1996}
+      \verb{doi}
+      \verb 10.1175/1520-0469(1996)053<2186:PABAHA>2.0.CO;2
+      \endverb
+      \verb{file}
+      \verb Prusa et al_1996_Propagation and Breaking at High Altitudes of Gravity Waves Excited by.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Prusa et al_1996_Propagation and Breaking at High Altitudes of Gravity Waves Excited by.pdf:application/pdf
       \endverb
     \endentry
     \entry{prusa_all-scale_2003}{article}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=88bbb344616d26eb120e909a658f75a3}{%
+        {{un=1,uniquepart=given,hash=88bbb344616d26eb120e909a658f75a3}{%
            family={Prusa},
            familyi={P\bibinitperiod},
            given={Joseph\bibnamedelima M.},
            giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=1,uniquepart=given,hash=ac870be4d590a1f1008633458cf641c5}{%
            family={Smolarkiewicz},
            familyi={S\bibinitperiod},
@@ -1549,7 +1097,6 @@
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{00219991}
@@ -1581,12 +1128,12 @@
     \endentry
     \entry{prusa_eulag_2008}{article}{}
       \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=88bbb344616d26eb120e909a658f75a3}{%
+        {{un=1,uniquepart=given,hash=88bbb344616d26eb120e909a658f75a3}{%
            family={Prusa},
            familyi={P\bibinitperiod},
            given={Joseph\bibnamedelima M.},
            giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=ac870be4d590a1f1008633458cf641c5}{%
            family={Smolarkiewicz},
            familyi={S\bibinitperiod},
@@ -1613,7 +1160,6 @@
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{00457930}
@@ -1695,14 +1241,268 @@
       \verb https://journals.ametsoc.org/doi/10.1175/1520-0477-29.1.16
       \endverb
     \endentry
+    \entry{rapp_southtrac-gw_2021}{article}{}
+      \name{author}{27}{}{%
+        {{un=0,uniquepart=base,hash=3c959392a31dc963ae71e8be9e5040e6}{%
+           family={Rapp},
+           familyi={R\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0f2bb679ef95ffd2aeea3e9a9e691c69}{%
+           family={Kaifler},
+           familyi={K\bibinitperiod},
+           given={Bernd},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4aa53d2623aa8ab18bce41737010a8ad}{%
+           family={Dörnbrack},
+           familyi={D\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7f6ac5b78c3f664cf475217dc40c99d6}{%
+           family={Gisinger},
+           familyi={G\bibinitperiod},
+           given={Sonja},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=60a003961d6ecdbb5127edf8bce4f90c}{%
+           family={Mixa},
+           familyi={M\bibinitperiod},
+           given={Tyler},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81992e75d6ab3333d31eab7931700331}{%
+           family={Reichert},
+           familyi={R\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=646629742ad9636d0bf9e8085512b8e7}{%
+           family={Kaifler},
+           familyi={K\bibinitperiod},
+           given={Natalie},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f656647a53180cea5e2cb59725bec36}{%
+           family={Knobloch},
+           familyi={K\bibinitperiod},
+           given={Stefanie},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c3c3628fd735c30ef3ad8de907a292bc}{%
+           family={Eckert},
+           familyi={E\bibinitperiod},
+           given={Ramona},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=72425bda730ef776e50bccd579569f60}{%
+           family={Wildmann},
+           familyi={W\bibinitperiod},
+           given={Norman},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1fa612a94f804d208af7d8253817f8df}{%
+           family={Giez},
+           familyi={G\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56d8fe936cd96978f7ef01cdec80e974}{%
+           family={Krasauskas},
+           familyi={K\bibinitperiod},
+           given={Lukas},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8a790b38b7248a23e88abd0364236110}{%
+           family={Preusse},
+           familyi={P\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b5da541540765b1874a9a2c4ad71eb90}{%
+           family={Geldenhuys},
+           familyi={G\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dc49bf8243ff71a936f117c6f9338979}{%
+           family={Riese},
+           familyi={R\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e3469a199aff5de861df94dc4c17f1b5}{%
+           family={Woiwode},
+           familyi={W\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=470b3d0f2d03cc754928d282f3015b26}{%
+           family={Friedl-Vallon},
+           familyi={F\bibinithyphendelim V\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=28191dc962df51bfed30b2a682101115}{%
+           family={Sinnhuber},
+           familyi={S\bibinitperiod},
+           given={Björn-Martin},
+           giveni={B\bibinithyphendelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62eaa04346437f6044b7bb3424a35045}{%
+           family={Torre},
+           familyi={T\bibinitperiod},
+           given={Alejandro\bibnamedelimb de\bibnamedelima la},
+           giveni={A\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim l\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a3858020d0344db8a6795ca2f340f1e1}{%
+           family={Alexander},
+           familyi={A\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2178ccbae7f8802d1f9bc873c32e508f}{%
+           family={Hormaechea},
+           familyi={H\bibinitperiod},
+           given={Jose\bibnamedelima Luis},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f69204025b68f8ff8e168e9685ba709a}{%
+           family={Janches},
+           familyi={J\bibinitperiod},
+           given={Diego},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=65100bc4a679d215275034f4134ba3c2}{%
+           family={Garhammer},
+           familyi={G\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5d082abfe860ffb9979f9390d473aac3}{%
+           family={Chau},
+           familyi={C\bibinitperiod},
+           given={Jorge\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43404a082b1e82663c7353183d648f92}{%
+           family={Conte},
+           familyi={C\bibinitperiod},
+           given={J.\bibnamedelimi Federico},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bf3f7e042d4b494d370c9e7526b63a27}{%
+           family={Hoor},
+           familyi={H\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac78be415c456409b40641e9fdf2ab8f}{%
+           family={Engel},
+           familyi={E\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6e84b1915f384cee515f9cf5fbc468f6}
+      \strng{fullhash}{58db69b841b23f41ad04f8addfddf15d}
+      \strng{bibnamehash}{dcf42db6a56d771c63d77331ab04c942}
+      \strng{authorbibnamehash}{dcf42db6a56d771c63d77331ab04c942}
+      \strng{authornamehash}{6e84b1915f384cee515f9cf5fbc468f6}
+      \strng{authorfullhash}{58db69b841b23f41ad04f8addfddf15d}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Abstract The southern part of South America and the Antarctic peninsula are known as the world’s strongest hotspot region of stratospheric gravity wave (GW) activity. Large tropospheric winds are deflected by the Andes and the Antarctic Peninsula and excite GWs that might propagate into the upper mesosphere. Satellite observations show large stratospheric GW activity above the mountains, the Drake Passage, and in a belt centered along 60°S. This scientifically highly interesting region for studying GW dynamics was the focus of the Southern Hemisphere Transport, Dynamics, and Chemistry–Gravity Waves (SOUTHTRAC-GW) mission. The German High Altitude and Long Range Research Aircraft (HALO) was deployed to Rio Grande at the southern tip of Argentina in September 2019. Seven dedicated research flights with a typical length of 7,000 km were conducted to collect GW observations with the novel Airborne Lidar for Middle Atmosphere research (ALIMA) instrument and the Gimballed Limb Observer for Radiance Imaging of the Atmosphere (GLORIA) limb sounder. While ALIMA measures temperatures in the altitude range from 20 to 90 km, GLORIA observations allow characterization of temperatures and trace gas mixing ratios from 5 to 15 km. Wave perturbations are derived by subtracting suitable mean profiles. This paper summarizes the motivations and objectives of the SOUTHTRAC-GW mission. The evolution of the atmospheric conditions is documented including the effect of the extraordinary Southern Hemisphere sudden stratospheric warming (SSW) that occurred in early September 2019. Moreover, outstanding initial results of the GW observation and plans for future work are presented.}
+      \field{issn}{0003-0007, 1520-0477}
+      \field{journaltitle}{Bulletin of the American Meteorological Society}
+      \field{month}{4}
+      \field{number}{4}
+      \field{shorttitle}{{SOUTHTRAC}-{GW}}
+      \field{title}{{SOUTHTRAC}-{GW}: {An} {Airborne} {Field} {Campaign} to {Explore} {Gravity} {Wave} {Dynamics} at the {World}’s {Strongest} {Hotspot}}
+      \field{urlday}{3}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{volume}{102}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{E871\bibrangedash E893}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1175/BAMS-D-20-0034.1
+      \endverb
+      \verb{file}
+      \verb Rapp et al. - 2021 - SOUTHTRAC-GW An Airborne Field Campaign to Explor.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Rapp et al. - 2021 - SOUTHTRAC-GW An Airborne Field Campaign to Explor.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.ametsoc.org/view/journals/bams/102/4/BAMS-D-20-0034.1.xml
+      \endverb
+      \verb{url}
+      \verb https://journals.ametsoc.org/view/journals/bams/102/4/BAMS-D-20-0034.1.xml
+      \endverb
+    \endentry
+    \entry{reichert_robert_characterization_2022}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=81992e75d6ab3333d31eab7931700331}{%
+           family={Reichert},
+           familyi={R\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Ludwig-Maximilians-Universität München}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{81992e75d6ab3333d31eab7931700331}
+      \strng{fullhash}{81992e75d6ab3333d31eab7931700331}
+      \strng{bibnamehash}{81992e75d6ab3333d31eab7931700331}
+      \strng{authorbibnamehash}{81992e75d6ab3333d31eab7931700331}
+      \strng{authornamehash}{81992e75d6ab3333d31eab7931700331}
+      \strng{authorfullhash}{81992e75d6ab3333d31eab7931700331}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The largest mountain waves worldwide are excited at the southern Andes where they subsequently propagate vertically and horizontally downwind and transfer their momentum to the mean flow in the middle atmosphere. Many questions regarding excitation, exact propagation, interaction and dissipation of these waves are still unanswered. For this reason, a Rayleigh lidar system was installed on behalf of DLR at Río Grande (53.7◦ S, 67.7◦ W), Argentina, to record vertical temperature profiles, to detect gravity wave signatures. Analysis of the lidar data set, collected in an automated manner between November 2017 and October 2020, is the core of this dissertation. What is new here is not only the measurement at this geographic location, but also the high cadence of the measurements. The measurement coverage of an average of two measurements within three nights allows to define a temperature background, which covers temporal scales from 9 days up to one year and vertical scales from 15 km. In addition, diurnal tides are extracted from nighttime lidar measurements using a new methodology that is also applied to ECMWF reanalysis data for validation. The comparison shows good agreement, although the amplitudes of the diurnal tide in the lidar data are larger in the mesosphere and vary much more than in the reanalysis data. Tidal aliasing likely results in unexpected small/large amplitudes in the annual/semi-annual oscillations. The wave energies studied are the largest ever measured in the stratosphere, reaching a saturation limit at 60 km altitude. Reaching a saturation limit at such low altitudes has not been observed before in that way and suggests that waves are already generated with very large amplitudes and also find good growth conditions during vertical propagation. Also related to saturation is an observed decrease in gravity wave intermittency in the mesosphere. The development of a new spectral tool helps in the determination of wavelengths. Here it becomes clear that about 50 \% of the waves have vertical scales greater than 16,5 km. This is an important result considering that previous lidar studies have mostly focused on vertical wavelengths \&lt;15 km. In isolated cases, energy growth in the stratosphere is observed to exceed the expected exponential growth. This may indicate that the waves are propagating horizontally through the lidar’s observation volume. To investigate the propagation of the waves along with their excitation mechanism, a ray tracing study was carried out. It becomes clear, first, that measured wave energies in the middle atmosphere depend primarily on the properties of the background atmosphere and only secondarily on the strength of the forcing. Second, it has been found that the excitation defines the direction of propagation of the mountain waves. If the wind turns with altitude, lateral propagation occurs more strongly, sometimes leeward for several 100 km. A horizontal wind gradient is not able to compensate this by rotating the wave vector. This is an important result and should be considered in future parameterization schemes of climate models.}
+      \field{note}{Medium: application/pdf}
+      \field{title}{Characterization of gravity waves in the lee of the southern {Andes} utilizing an autonomous {Rayleigh} lidar system}
+      \field{type}{phdthesis}
+      \field{urlday}{10}
+      \field{urlmonth}{11}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.5282/EDOC.30211
+      \endverb
+      \verb{urlraw}
+      \verb https://edoc.ub.uni-muenchen.de/id/eprint/30211
+      \endverb
+      \verb{url}
+      \verb https://edoc.ub.uni-muenchen.de/id/eprint/30211
+      \endverb
+      \keyw{500,530,atmospheric gravity waves,southern Andes,rayleigh lidar,middle atmosphere,wavelet analysis,raytracing,FOS: Physical sciences}
+    \endentry
     \entry{smith_influence_1979}{article}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=4d084d34e849795ff97260faaadc98b0}{%
+        {{un=1,uniquepart=given,hash=4d084d34e849795ff97260faaadc98b0}{%
            family={Smith},
            familyi={S\bibinitperiod},
            given={Ron},
            giveni={R\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
       }
       \strng{namehash}{4d084d34e849795ff97260faaadc98b0}
       \strng{fullhash}{4d084d34e849795ff97260faaadc98b0}
@@ -1714,7 +1514,6 @@
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Atmospheric Sciences}
@@ -1730,6 +1529,56 @@
       \endverb
       \verb{file}
       \verb Smith_1979_The Influence of the Earth's Rotation on Mountain Wave Drag.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Smith_1979_The Influence of the Earth's Rotation on Mountain Wave Drag.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{smith_linear_1980}{article}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=262a793265d9ced4e8f534422caa8a32}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Ronald\bibnamedelima B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{262a793265d9ced4e8f534422caa8a32}
+      \strng{fullhash}{262a793265d9ced4e8f534422caa8a32}
+      \strng{bibnamehash}{262a793265d9ced4e8f534422caa8a32}
+      \strng{authorbibnamehash}{262a793265d9ced4e8f534422caa8a32}
+      \strng{authornamehash}{262a793265d9ced4e8f534422caa8a32}
+      \strng{authorfullhash}{262a793265d9ced4e8f534422caa8a32}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0040-2826, 2153-3490}
+      \field{journaltitle}{Tellus}
+      \field{month}{1}
+      \field{number}{4}
+      \field{title}{Linear theory of stratified hydrostatic flow past an isolated mountain}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{volume}{32}
+      \field{year}{1980}
+      \field{urldateera}{ce}
+      \field{pages}{348\bibrangedash 364}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.3402/tellusa.v32i4.10590
+      \endverb
+      \verb{file}
+      \verb Smith_1980_Linear theory of stratified hydrostatic flow past an isolated mountain.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Smith_1980_Linear theory of stratified hydrostatic flow past an isolated mountain.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.tandfonline.com/doi/full/10.3402/tellusa.v32i4.10590
+      \endverb
+      \verb{url}
+      \verb https://www.tandfonline.com/doi/full/10.3402/tellusa.v32i4.10590
       \endverb
     \endentry
     \entry{smolarkiewicz_forward--time_1993}{article}{}
@@ -1926,6 +1775,51 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0021999198959010
       \endverb
     \endentry
+    \entry{teixeira_physics_2014}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=01aabc65474646b2d518d4f310777160}{%
+           family={Teixeira},
+           familyi={T\bibinitperiod},
+           given={Miguel\bibnamedelimb A.\bibnamedelimi C.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{01aabc65474646b2d518d4f310777160}
+      \strng{fullhash}{01aabc65474646b2d518d4f310777160}
+      \strng{bibnamehash}{01aabc65474646b2d518d4f310777160}
+      \strng{authorbibnamehash}{01aabc65474646b2d518d4f310777160}
+      \strng{authornamehash}{01aabc65474646b2d518d4f310777160}
+      \strng{authorfullhash}{01aabc65474646b2d518d4f310777160}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2296-424X}
+      \field{journaltitle}{Frontiers in Physics}
+      \field{month}{7}
+      \field{title}{The physics of orographic gravity wave drag}
+      \field{urlday}{5}
+      \field{urlmonth}{7}
+      \field{urlyear}{2021}
+      \field{volume}{2}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.3389/fphy.2014.00043
+      \endverb
+      \verb{file}
+      \verb Teixeira_2014_The physics of orographic gravity wave drag.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Teixeira_2014_The physics of orographic gravity wave drag2.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://journal.frontiersin.org/article/10.3389/fphy.2014.00043/abstract
+      \endverb
+      \verb{url}
+      \verb http://journal.frontiersin.org/article/10.3389/fphy.2014.00043/abstract
+      \endverb
+    \endentry
     \entry{tsuda_global_2000}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=7b80e0003cabdd455dfdc5574d714fd4}{%
@@ -2041,141 +1935,6 @@
       \endverb
       \verb{url}
       \verb https://www.ecmwf.int/node/13027
-      \endverb
-    \endentry
-    \entry{wright_exploring_2017}{article}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=7ff519ccd7f8e69af78ac52b63d889c7}{%
-           family={Wright},
-           familyi={W\bibinitperiod},
-           given={Corwin\bibnamedelima J.},
-           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b764c965d1dfd568f077c24e557b1c1c}{%
-           family={Hindley},
-           familyi={H\bibinitperiod},
-           given={Neil\bibnamedelima P.},
-           giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f721c74d22df576042da5854fab00e31}{%
-           family={Hoffmann},
-           familyi={H\bibinitperiod},
-           given={Lars},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9f7a8fe87b1ec00f00134141c2e2e3cc}{%
-           family={Alexander},
-           familyi={A\bibinitperiod},
-           given={M.\bibnamedelimi Joan},
-           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b553a69ebb60c12d2ec190828d85753e}{%
-           family={Mitchell},
-           familyi={M\bibinitperiod},
-           given={Nicholas\bibnamedelima J.},
-           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{000cb5ec9ce940b64c4798e76afd911a}
-      \strng{fullhash}{5377a0aa67238b3fdf2b371c025bd47c}
-      \strng{bibnamehash}{5377a0aa67238b3fdf2b371c025bd47c}
-      \strng{authorbibnamehash}{5377a0aa67238b3fdf2b371c025bd47c}
-      \strng{authornamehash}{000cb5ec9ce940b64c4798e76afd911a}
-      \strng{authorfullhash}{5377a0aa67238b3fdf2b371c025bd47c}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Abstract. Gravity waves (GWs) transport momentum and energy in the atmosphere, exerting a profound influence on the global circulation. Accurately measuring them is thus vital both for understanding the atmosphere and for developing the next generation of weather forecasting and climate prediction models. However, it has proven very difficult to measure the full set of GW parameters from satellite measurements, which are the only suitable observations with global coverage. This is particularly critical at latitudes close to 60° S, where climate models significantly under-represent wave momentum fluxes. Here, we present a novel fully 3-D method for detecting and characterising GWs in the stratosphere. This method is based around a 3-D Stockwell transform, and can be applied retrospectively to existing observed data. This is the first scientific use of this spectral analysis technique. We apply our method to high-resolution 3-D atmospheric temperature data from AIRS/Aqua over the altitude range 20–60 km. Our method allows us to determine a wide range of parameters for each wave detected. These include amplitude, propagation direction, horizontal/vertical wavelength, height/direction-resolved momentum fluxes (MFs), and phase and group velocity vectors. The latter three have not previously been measured from an individual satellite instrument. We demonstrate this method over the region around the Southern Andes and Antarctic Peninsula, the largest known sources of GW MFs near the 60° S belt. Our analyses reveal the presence of strongly intermittent highly directionally focused GWs with very high momentum fluxes (∼ 80–100 mPa or more at 30 km altitude). These waves are closely associated with the mountains rather than the open ocean of the Drake Passage. Measured fluxes are directed orthogonal to both mountain ranges, consistent with an orographic source mechanism, and are largest in winter. Further, our measurements of wave group velocity vectors show clear observational evidence that these waves are strongly focused into the polar night wind jet, and thus may contribute significantly to the missing momentum at these latitudes. These results demonstrate the capabilities of our new method, which provides a powerful tool for delivering the observations required for the next generation of weather and climate models.}
-      \field{issn}{1680-7324}
-      \field{journaltitle}{Atmospheric Chemistry and Physics}
-      \field{month}{7}
-      \field{number}{13}
-      \field{shorttitle}{Exploring gravity wave characteristics in 3-{D} using a novel {S}-transform technique}
-      \field{title}{Exploring gravity wave characteristics in 3-{D} using a novel {S}-transform technique: {AIRS}/{Aqua} measurements over the {Southern} {Andes} and {Drake} {Passage}}
-      \field{urlday}{22}
-      \field{urlmonth}{12}
-      \field{urlyear}{2022}
-      \field{volume}{17}
-      \field{year}{2017}
-      \field{urldateera}{ce}
-      \field{pages}{8553\bibrangedash 8575}
-      \range{pages}{23}
-      \verb{doi}
-      \verb 10.5194/acp-17-8553-2017
-      \endverb
-      \verb{file}
-      \verb Full Text:/Users/tennismichel/Zotero/storage/TF4VXTQ9/Wright et al. - 2017 - Exploring gravity wave characteristics in 3-D usin.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://acp.copernicus.org/articles/17/8553/2017/
-      \endverb
-      \verb{url}
-      \verb https://acp.copernicus.org/articles/17/8553/2017/
-      \endverb
-    \endentry
-    \entry{wu_satellite_1996}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=f53bc1a57239f3198244f9fef9b6f657}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={D.\bibnamedelimi L.},
-           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ea1c2ec4f4135157d51b74f2020cc76a}{%
-           family={Waters},
-           familyi={W\bibinitperiod},
-           given={J.\bibnamedelimi W.},
-           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{3bdf17e8df850812841ff5eccfd6fec2}
-      \strng{fullhash}{3bdf17e8df850812841ff5eccfd6fec2}
-      \strng{bibnamehash}{3bdf17e8df850812841ff5eccfd6fec2}
-      \strng{authorbibnamehash}{3bdf17e8df850812841ff5eccfd6fec2}
-      \strng{authornamehash}{3bdf17e8df850812841ff5eccfd6fec2}
-      \strng{authorfullhash}{3bdf17e8df850812841ff5eccfd6fec2}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{issn}{00948276}
-      \field{journaltitle}{Geophysical Research Letters}
-      \field{month}{12}
-      \field{number}{24}
-      \field{shorttitle}{Satellite observations of atmospheric variances}
-      \field{title}{Satellite observations of atmospheric variances: {A} possible indication of gravity waves}
-      \field{urlday}{18}
-      \field{urlmonth}{5}
-      \field{urlyear}{2021}
-      \field{volume}{23}
-      \field{year}{1996}
-      \field{urldateera}{ce}
-      \field{pages}{3631\bibrangedash 3634}
-      \range{pages}{4}
-      \verb{doi}
-      \verb 10.1029/96GL02907
-      \endverb
-      \verb{file}
-      \verb Wu_Waters_1996_Satellite observations of atmospheric variances.pdf:/Users/tennismichel/Google Drive/Zotero/Zotero_library/Wu_Waters_1996_Satellite observations of atmospheric variances.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb http://doi.wiley.com/10.1029/96GL02907
-      \endverb
-      \verb{url}
-      \verb http://doi.wiley.com/10.1029/96GL02907
       \endverb
     \endentry
   \enddatalist
