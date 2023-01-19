@@ -1,10 +1,13 @@
 % ==== BEGIN OF PREAMBLE =======================================================
 % ---- document class (use appropriate driver for DIV to PS/PDF conversion):
 \documentclass[12pt,a4paper]{book}
-%\includeonly{intro,methods,results2D,results3D}
+%\includeonly{chapters/intro}
+%\includeonly{chapters/methods}
+%\includeonly{chapters/eulag_model}
+%\includeonly{chapters/resultsQ3D}
+\includeonly{chapters/results3D}
 %\includeonly{chapters/lidar_obs}
-%\includeonly{chapters/eulag_model,chapters/resultsQ3D}
-\includeonly{chapters/eulag_model}
+%\includeonly{chapters/eulag_model,chapters/resultsQ3D,chapters/results3D,chapters/lidar_obs} % DRAFT
 % option+z  for formatting tex file in vscode
 
 %%% If bib compilation fails - run in terminal %%%
@@ -28,7 +31,6 @@
 \setlength\bibhang{12pt}
 \setlength\bibitemsep{6pt}
 \addbibresource{refs.bib}
-
 
 % ==== END OF PREAMBLE =========================================================
 
