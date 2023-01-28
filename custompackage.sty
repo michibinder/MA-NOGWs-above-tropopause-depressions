@@ -76,6 +76,12 @@
 
 %% --- fancyhdr package:
 \usepackage{fancyhdr}
+%%% - cmb
+\fancypagestyle{plain}{% % <-- this is new
+  \fancyhf{} 
+  \fancyfoot[LE,RO]{\thepage} % same placement as with page style "fancy"
+  \renewcommand{\headrulewidth}{0pt}}
+%%% - cmb
 
 %% --- some other useful packages:
 % \usepackage{showkeys}  % show all keys (labels) in pdf

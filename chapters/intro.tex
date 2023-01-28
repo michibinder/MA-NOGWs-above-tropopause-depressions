@@ -26,7 +26,7 @@ State-of-the-art general circulation models (GCMs) are not yet capable of resolv
 
 As a result, parameterizations have to account for the significant portion of subgrid-scale processes. Since the main feature of GWs is the transport of horizontal momentum upward into the middle and upper atmosphere, most GW parameterisations are based on two assumptions. Firstly, GWs are excited within the troposphere and, secondly, they only propagate vertically (\cite{plougonven_how_2020} and \cite{alexander_recent_2010}). Physically based parameterisations of waves from non-orographic sources exist (e.g. \cite{scinocca_accurate_2003}), but lack observational constraints (\cite{plougonven_internal_2014}) and are restricted to the troposphere. Sources in the upper atmosphere like secondary generation or the proposed mechanism of \textcite{dornbrack_stratospheric_2022} are not represented (\cite{plougonven_how_2020} and \cite{kim_overview_2003}).
 
-The simplified columnar propagation of GWs has its advantage within the constraints of parallel computing, but multiple studies already showed that waves can propagate horizontally due to the refraction of jet streams and/or advection of the mean wind, too (\cite{dunkerton_dunkerton_inertiagravity_1984}, \cite{preusse_space-based_2002}, \cite{sato_origins_2009}, \cite{sato_gravity_2012} and \cite{ehard_horizontal_2017}). % include reference to section 2.3
+The simplified columnar propagation of GWs has its advantage within the constraints of parallel computing, but multiple studies already showed that waves can propagate horizontally due to the refraction of jet streams and/or advection of the mean wind, too (\cite{dunkerton_inertiagravity_1984}, \cite{preusse_space-based_2002}, \cite{sato_origins_2009}, \cite{sato_gravity_2012} and \cite{ehard_horizontal_2017}). % include reference to section 2.3
 
 It follows that continued improvements of GW parameterisations are of great interest as long as resolution limits the dynamics of global numerical models. Recent approaches incorporating deep learning with neural networks (\cite{matsuoka_application_2020}) principally allow for horizontal propagation of sub-grid scale waves at a reasonable computational cost. First results are promising, but it is still difficult to predict, if this recent trend marks the next generation of parameterisations ("Soft AI" approach) or even replaces larger parts within weather and climate predictions as discussed by \textcite{chantry_opportunities_2021} who refer to it as "Medium AI" and "Hard AI" approaches.
 
@@ -55,8 +55,9 @@ Either way, it does not mitigate the importance of expanding our knowledge on th
 %
 \begin{figure*}[ht]
     \centering
-    \includegraphics[width=0.99\textwidth]{Figures/hindley_2020_GWMF.png}
-    \caption{Stereographic maps of average wintertime zonal (a, b) and meridional (c, d) GWMF near 40 km altitude derived from AIRS/Aqua 3‐D satellite observations for the period 2002–2019. Winter is defined as December–February (June–August) for the Northern (Southern) Hemisphere. GWMF values that are close to zero have been made transparent to reveal the surface features below, and landmarks that lie beneath regions of increased GWMF have been labeled. Inset in the top right of each panel is a stereographic map of the same data but centered on the north and south poles. These inset panels share a color scale with the corresponding 3‐D contours. Panels (e)–(h) show average wintertime zonal and meridional winds at 3 hPa for the period 2002–2019 from ERA5 reanalysis. Taken from \cite{hindley_18year_2020}.}
+    \includegraphics[width=0.99\textwidth]{figures_intro/hindley_2020_GWMF.png}
+    \caption{Stereographic maps of average wintertime zonal (a, b) and meridional (c, d) GWMF near 40 km altitude derived from AIRS/Aqua 3‐D satellite observations for the period 2002–2019. Winter is defined as December–February (June–August) for the Northern (Southern) Hemisphere. GWMF values that are close to zero have been made transparent to reveal the surface features below, and landmarks that lie beneath regions of increased GWMF have been labeled. Inset in the top right of each panel is a stereographic map of the same data but centered on the north and south poles. These inset panels share a color scale with the corresponding 3‐D contours. Taken from \cite{hindley_18year_2020}.}
+    % Panels (e)–(h) show average wintertime zonal and meridional winds at 3 hPa for the period 2002–2019 from ERA5 reanalysis.
     \label{fig:hindley_2020_GWMF}
     %% change figure to southern hemisphere and include observational filter, then state ern 2018 observational filter better for shorter vertical wavelengths still observe GW belt (hindley discusses this in 2019 paper!!!!
     %Stratospheric zonal and meridional GWMF are illustrated on top of a map of the southern hemisphere. GWMF is derived from Atmospheric Infrared Sounder (AIRS) measurements between 2002 and 2019. Illustrated is the average over the austral winter months June – August. The figure is taken from Hindley et al. (2020))
@@ -94,12 +95,12 @@ In the vicinity of jet streams or upper level frontal zones and associated with 
 %
 \begin{figure*}[ht]
     \centering
-    \includegraphics[width=0.99\textwidth]{Figures/Skerlak_Fold.png}
+    \includegraphics[width=0.99\textwidth]{figures_intro/Skerlak_Fold.png}
     \caption{Example of a deep tropopause fold near the subtropical jet west of Australia at 18 UTC on 13 July 2011. The vertical cross section shown in Figure 2a is aligned along 81$\degree$E from 37S$\degree$ to 22$\degree$S (green line segment in Figure 2b). Displayed are (a) the squared Brunt-Vaisala frequency ($N^2$, colored), potential vorticity (-1 to -4 PVU, thick solid lines, -2 PVU in green, rest in black), the WMO first and second tropopauses (green and blue solid circles, respectively), horizontal wind speed (in \SI{1}{\meter\second^{-1}}, dashed contours), and isentropes (in K, thin contours) and (b) PV on 320 K (colored, in PVU), contours of PV on 310 K at -1 PVU and -2 PVU (dashed and solid blue, respectively), and horizontal wind speed on 345K (reference vector in the top right, in \SI{1}{\meter\second^{-1}}). The West Coast of Australia is visible as grey contour. Taken from \cite{skerlak_tropopause_2015}.}
     \label{fig:skerlakFold}
 \end{figure*}
 %
-The shape of the TD and especially the vertical extend of the prominent tongue of stratospheric air can vary significantly depending on the large scale flow conditions and strength of the upper level frontal system. This has already been discussed extensively from an observational (e.g. \cite{shapiro_further_1978} and \cite{keyser_review_1986}) and model (\cite{skerlak_tropopause_2015}) perspective. Fortunately, the excitation of GWs above such a depression might not be very sensitive to the fold's shape far below the tropopause. Isentropes, that are deflected downwards, but rise again on the other side of the depression (e.g. 360-\SI{390}{\kelvin} in Fig. \ref{fig:skerlakFold}a) are much more interesting for the proposed mechanism considering its similarity to flow over orography. Additionally, the zonal shape of the depression is more relevant for the GW forcing. This along-stream cross section (orthogonal on \ref{fig:skerlakFold}a) was rarely discussed in relevant publications, since the main folding process happens in the cross-stream direction. Based on the ERA5 case study conducted by \textcite{dornbrack_stratospheric_2022} (Fig. \ref{fig:RF25_waves}), the zonal width at half maximum of the propagating TD can be estimated between $4 \degree$ and $8 \degree$ in zonal direction, which transfers to $a=240-$\SI{480}{\kilo\meter}
+The shape of the TD and especially the vertical extend of the prominent tongue of stratospheric air can vary significantly depending on the large scale flow conditions and strength of the upper level frontal system. This has already been discussed extensively from an observational (e.g. \cite{shapiro_further_1978} and \cite{keyser_review_1986}) and model (\cite{skerlak_tropopause_2015}) perspective. Fortunately, the excitation of GWs above such a depression might not be very sensitive to the fold's shape far below the tropopause. Isentropes, that are deflected downwards, but rise again on the other side of the depression (e.g. 360-\SI{390}{\kelvin} in Fig. \ref{fig:skerlakFold}a) are much more interesting for the proposed mechanism considering its similarity to flow over orography. Additionally, the zonal shape of the depression is more relevant for the GW forcing. This along-stream cross section (orthogonal on \ref{fig:skerlakFold}a) was rarely discussed in relevant publications, since the main folding process happens in the cross-stream direction. Based on the ERA5 case study conducted by \textcite{dornbrack_stratospheric_2022} (Fig. \ref{fig:RF25_era5_vertical}), the zonal width at half maximum of the propagating TD can be estimated between $4 \degree$ and $8 \degree$ in zonal direction, which transfers to $a=240-$\SI{480}{\kilo\meter}
 ($1\degree \approx$ \SI{63}{\kilo\meter} at $55 \degree$S). 
 
 half width is approximately 4/5 degree and 2 degree in zonal vertical cross section Dörnbrack et al
@@ -131,18 +132,24 @@ A major difference of potential GWs above TDs to classic mountain waves is the t
 \section{The propagation of GWs above tropopause depressions}
 \label{sec:propagation}
 
-Considering the hydrostatic nature of GWs excited by TDs, the strongest wave signal should more or less appear directly above a propagating depression. In fact, \textcite{dornbrack_stratospheric_2022} observed exactly this feature in ERA5 data (Fig. \ref{fig:RF25_waves}), when analysing lidar measurements from DEEPWAVE research flight 25. Clear wave signals are observed directly above the tropopause fold for multiple points in time. This inspires confidence in the proposed mechanism and suggests that GWs can be observed along the whole path of the baroclinic system responsible for the depression.
+Considering the hydrostatic nature of GWs excited by TDs, the strongest wave signal should more or less appear directly above a propagating depression. In fact, \textcite{dornbrack_stratospheric_2022} observed exactly this feature in ERA5 data (Fig. \ref{fig:RF25_era5_vertical}), when analysing lidar measurements from DEEPWAVE research flight 25. Clear wave signals are observed directly above the tropopause fold for multiple points in time. This inspires confidence in the proposed mechanism and suggests that GWs can be observed along the whole path of the baroclinic system responsible for the depression.
 %
 \begin{figure*}[ht]
     \centering
-    \includegraphics[width=0.99\textwidth]{Figures/RF25_waves.png}
+    \includegraphics[width=0.99\textwidth]{figures_intro/RF25_ERA5_vertical.png}
     \caption{Temperature perturbations (K, red and blue contour lines) and potential temperature (K, black lines in logarithmic scaling) along 55$\degree$S on 17 July 2014 15 UTC (a) and 18 July 2014 09 UTC (b). The bottom panels depict the height of the dynamical tropopause (thick black lines, meridional average from 52.5$\degree$S to 57.5$\degree$S) and the horizontal wind (\SI{}{\meter\second^{-1}}, thin black lines) at the same instances. Data: One hourly ERA5 data. Taken from Dörnbrack et al. (2021).}
-    \label{fig:RF25_waves}
+    \label{fig:RF25_era5_vertical}
+\end{figure*}
+\begin{figure*}[ht]
+    \centering
+    \includegraphics[width=0.99\textwidth]{figures_intro/RF25_ERA5_horizontal.png}
+    \caption{Temperature perturbations (K, red and blue contour lines) and potential temperature (K, black lines in logarithmic scaling) along 55$\degree$S on 17 July 2014 15 UTC (a) and 18 July 2014 09 UTC (b). The bottom panels depict the height of the dynamical tropopause (thick black lines, meridional average from 52.5$\degree$S to 57.5$\degree$S) and the horizontal wind (\SI{}{\meter\second^{-1}}, thin black lines) at the same instances. Data: One hourly ERA5 data. Taken from Dörnbrack et al. (2021).}
+    \label{fig:RF25_era5_horizonal}
 \end{figure*}
 %
 Now, the last piece to the puzzle for explaining the wave belt above the Southern Ocean during the austral winter in Fig. \ref{fig:hindley_2020_GWMF}b and \ref{fig:hindley_2020_GWMF}d is the meridional propagation of GWs in the stratosphere. This is important, because especially in the southern hemisphere pronounced frontal systems are not deviating significantly from a latitude band around 50$\degree$S (\cite{skerlak_tropopause_2015}) though GWs are frequently observed further south.
 
-Two mechanisms are at hand concerning this meridional propagation. At first, the orientation of the TDs is rarely exactly North-South resulting in an inclined wave vector with respect to the predominantly westerly flow in the upper stratosphere. The wave vector defines the propagation direction, so this mechanism is always present and relevant as soon as tilted obstacles are in place as discussed by \textcite{preusse_space-based_2002} for GWs excited by the Andes at similar latitudes. The second process is based on ray-tracing theory and was first discussed and applied by \textcite{dunkerton_dunkerton_inertiagravity_1984}. It describes the modification of the meridional (horizontal) wavenumber by the background wind field with
+Two mechanisms are at hand concerning this meridional propagation. At first, the orientation of the TDs is rarely exactly North-South resulting in an inclined wave vector with respect to the predominantly westerly flow in the upper stratosphere. The wave vector defines the propagation direction, so this mechanism is always present and relevant as soon as tilted obstacles are in place as discussed by \textcite{preusse_space-based_2002} for GWs excited by the Andes at similar latitudes. The second process is based on ray-tracing theory and was first discussed and applied by \textcite{dunkerton_inertiagravity_1984}. It describes the modification of the meridional (horizontal) wavenumber by the background wind field with
 %
 \begin{equation}
     \frac{dl}{dt} = -(k \frac{\partial U}{\partial y} + l \frac{\partial V}{\partial y} + \frac{\beta f}{\hat{\omega}})
@@ -150,7 +157,7 @@ Two mechanisms are at hand concerning this meridional propagation. At first, the
     \label{equ:meridionalRefraction}
 \end{equation}
 %
-In a simplified scenario the time rate of change of the meridional wavenumber $l$ along the ray is proportional to the meridional gradient of the background wind $U$ and the zonal wavenumber $k$. In other words, horizontal wind shear develops a meridional component of the wave vector even in the case of a purely zonal initial propagation. In general, this phenomenon leads to a refraction of internal GWs into the southern hemispheric PNJ at 60$\degree$S, which has already been described by a number of publications (e.g. \cite{dunkerton_dunkerton_inertiagravity_1984}, \cite{preusse_space-based_2002}, \cite{sato_origins_2009}, \cite{sato_gravity_2012}, \cite{ehard_horizontal_2017} and \cite{jiang_stratospheric_2019}). \textcite{jiang_stratospheric_2019} further add, that waves are elongated towards the stronger background wind (towards the center of the PNJ) and shortened on the opposite side with weaker winds.
+In a simplified scenario the time rate of change of the meridional wavenumber $l$ along the ray is proportional to the meridional gradient of the background wind $U$ and the zonal wavenumber $k$. In other words, horizontal wind shear develops a meridional component of the wave vector even in the case of a purely zonal initial propagation. In general, this phenomenon leads to a refraction of internal GWs into the southern hemispheric PNJ at 60$\degree$S, which has already been described by a number of publications (e.g. \cite{dunkerton_inertiagravity_1984}, \cite{preusse_space-based_2002}, \cite{sato_origins_2009}, \cite{sato_gravity_2012}, \cite{ehard_horizontal_2017} and \cite{jiang_stratospheric_2019}). \textcite{jiang_stratospheric_2019} further add, that waves are elongated towards the stronger background wind (towards the center of the PNJ) and shortened on the opposite side with weaker winds.
 
 \section{Research goals and outline}
 \label{sec:goals}
@@ -175,10 +182,17 @@ INCLUDE OUTLOOK OF andreas paper with suggestions for further work
 % Here is some text
 % \end{tcolorbox}
 
+Figure \ref{fig:RF25_era5_vertical} was motivation for analogy of excitation mechanism with MWs, so this pattern is quite likely... however horizontal cross section pattern is interesting...
+
 \begin{tcolorbox}[]
-    (R1) Can the proposed excitation mechanism for NOGWs above tropopause folds explain the GW pattern observed in ERA5 data?
+    (R1) Can the proposed excitation mechanism for NOGWs above tropopause depressions explain the zonally elongated phase lines in ERA5 above the Southern Ocean?
+    % the zonally elongated phase lines in the horizontal cross sections of Figure \ref{fig:RF25_era5_horizonal}. 
     % long vertical wave lengths in vertical cross section and elongated phase line in horizontal
+    % Address vertical cross section in introduction
 \end{tcolorbox}
+
+
+
 
 \begin{tcolorbox}[]
     (R2) How sensitive are NOGWs from propagating tropopause folds to the fold's 2D shape and to 2D properties of the stratospheric environment?
