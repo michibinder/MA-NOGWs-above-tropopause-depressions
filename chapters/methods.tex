@@ -6,34 +6,33 @@ The following subsections provide a sufficient overview on the numerical model a
 \label{sec:spectral_filter}
 % FFT
 
-refer to filtering described in Kruse paper and from Vera
-but mention equations
+% and from Vera
 
-Gaussian filter vs. butterworth filter
+- compare Gaussian filter vs. butterworth filter
 
-and describe butterworth filter for CORAL data
+- refer to filtering described in appendix of \textcite[]{kruse_gravity_2015}
+
+- describe butterworth filter for CORAL data
 
 \section{Wavelet Analysis}
 \label{sec:wavelet}
 The wavelet analysis described by \textcite{torrence_practical_1998} is used for deriving horizontal and vertical wavelengths of GWs in the idealized numerical simulations. 
 
+% \begin{equation}
+%     \mathcal{F}_x =  \rho_0 \int_{-\infty}^{\infty} (u'\omega' + f v' \eta') dx + f \int_{-\infty}^{\infty} \rho' v' \eta' dx
+%     \label{equ:morlet}
+% \end{equation}
 
 
+- The normalization with the variance of the data $\sigma^2$ gives a measure of the power relative to white noise. 
 
+- also describe red noise and Significance level
 
-\begin{equation}
-    \mathcal{F}_x =  \rho_0 \int_{-\infty}^{\infty} (u'\omega' + f v' \eta') dx + f \int_{-\infty}^{\infty} \rho' v' \eta' dx
-    \label{equ:morlet}
-\end{equation}
+- 
 
-The normalization with the variance of the data $\sigma^2$ gives a measure of the power relative to white noise. 
-
-Then there is red noise too.
-
-
-\begin{figure*}[tbp]
+\begin{figure*}[t]
     \centering
-    \includegraphics[width=0.99\textwidth]{figures_methods/waveletAna_power_spectrum.png}
+    \includegraphics[width=0.8\textwidth]{figures_methods/waveletAna_power_spectrum.png}
     \caption{}
     \label{fig:wavelet_example}
 \end{figure*}
@@ -73,8 +72,6 @@ Then there is red noise too.
 
 % Figure: wavelet + cut + power spectrum 
 
-spectral resolution was 
-
 
 \section{CORAL temperature measurements} 
 \label{sec:coral}
@@ -84,4 +81,4 @@ spectral resolution was
 
 \section{(ERA5 reanalysis data)}
 
-% eventually comment on observational filter of satellite measurments from with figure from Hindley
+- maybe also comment on observational filter of satellite measurments from with figure from Hindley
