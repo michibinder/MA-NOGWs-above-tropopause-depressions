@@ -5,9 +5,10 @@
 %\includeonly{chapters/methods}
 %\includeonly{chapters/eulag_model}
 %\includeonly{chapters/resultsQ3D}
-%\includeonly{chapters/results3D}
+\includeonly{chapters/results3D,chapters/appendix}
+%\includeonly{chapters/mf_comp}
 %\includeonly{chapters/lidar_obs}
-\includeonly{chapters/intro,chapters/methods,chapters/eulag_model,chapters/resultsQ3D,chapters/results3D,chapters/lidar_obs,chapters/appendix} % DRAFT
+%\includeonly{chapters/intro,chapters/methods,chapters/eulag_model,chapters/resultsQ3D,chapters/results3D,chapters/mf_comp,chapters/lidar_obs,chapters/appendix} % DRAFT
 % option+z  for formatting tex file in vscode
 
 %%% If bib compilation fails - run in terminal %%%
@@ -130,6 +131,16 @@
 \setcounter{figure}{0}
 % ---- include tex-file:
 \include{chapters/results3D}
+\newpage
+%\thispagestyle{plain}
+
+% ==== CHAPTER 5.1 ==============================================================
+% ---- set some counters to zero:
+\setcounter{equation}{0}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+% ---- include tex-file:
+\include{chapters/mf_comp}
 \newpage
 \thispagestyle{plain}
 

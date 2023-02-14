@@ -1,0 +1,121 @@
+\chapter{The calculation of MF from an observational perspective}
+\label{sec:mf_comp}
+% from an observational perspective
+% from model data and observations
+In numerical simulations the vertical flux of horizontal momentum (MF) can be calculated directly from available wind perturbations ($u'$,$v'$ and $w'$) by utilizing equation \ref{equ:mf}. It was used in the preceding sections, too. However, most satellite or ground-based instruments that provide observations of the stratosphere and MLT on a reasonable scale to study GWs are only capable of measuring temperature (e.g. \cite{wu_satellite_1996}, \cite[]{ern_absolute_2004}, \cite{hindley_gravity_2019}, \cite{kaifler_compact_2021}). Temperature perturbations alone allow the calculation of potential energy distributions, but usually MF is the variable of interest to investigate wave-mean flow interactions in the middle atmosphere and constrain GW parameterizations in climate simulations (\cite[]{geller_comparison_2013} or \cite[]{kim_overview_2003}). \\
+In this context, \textcite[]{ern_absolute_2004} derived a formulation of MF that depends on the temperature amplitude $\hat{T}$ and the wave's horizontal and vertical wavelength instead of $\overbar{u'w'}$. This chapter discusses the underlying assumptions of this approach to tackle the fourth research question
+\begin{tcolorbox}[]
+    (R4) Can the MF of NOGWs above propagating tropopause depressions be calculated from temperature perturbations?
+\end{tcolorbox}
+
+\section{Theoretical background}
+\textcite{ern_absolute_2004} start with the expression of the vertical flux of horizontal pseudomomentum valid for conservative wave propagation
+\begin{equation}
+    (\mathrm{MF}_x, \mathrm{MF}_y) = \bar{\rho} (1-\frac{f^2}{\hat{w}^2}) \Bigl(\overbar{u'w'},\overbar{v'w'}\Bigr) 
+    % \approx \bar{\rho}  (\overbar{u'w'},\overbar{v'w'})
+    \label{equ:ps-mf}
+\end{equation}
+(\cite[]{fritts_gravity_2003}). We follow their convention and refer to it as momentum flux MF with MF$_x$ and MF$_y$ being the zonal and meridional MF respectively. They utilize the generally valid linear polarization relations (Equation (14) in \textcite[]{fritts_gravity_2003}) and the dispersion relation
+\begin{equation}
+    \hat{w}^2 = \frac{N^2 \Bigl(k^2+l^2\Bigr) + f^2 \Bigl(m^2 + \frac{1}{4H^2}\Bigr)}{k^2+l^2+m^2+\frac{1}{4H^2}}
+    \label{equ_lid:dispersion_noAss}
+\end{equation}
+from \textcite[]{fritts_gravity_2003} to end up with
+\begin{equation}
+    (\mathrm{MF}_x, \mathrm{MF}_y) = \textrm{A} \, \textrm{B} \, \frac{\bar{\rho}}{2} \Bigl(\frac{g}{N}\Bigr)^2 {\Bigl(\frac{\hat{T}}{\bar{T}}\Bigr)^2} \Bigl(\frac{k}{m},\frac{l}{m}\Bigr).
+    \label{equ:mf-tp}
+\end{equation}
+The only assumptions that accompany equation \ref{equ:mf-tp} are a monochromatic wave perturbation and hydrostatic equilibrium. In \textcite[]{ern_absolute_2004} and many follow-up publications (e.g. \cite[]{preusse_characteristics_2014}, \cite[]{ern_gracile_2018}, \cite[]{hindley_gravity_2019}) the factors A and B are neglected by refererring to the midfrequency approximation. NOGWs above tropopause depression can be considered low frequency waves with large horizontal wavelengths. It needs to be checked if A and B are still neglible in this spectral range. While the factor
+\begin{equation}
+    \begin{split}
+        \textrm{A} = &\biggl(1-\frac{\hat{\omega}^2}{N^2}\biggr) \biggl(1 + \frac{1}{m^2} \Bigl(\frac{1}{2H}-\frac{g}{c_s^2}\Bigr)^2\biggr)^{-1} \\
+            &\biggl(1+\Bigl(\frac{f}{m \hat{\omega}}\Bigr)^2 \Bigl(\frac{1}{2H} - \frac{g}{c_s^2}\Bigr)^2\biggr)^{0.5}
+    \end{split}
+    \label{equ:A}
+\end{equation}
+naturally appears following the approach of \textcite[]{ern_absolute_2004}. The factor
+\begin{equation}
+    \textrm{B} = \left| \frac{\tilde{\Theta}}{\tilde{T}} \right|^2 = \left| 1 + \frac{1}{\beta} \frac{\gamma-1}{c_s^2} \frac{\hat{\omega}}{\frac{N^2}{g}}i\right|^{-2}
+    \label{equ:B}
+\end{equation}
+with
+\begin{equation}
+    \beta = -\frac{\hat{\omega}}{N^2-\hat{\omega}^2} \biggl(m + \Bigl(\frac{1}{2H}-\frac{g}{c_s^2}\Bigr)i\biggr)
+    \label{equ:beta}
+\end{equation}
+represents the error by assuming equal amplitudes for $\hat{\Theta}$ and $\hat{T}$ considering all motions to be adiabatic (\cite[]{fritts_gravity_2003} and \cite[]{ern_directional_2017}).
+\begin{wrapfigure}{r}{7.5cm}
+    \includegraphics[width=7.5cm]{figures_3D/waveletAna_mfcorrection_factor.png}
+    \caption{The correction factor $\textrm{A} \, \textrm{B}$ in equation \ref{equ:mf-tp} for a range of vertical and horizontal wavelengths. It is reproduced from \textcite[]{ern_directional_2017} (supporting information) for a larger $f$ and smaller $c_s$. The dashed rectangle contains all combinations of wavelenghts from the wavelet analysis.}
+    \label{fig:mf_correction}
+\end{wrapfigure}
+In their supporting information \textcite[]{ern_directional_2017} visualize A and B for a common range of vertical and horizontal wavelengths and typical stratospheric values of $N=\SI{0.02}{\per\second}$, $H=\SI{7}{\kilo\meter}$ and $T=\SI{250}{K}$ resulting in $c_s = \SI{316}{\meter\per\second}$. Furthermore, $\gamma=0.4$ and $g=\SI{9.81}{\meter\per\second^2}$. The Coriolis parameter $f$ was chosen for a latitude of 30°. All values are representative for the idealized simulations of this work, but $f$ was a factor of 1.64 larger in the simulations and the background temperature of the isothermal atmosphere was $T=\SI{239}{K}$. Therefore, Figure (S1c) of \textcite[]{ern_directional_2017} is reproduced in Figure \ref{fig:mf_correction} for a Coriolis parameter $f=\SI{1.2e-4}{\per\second}$ (latitude of 55°) and $c_s = \SI{310}{\meter\per\second}$ due to $T=\SI{239}{K}$. \\
+Adapting the Coriolis parameter had no noticeable effect. Lowering $c_s$ made $\textrm{A} \, \textrm{B}$ smaller, so less negligible, but the factor is still greater than $0.95$ for most combinations of wavelengths appearing in the simulations (dashed rectangle). In general, Figure \ref{fig:mf_correction} clarifies that $\textrm{A} \, \textrm{B}$ is much more significant for non-hydrostatic or high frequency waves, while GWs with large horizontal scales are less affected and $\textrm{A} \, \textrm{B}$ can be set to 1 for the following comparison.
+
+At this point, it is important to clarify another relation. \textcite[]{ern_absolute_2004} derived an equation for the momentum flux that depends on the wave's temperature amplitude $\hat{T}$. $\hat{T}$ results from the spectral analysis of the 3D temperature measurements just like horizontal and vertical wavelengths and refers to the amplitude of a perfect sine or cosine wave. These spectral analysis methods improved consistently over the past two decades. Examples are the "S3D" method by \textcite[]{lehmann_consistency_2012} or the work of \textcite[]{wright_exploring_2017} who extended the Stockwell transform to 3D and applied it to new satellite measurements with AIRS (see also \cite[]{hindley_gravity_2019} and \cite[]{hindley_18year_2020}). When following these analysis methods it makes sense to use $\hat{T}$ for calculating MF, because maximum amplitudes might be missed by the coarse resolution of the measurements. In contrast, numerical models provide temperature perturbations $T'$ on a regular grid and it is possible to calculate MF directly via the temperature variance $\overbar{T'^2}$. Again, the overbar denotes averaging over one or multiple full wave cycles. Relating $\overbar{T'^2}$ to $\hat{T}^2$ yields
+\begin{equation}
+    \overbar{T'^2} = \overbar{\hat{T} sin(\phi)^2} = \frac{1}{2}\hat{T}^2,
+    \label{equ:tvariance}
+\end{equation}
+because $\overbar{sin(\phi)^2} = \frac{1}{2}$. Since temperature variance defines the eddy potential energy per unit mass $E_p$ (first row in equation \ref{equ:epot}), we can use equation \ref{equ:tvariance} to rewrite $E_p$ in terms of $\hat{T}$
+\begin{equation}
+    \begin{split}
+        E_p &= \frac{1}{2} \Bigl(\frac{g}{N}\Bigr)^2 \overbar{\Bigl(\frac{T'}{\bar{T}}\Bigr)^2} \\
+            &= \frac{1}{4} \Bigl(\frac{g}{N}\Bigr)^2 \Bigl(\frac{\hat{T}}{\bar{T}}\Bigr)^2
+    \end{split}
+    \label{equ:epot}
+\end{equation}
+and relate it to the momentum flux
+\begin{equation}
+    (\mathrm{MF}_x, MF_y) = \bar{\rho} \Bigl(\frac{g}{N}\Bigr)^2 \overbar{\Bigl(\frac{T'}{\bar{T}}\Bigr)^2} \Bigl(\frac{k}{m},\frac{l}{m}\Bigr) = 2 \bar{\rho} E_p \Bigl(\frac{k}{m},\frac{l}{m}\Bigr)
+    \label{equ:mf-epot}
+\end{equation}
+based on equation \ref{equ:mf-tp} and neglecting the factor $\textrm{A} \, \textrm{B}$ (\cite[]{ern_gracile_2018}, \cite*[]{ern_intermittency_2022}). From Figure \ref{fig:mf_correction}, it is clear that the factor $\textrm{A} \, \textrm{B}$ is close to 1 for the low frequency GWs excited above tropopause folds, so in the following, we will use equation \ref{equ:mf-epot} to calculate the pseudomomentum flux from temperature perturbations. In a similar manner, it is possible to show that the factor $\bigl(1-\frac{f^2}{\hat{\omega}^2}\bigr)$ in equation \ref{equ:ps-mf} can be neglected to calculate the pseudomomentum flux from wind perturbations. Again, the factor is greater than 0.95 for most combinations of horizontal and vertical wavelengths that appear in the idealized simulations, so the vertical flux of horizontal pseudomomentum is underestimated by about \SI{5}{\percent} or less when replaced by the conventional momentum flux $\bar{\rho}(\overbar{u'w'},\overbar{v'w'})$ (equation \ref{equ:mf}) under the midfrequency approximation ($N >> \hat{\omega} >> f$).
+
+For a broader understanding we can obtain another perspective on the error of the midfrequency approximation by introducing the total energy
+\begin{equation}
+    E_0 = E_k + E_p = \frac{1}{2} \Bigl(\overbar{u'^2} + \overbar{v'^2} + \overbar{w'^2}\Bigr) + \frac{1}{2} \Bigl(\frac{g}{N}\Bigr)^2 \overbar{\Bigl(\frac{T'}{\bar{T}}\Bigr)^2}
+    \label{equ:etot}
+\end{equation}
+with the kinetic energy per unit mass $E_k$ (e.g. \cite[]{gill_atmosphere-ocean_1982} or \cite[]{tsuda_global_2000}). For non-rotating GWs the kinetic and potential energy tend to be the same ($ E_k \approx E_p$). In that case, the wave energy is equipartitioned and from equation \ref{equ:mf-epot} it follows
+\begin{equation}
+    \mathbf{MF} = 2 \bar{\rho} E_p \frac{\mathbf{K}}{m} = \bar{\rho} E_{0} \frac{\mathbf{K}}{m}
+    \label{equ:mf-etot}
+\end{equation}
+with the horizontal wavenumber vector $\mathbf{K}$ (compare to \cite[]{andrews_wave-action_1978} or \cite[]{fritts_gravity_2003}). The kinetic energy part becomes more and more dominant for low frequency waves (\cite[]{gill_atmosphere-ocean_1982}), so the error of calculating the pseudomomentum flux under the midfrequency approximation (equation \ref{equ:mf} and \ref{equ:mf-epot}) is proportional to $\frac{E_k}{E_p}$.  
+
+\section{A MF comparison for GWs above tropopause depressions}
+After this extensive discussion on relevant approximations and relations, Figure \ref{fig:mf_scatter} finally compares zonal and meridional MF from wind perturbations to MF from temperature perturbations for all 3D simulations in Figure \ref{fig:waveletAna}.
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=0.99\textwidth]{figures_3D/waveletAna_mf_scatter.png}
+    \caption{Scatter plots of the zonal (a) and meridional (b) MF at z=\SI{40}{\kilo\meter} after 72h for all simulations in Figure \ref{fig:waveletAna}. The x-axis refers to the MF calculated from temperature perturbations, the y-axis refers to the MF calculated from wind perturbations. Colored dashed lines are linear fits with slope m and intercept $y_{0}=0$ for each individual simulation.}
+    \label{fig:mf_scatter}
+\end{figure*}
+Overall, momentum fluxes from wind and temperature correlate well. R values are greater than 0.9 for all simulations, so linear regressions in Figure \ref{fig:mf_scatter} represent meaningful relations. Especially linear fits of the zonal MF show a good agreement with slope values $m \approx 1$ with one exception. The slope of the linear regression for the simulation with the PNJ centered above the propagating tropopause depression has a slope of $m \approx 1.7$. In this simulation setup GWs propagate upward into the PNJ without a turning of phase lines resulting in no meridional flux. Most likely, this offset is related to nonlinear process at \SI{40}{\kilo\meter} that also lead to the partly unstructured wave pattern in Figure \ref{fig:waveletAna}a. The deviation from an infinitesimal depth of the tropopause depression and the utilization of an exponential damping in the vertical dimension could also contribute to the discrepancy from $m = 1$.
+
+MF$_y$ (Figure \ref{fig:mf_scatter}b) also shows good agreement, but a general low bias of temperature-based with respect to wind-based MF can be observed. Only the simulation for the smallest depression width $L=\SI{200}{\kilo\meter}$ has an almost perfect slope while the general picture indicates $15-\SI{25}{\percent}$ higher values for MF$_y$ from winds.\\
+MF$_x$ and MF$_y$ suggest a higher correlation for smaller depression widths $L$. Three simulations ($L=400,300,\SI{200}{\kilo\meter}$) are not enough to be conclusive here, but this trend could be related to the effect of rotation that becomes more relevant for wider tropopause folds that result in larger horizontal wavelengths and lower intrinsic frequencies $\hat{\omega}$. As discussed in the beginning of this section, the neglected factor $\textrm{A} \, \textrm{B}$ for the MF from $T'$ is not sensitive to large horizontal scales or an increased impact of Coriolis. On the other hand, the factor $\bigl(1-\frac{f^2}{\hat{\omega}^2}\bigr)$ in equation \ref{equ:ps-mf} decreases for smaller $\hat{\omega}$, so MF from wind is overestimated, when this factor is neglected for low frequency waves with $\hat{\omega}$ approaching $f$. Maybe, it is this simplification under the midfrequency approximation that becomes less valid and leads to a higher MF from winds for wider tropopause folds.
+
+Despite these uncertainties, we conclude that the calculation of MF from temperature perturbations leads to meaningful results for the spectrum of GWs excited by propagating tropopause depressions and research question 
+\begin{tcolorbox}[]
+    (R4) Can the MF of NOGWs above propagating tropopause depressions be calculated from temperature perturbations?
+\end{tcolorbox}
+can be answered with "Yes". Considering the uncertainty of real measurements the correspondence between temperature-based and wind-based MF is very good and uncertainties due to the calculation are tolerable. In addition, it shows that most of the GWs within the idealized simulations obey the polarization and dispersion relations of GWs and propagate virtually linearly up to an altitude of at least \SI{40}{\kilo\meter}. The analysis of horizontal cross sections at lower levels leads to similar conclusions and is therefore left out.
+
+% zero intercept was used, so larger fluxes might have stronger influence slope value??
+% A particularly striking result is a widespread 
+
+% The right part in equation \ref{equ:mf-etot} fits to the work of \textcite[]{andrews_wave-action_1978} or the work of \textcite[]{fritts_spectral_1993} who derived energy spectra in the upper atmosphere from observations. 
+
+% Vertical timeseries of temperature from Lidar observations usually aren't sufficient to derive horizontal momentum fluxes without additional information or assumptions for horizontal wavelengths.
+% Gracile paper (Ern 2018) states a factor of Ekin/Epot = 5/3???? should be E0/Epot??
+% $f$ is the inertial frequency
+% p=5/3 (intrinsic frequency ωˆ spectrum of the GW wave energy density assumed to decrease with ωˆ−5/3)
+% The acceleration or deceleration (X, Y ) of the background flow, in the following for simplification called gravity wave drag, is given by the vertical gradient of momentum flux: (X, Y ) = − 1 % ∂ (Fpx, Fpy ) ∂z , (12) with X and Y the drag in the zonal and meridional directions, respectively, and z the vertical coordinate.
+ 
+% F = rho * k/m * Epot,max.
+% Es gilt also Etot = Ekin + Epot = Epot,max (in Worten... zum Zeitpunkt, wo die potentielle Energie über die Schwingung maximal wird verschwindet der kinetische Anteil --> Ekin = 0). Wenn wir nun F allein aus den Temperaturvarianzen berechnen wollen nehmen wir an, dass
+% Epot {gemittelt über eine Wellenperiode} = Ekin {gemittelt über eine Wellenperiode} (hier kommen dann wohl Annahmen wie linear und non-dissipative mit rein). Daraus folgt dann 
+% --> Etot = 2 * Epot {gemittelt über eine Wellenperiode}
+% --> F = rho * k/m * 2*Epot {gemittelt über eine Wellenperiode} = rho * k/m *(g/N)^2 * average((T'/T)^2)
