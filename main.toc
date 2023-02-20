@@ -22,19 +22,19 @@
 \contentsline {section}{\numberline {4.2}The influence of the fold's propagation speed}{41}{section.4.2}%
 \contentsline {section}{\numberline {4.3}The influence of the tropopause shape}{43}{section.4.3}%
 \contentsline {section}{\numberline {4.4}The influence of the stratospheric environment}{45}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Summary and answer to research question (R1)}{50}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Meridional characteristics of GWs excited by propagating tropopause depressions}{51}{chapter.5}%
-\contentsline {section}{\numberline {5.1}The influence of the tropopause shape in the context of no meridional shear}{52}{section.5.1}%
-\contentsline {section}{\numberline {5.2}The influence of meridional shear}{55}{section.5.2}%
-\contentsline {section}{\numberline {5.3}The influence of the tropopause shape in the context of meridional shear}{59}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Summary and answer to research question (R2) and (R3)}{61}{section.5.4}%
-\contentsline {chapter}{\numberline {6}The calculation of MF from an observational perspective}{63}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Theoretical background}{64}{section.6.1}%
-\contentsline {section}{\numberline {6.2}A MF comparison for GWs above tropopause depressions}{67}{section.6.2}%
-\contentsline {chapter}{\numberline {7}NOGWs excited by tropopause depressions in ground-based Lidar observations}{69}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Lidar observations in idealized numerical simulations}{70}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Potential signatures of NOGWs from propagating tropopause depressions in CORAL measurements}{74}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Summary and answer to research question (R5)}{81}{section.7.3}%
+\contentsline {section}{\numberline {4.5}Summary and answer to research question (R1)}{51}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Meridional characteristics of GWs excited by propagating tropopause depressions}{53}{chapter.5}%
+\contentsline {section}{\numberline {5.1}The influence of the tropopause shape in the context of no meridional shear}{54}{section.5.1}%
+\contentsline {section}{\numberline {5.2}The influence of meridional shear}{57}{section.5.2}%
+\contentsline {section}{\numberline {5.3}The influence of the tropopause shape in the context of meridional shear}{61}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Summary and answer to research question (R2) and (R3)}{63}{section.5.4}%
+\contentsline {chapter}{\numberline {6}The calculation of MF from an observational perspective}{67}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Theoretical background}{68}{section.6.1}%
+\contentsline {section}{\numberline {6.2}A MF comparison for GWs above tropopause depressions}{71}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Characteristics of GWs excited by propagating tropopause depressions in ground-based lidar observations}{73}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Lidar observations in idealized numerical simulations}{74}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Potential signatures of NOGWs from propagating tropopause depressions in CORAL measurements}{78}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Summary and answer to research question (R5)}{85}{section.7.3}%
 \contentsline {chapter}{\numberline {7}Conclusion}{79}{chapter.7}%
 \contentsline {chapter}{\numberline {A}Supporting figures of the wavelet analysis and momentum flux calculation in Chapter \ref {sec:results3D}}{81}{appendix.A}%
 \contentsline {chapter}{Acknowledgments}{77}{appendix*.40}%

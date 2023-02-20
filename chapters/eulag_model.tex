@@ -297,7 +297,7 @@ and for a steady-state flow
     \label{equ:gwd-mf-2}
 \end{equation}
 the pressure drag equals the negative momentum flux (e.g. \cite[]{durran_lee_2003}). In other words, a positive pressure drag is compensated by a negative (downward) flux of horizontal momentum. \\
-The negative zonal momentum flux MF$_x$ from equation (\ref{equ:mf}) is represented by the red crosses in Figure \ref{fig:GWD-MWs}. For smaller mountain widths up to $L=\SI{5}{\kilo\meter}$ it is more or less identical to the pressure drag (purple hashes), but starts to deviate as soon as rotational effects become important. \textcite[]{bretherton_momentum_1969} nicely illustrated why equation (\ref{equ:gwd-mf-2}) is not valid anymore for rotating fluids though the Reynolds stress is still the momentum transfer across a flat horizontal surface (z$=$const.). He starts from the linearized momentum equation for a rotating fluid in the Boussinesq approximation
+The negative zonal momentum flux MF$_x$ from equation (\ref{equ:mf}) is represented by the red crosses in Figure \ref{fig:GWD-MWs}. For smaller mountain widths up to $L=\SI{5}{\kilo\meter}$ it is more or less identical to the pressure drag (purple hashes), but starts to deviate as soon as rotational effects become important. \textcite[]{bretherton_momentum_1969} nicely illustrated why equation (\ref{equ:gwd-mf-2}) is not valid anymore for rotating fluids though MF$_x$ is still the momentum transfer across a flat horizontal surface (z$=$const.). He starts from the linearized momentum equation for a rotating fluid in the Boussinesq approximation
 \begin{equation}
     U \frac{\partial u'}{\partial x} + w' \frac{\partial U}{\partial z} - f v' = -\frac{1}{\rho} \frac{\partial p'}{\partial x}
     \label{equ:momEqu-rotating}
@@ -317,7 +317,7 @@ and after linearizing with $w'=U\frac{\partial \eta}{\partial x}$ the second ter
     F_x = \mathrm{MF}_{x,ang} = -\int_{}^{} \rho u'w' \, dx  -  \int_{}^{} \rho f v' \eta' \, dx
     \label{equ:angular_momentum}
 \end{equation}
-with a first term representing the Reynolds stress or vertical flux of linear momentum and a second term that represents the Coriolis force acting in the region between the undisturbed, leveled streamline and the vertically displaced streamline. For rotating fluids it is equation (\ref{equ:angular_momentum}) that is equal to the pressure drag of equation (\ref{equ:gwd}). It is called the vertical flux of angular momentum and can be interpreted as the force exerted across a surface always consisting of the same material particles (Lagrangian perspective) that differs from the linear momentum across a horizontal plane (Eulerian perspective) by the Coriolis term in equation (\ref{equ:angular_momentum}). \\
+with a first term representing the vertical flux of linear momentum MF$_x$ and a second term that represents the Coriolis force acting in the region between the undisturbed, leveled streamline and the vertically displaced streamline. For rotating fluids it is equation (\ref{equ:angular_momentum}) that is equal to the pressure drag of equation (\ref{equ:gwd}). It is called the vertical flux of angular momentum and can be interpreted as the force exerted across a surface always consisting of the same material particles (Lagrangian perspective) that differs from the linear momentum across a horizontal plane (Eulerian perspective) by the Coriolis term in equation (\ref{equ:angular_momentum}). \\
 In Figure \ref{fig:GWD-MWs} the angular momentum is represented by the green crosses. It is slightly higher than the pressure drag for larger mountain widths, but the difference is small. It was checked if compressible effects can explain this difference considering the compressible solution of the GWD from linear theory 
 \begin{equation}
     F_x =  \rho_0 \int_{}^{} (u'w' + f v' \eta') \, dx + f \int_{}^{} \rho' v' \eta' \, dx
@@ -356,7 +356,7 @@ and to EF$_z$ directly
     \end{aligned}
     \label{equ:EP-relation}
 \end{equation}
-Equation (\ref{equ:EP-relation}) is called the Eliassen-Palm (EP) relation and is valid for linear, steady, small-amplitude, non-dissipative wave propagation. Under these assumptions equation (\ref{equ:EP-relation-dudz}) and (\ref{equ:EP-relation}) again state that the vertical flux of horizontal momentum is conserved in the vertical and that EF$_z$ changes in proportion to the gradient of $U(z)$. For $U(z)=$const. EF$_z$ does not change with height, too.
+Equation (\ref{equ:EP-relation}) is called the Eliassen-Palm (EP) relation and is valid for linear, steady, small-amplitude, non-dissipative wave propagation. Under these assumptions, equation (\ref{equ:EP-relation-dudz}) and (\ref{equ:EP-relation}) again state that the vertical flux of horizontal momentum is conserved in the vertical and that EF$_z$ changes in proportion to the gradient of $U(z)$. For $U(z)=$const. EF$_z$ does not change with height, too.
 
 \textcite[]{broad_linear_1995} combined the analysis methods of \textcite[]{eliassen_transfer_1960} and \textcite[]{bretherton_momentum_1969} to obtain a similar set of equations for the general case of a 3D rotating fluid. Modifying the 3D energy equation according to \textcite[]{eliassen_transfer_1960} provides 
 \begin{equation}
