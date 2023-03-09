@@ -14,7 +14,7 @@
 % \usepackage{microtype} % Slightly tweak font spacing for aesthetics
 
 %% --- Useful / new commands
-\newcommand{\spaceTitlepage}{11mm}
+\newcommand{\spaceTitlepage}{12mm}
 \usepackage{verbatim} % for multi-line comments
 
 %% --- Language setup
@@ -77,10 +77,10 @@
 %% --- fancyhdr package:
 \usepackage{fancyhdr}
 %%% - cmb
-\fancypagestyle{plain}{% % <-- this is new
-  \fancyhf{} 
-  \fancyfoot[LE,RO]{\thepage} % same placement as with page style "fancy"
-  \renewcommand{\headrulewidth}{0pt}}
+%\fancypagestyle{plain}{% % <-- this is new
+%  \fancyhf{} 
+%  \fancyfoot[LE,RO]{\thepage} % same placement as with page style "fancy"
+%  \renewcommand{\headrulewidth}{0pt}}
 %%% - cmb
 
 %% --- some other useful packages:
@@ -88,7 +88,7 @@
 % \usepackage{times}     % use times new roman instead of computer modern font
 
 %% --- page layout:
-\setlength{\textheight}{23.5cm} %% change horizontal scale
+\setlength{\textheight}{24cm} %% change vertical scale
 \setlength{\textwidth}{15cm}
 \setlength{\topmargin}{-0.9cm}
 \setlength{\headheight}{0.6cm}
@@ -97,7 +97,7 @@
 \setlength{\oddsidemargin}{9.1mm}
 \setlength{\evensidemargin}{-0.2mm}
 \setlength{\marginparwidth}{2cm}
-\setlength{\paperheight}{11in}
+\setlength{\paperheight}{11.69in} % A4: 11.69 US letter: 11
 % \setlength{\stockheight}{11in}
 % \usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins textwidth=5.788in < 15cm
 % use package showframe or showframe option of geometry

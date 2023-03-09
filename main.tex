@@ -1,14 +1,16 @@
 % ==== BEGIN OF PREAMBLE =======================================================
 % ---- document class (use appropriate driver for DIV to PS/PDF conversion):
-\documentclass[12pt,a4paper]{book}
+\documentclass[12pt,a4paper,openany]{book}
 %\includeonly{chapters/intro}
 %\includeonly{chapters/methods}
 %\includeonly{chapters/eulag_model}
-\includeonly{chapters/resultsQ3D}
+%\includeonly{chapters/resultsQ3D}
 %\includeonly{chapters/results3D,chapters/appendix}
 %\includeonly{chapters/mf_comp}
 %\includeonly{chapters/lidar_obs}
-%\includeonly{chapters/intro,chapters/methods,chapters/eulag_model,chapters/resultsQ3D,chapters/results3D,chapters/mf_comp,chapters/lidar_obs,chapters/appendix} % DRAFT
+%\includeonly{chapters/conclusion_outlook}
+%\includeonly{pre-and-post/abstract}
+%\includeonly{pre-and-post/titlepage_master, pre-and-post/abstract, chapters/intro,chapters/methods,chapters/eulag_model,chapters/resultsQ3D,chapters/results3D,chapters/mf_comp,chapters/lidar_obs,chapters/conclusion_outlook,chapters/appendix} % DRAFT
 % option+z  for formatting tex file in vscode
 
 %%% If bib compilation fails - run in terminal %%%
@@ -28,6 +30,7 @@
 \usepackage[
     backend=biber, % backend=biber,
     style=apa, % apa, authoryear
+    uniquename=false, %     maxbibnames=3,
   ]{biblatex}
 \setlength\bibhang{12pt}
 \setlength\bibitemsep{6pt}
@@ -45,23 +48,22 @@
 % ---- include tex-file (CHOOSE APPROPRIATE FILE):
 \include{pre-and-post/titlepage_master}    % activate this line for Master's Thesis
 % \include{titlepage_diploma}   % activate this line for Diploma Thesis
-\newpage
-~\thispagestyle{empty}
-\newpage
+%\newpage
+%~\thispagestyle{empty}
+%\newpage
 % ---- start page numbering again:
 \setcounter{page}{1}
 
 % ==== DEDICATION ==============================================================
 % ---- include tex-file:
-\include{pre-and-post/dedication}
-\newpage
-\thispagestyle{plain}
+%\include{pre-and-post/dedication}
+%\newpage
+%\thispagestyle{plain}
 
 % ==== PREFACE =================================================================
 % ---- include tex-file:
 \include{pre-and-post/preface}
-\newpage
-\thispagestyle{plain}
+%\thispagestyle{plain}
 
 % ==== ABSTRACT ================================================================
 % ---- set some counters to zero:
@@ -69,17 +71,17 @@
 \setcounter{table}{0}
 \setcounter{figure}{0}
 % ---- include tex-file:
-%\include{abstract}
+\include{pre-and-post/abstract}
 \newpage
 \thispagestyle{plain}
 
 % ==== TABLE OF CONTENTS =======================================================
-~
-\newpage
+%~
+%\newpage
 \addcontentsline{toc}{chapter}{Contents}
 \tableofcontents
-\newpage
-\thispagestyle{plain}
+%\newpage
+%\thispagestyle{plain}
 
 % ==== START MAIN MATTER (use ARABIC numerals) =================================
 \mainmatter
@@ -183,21 +185,21 @@
 
 % ==== BIBLIOGRAPHY ============================================================
 \printbibliography
-% \addcontentsline{toc}{chapter}{Bibliography}
+\addcontentsline{toc}{chapter}{Bibliography}
 % ---- use AMS reference format (use file ametsoc.bst included in ...
 %      ... http://www.ametsoc.org/pubs/journals/AMS_Latex_V3.0.tar.gz):s
 % \bibliographystyle{./ametsoc}   % ametsoc.bst in local directory
 % ---- use BibTeX database file:
 % \bibliography{./refs}      % mybibfile.bib in local directory
-\newpage
-\thispagestyle{plain}
+%\newpage
+%\thispagestyle{plain}
 
 
 % ==== ACKNOWLEDGMENTS =========================================================
 % ---- include tex-file:
 \include{pre-and-post/thanks}
-\newpage
-\thispagestyle{plain}
+%\newpage
+%\thispagestyle{plain}
 
 
 % ==== CURRICULUM VITAE ========================================================
@@ -209,7 +211,7 @@
 
 % ==== EPILOGUE ================================================================
 % ---- include tex-file:
-% \include{epilogue}
+% \include{pre-and-post/epilogue}
 % \newpage
 % \thispagestyle{plain}
 

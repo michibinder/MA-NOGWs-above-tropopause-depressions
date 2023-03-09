@@ -1,0 +1,1 @@
+{"rule":"EN_SPECIFIC_CASE","sentence":"^\\QOn the southern hemisphere warm air advection is accompanied by wind backing, which can be observed in (f) over multiple timesteps, too.\\E$"}

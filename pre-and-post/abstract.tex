@@ -2,27 +2,68 @@
 \addcontentsline{toc}{chapter}{Abstract}
 \thispagestyle{plain}
 
-The abstract is a short summary of the thesis. It announces in
-a brief and concise way the scientific goals, methods, and most important
-results. The chapter ``conclusions'' is not equivalent to the abstract!
-Nevertheless, the abstract may contain concluding remarks. The abstract
-should not be discursive. Hence, it cannot summarize all aspects of the thesis
-in very detail. Nothing should appear in an abstract that is not also
-covered in the body of the thesis itself. Hence, the abstract should be the
-last part of the thesis to be compiled by the author.
+In this study, the excitation and propagation of non-orographic gravity waves (NOGWs) above tropopause depressions usually associated with propagating Rossby waves is investigated. Observations and analysis of NOGWs in the upper stratosphere during research flight 25 of the 2014 DEEPWAVE campaign show hydrostatic wave patterns above a tropopause depression comparable to waves excited by orography at the surface. These gravity waves (GWs) stay above the depression as the depression travels east with the phase speed of the Rossby wave. In austral winter, the polar night jet (PNJ) develops in the Southern Hemisphere, leading to a much faster zonal stratospheric flow than the Rossby wave's phase speed. Therefore, the source of these GWs could simply be the vertical displacement of the airflow above the tropopause mimicking an obstacle to the flow above.
 
-A good abstract has the following properties: \emph{Comprehensive:} All major
-parts of the main text must also appear in the abstract. \emph{Precise:}
-Results, interpretations, and opinions must not differ from the ones in the main
-text. Avoid even subtle shifts in emphasis. \emph{Objective:} It may contain
-evaluative components, but it must not seem judgemental, even if the thesis
-topic raises controversial issues. \emph{Concise:} It should only contain the
-most important results. It should not exceed 300--500 words or about one page.
-\emph{Intelligible:} It should only contain widely-used terms. It should
-not contain equations and citations. Try to avoid symbols and acronyms (or at
-least explain them). \emph{Informative:} The reader should be able to quickly
-evaluate, whether or not the thesis is relevant for his/her work.
+The goal was to evaluate this potential NOGW source through idealized numerical simulations with the geophysical flow solver EULAG. Typical shapes of tropopause depressions and typical stratospheric winter conditions suggest the excitation of low-frequency or inertia-gravity waves (IGWs). To account for their oscillation in the vertical and horizontal plane, all simulations were conducted in 3D. Preliminary studies were performed to assess the reliability of the model by comparing its numerical solutions to analytical solutions of different mountain wave regimes. In particular, comparisons of the gravity wave drag and surface momentum fluxes were instructive and guided the setup of the following simulations.
+Within the framework of this thesis, the simulations are constrained to the stratosphere, with the tropopause represented as a transient, impermeable, and frictionless lower boundary. Multiple simulations with different idealized tropopause shapes and different idealized background conditions were carried out to characterise the sensitivity of the waves' momentum and energy fluxes and to identify scenarios which reproduce the GW patterns observed during the DEEPWAVE case study. For example, varying the vertical ambient wind profile $u_e(z)$ revealed that increasing $u_e(z)$ by a constant speed $U_c$ has a similar effect as decreasing the fold's propagation speed by $U_c$. Furthermore, a local wind minimum significantly impacts upper stratosphere GW activity, even without introducing a critical level. This so-called valve layer still involves wave dissipation and first dissipates waves that propagate into the lee of the depression. Thus, in the presence of a valve layer IGWs look like hydrostatic non-rotating GWs in vertical cross-sections, with the main GW activity directly above the depression. Variations of the PNJ's meridional location and strength showed that a southward position of the PNJ relative to the propagating tropopause depression and a very strong PNJ are necessary to reproduce the zonally elongated GW pattern detected in ERA5.
 
-An Example: The objective was to determine whether \dots (\emph{question/goal}).
-For this purpose, \dots was \dots (\emph{methodology}). It was found that \dots
-(\emph{results}). The results demonstrate that \dots (\emph{answer}).
+The idealized numerical simulations also demonstrated that GWs excited by a transient source like a propagating tropopause depression have a distinct pattern of ascending phase lines in time-height diagrams emulating the measurements of vertically staring ground-based lidar instruments. Since stationary mountain waves result in horizontal phase lines in these measurements, it might be possible to differentiate between these two sources and identify GWs excited by propagating tropopause depressions in lidar measurements. However, ascending phase lines in time-height diagrams can also be traced back to other processes (for example, transient conditions). Therefore, two measurement periods with upward-tilted phase lines were selected from the dataset of the Rayleigh lidar CORAL operating at the southern tip of South America and analysed based on ERA5. In these two cases, the analysis did not support a connection between the ascending phase lines and a passing tropopause depression but suggests an excitation by orography in the context of a transient wind forcing in the lower troposphere. On the other hand, the ERA5 analysis of the second case also indicated GWs above a tropopause depression, similar to the DEEPWAVE case study that motivated this thesis. The direct comparison of these NOGWs over the Pacific Ocean to the mountain waves above the Southern Andes and CORAL's location showed that temperature amplitudes of NOGWs are more than a factor of 4 smaller than those of mountain waves. It can be challenging to isolate the contribution of small-amplitude NOGWs excited by tropopause expressions from the contribution of large-amplitude MWs to the total GW field measured by vertically staring lidars primarily influenced by mountain waves such as CORAL.  
+
+Next steps should involve a complete simulation of tropospheric and stratospheric airflows by simulating baroclinic instabilities in the presence of a PNJ in the upper stratosphere. In this way, the assumption of an impermeable tropopause can be dropped and it would be possible to generalise the conclusions of this thesis. 
+
+% In a next step, the numerical simulations will be extended into the troposphere and baroclinic life-cycle experiments in the presence of a stratospheric PNJ will be conducted. Unlike previous investigations, these simulations will include the propagation of NOGWs into the upper stratosphere and help to distinguish the proposed mechanism from established NOGW sources (e.g. geostrophic adjustment) and quantify their contributions to the stratospheric gravity wave belt around 60°S.
+
+% at the southern tip of South America
+
+% favours the hydrostatic appearance of 
+
+% A qualitative comparison to ERA5 data suggests that the proposed mechanism could indeed lead to observed GW patterns above the Southern Ocean during austral winter. 
+
+% NOGWs above tropopause depressions behave and propagate just like MWs within the reference frame of the propagating depression for a relative wind 
+
+
+%and identify  that significantly influence the gravity wave activity in the upper stratosphere and define to 
+
+
+%were performed to investigate the sensitive  with a tropopause depression moving at a constant speed at the lower boundary
+
+% to characterise the sensitivity of gravity wave momentum and energy fluxes to the zonal shape of the depression and to vertical profiles of the ambient wind, 
+
+% for a deep atmosphere with stratospheric conditions up to 75 km altitude and idealized wind profiles for the zonal background flow. Sensitivities with respect to the shape of the depression and atmospheric background conditions were investigated in simplified 3D simulations. Effects of horizontal wind shear and tropopause shapes on the horizontal propagation of gravity waves (GWs) were analyzed in full 3D simulations. In summary, results fully align with published mountain wave theory and show that it also applies to transient GW sources. A qualitative comparison to ERA5 data suggests that the proposed mechanism could indeed lead to observed GW patterns above the Southern Ocean during austral winter. 
+
+% EULAG proved to be a suitable tool for such idealized simulations and also allows the formulation of time-dependent boundaries
+% the objective was...
+
+% The chosen  has proven to be a suitable tool for such idealized simulations and allows the formulation of a time-dependent boundary (Prusa and Smolarkiewicz, 2003). 
+
+% Its setup was first tested against analytic results from linear analysis for different mountain wave regimes to assure reliable results. 
+
+
+% Full 3D simulations further suggest that the proposed mechanism could indeed lead to the observed GW patterns above the Southern Ocean in austral winter.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The abstract is a short summary of the thesis. It announces in
+% a brief and concise way the scientific goals, methods, and most important
+% results. The chapter ``conclusions'' is not equivalent to the abstract!
+% Nevertheless, the abstract may contain concluding remarks. The abstract
+% should not be discursive. Hence, it cannot summarize all aspects of the thesis
+% in very detail. Nothing should appear in an abstract that is not also
+% covered in the body of the thesis itself. Hence, the abstract should be the
+% last part of the thesis to be compiled by the author.
+
+% A good abstract has the following properties: \emph{Comprehensive:} All major
+% parts of the main text must also appear in the abstract. \emph{Precise:}
+% Results, interpretations, and opinions must not differ from the ones in the main
+% text. Avoid even subtle shifts in emphasis. \emph{Objective:} It may contain
+% evaluative components, but it must not seem judgemental, even if the thesis
+% topic raises controversial issues. \emph{Concise:} It should only contain the
+% most important results. It should not exceed 300--500 words or about one page.
+% \emph{Intelligible:} It should only contain widely-used terms. It should
+% not contain equations and citations. Try to avoid symbols and acronyms (or at
+% least explain them). \emph{Informative:} The reader should be able to quickly
+% evaluate, whether or not the thesis is relevant for his/her work.
+
+% An Example: The objective was to determine whether \dots (\emph{question/goal}).
+% For this purpose, \dots was \dots (\emph{methodology}). It was found that \dots
+% (\emph{results}). The results demonstrate that \dots (\emph{answer}).

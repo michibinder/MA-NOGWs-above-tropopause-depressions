@@ -1,41 +1,47 @@
-\chapter{Conclusion}
+\chapter{Conclusion and outlook}
+%
+We performed idealized numerical simulations with the EULAG model to investigate the hypothesis of \textcite[]{dornbrack_stratospheric_2022} that GWs above propagating tropopause depressions contribute to the GW belt in the Southern Hemisphere winter stratosphere. They suggested an excitation of GWs above these depressions at tropopause level similar to the excitation of GWs above surface obstacles in the troposphere.\\
+In this context, five research questions set the framework of this thesis and guided the discussions throughout the preceding chapters. Specific answers to the research questions were given at the end of the corresponding chapters. Therefore, only the most important aspects are summarised and embedded into this general conclusion and outlook.
 
-Summarize answers from all subsections without restating the research questions
+%%% model validation %%%
+At first, the model validation in Chapter \ref{sec:EULAG} proved that non-linear numerical simulations with the EULAG model can reproduce analytic solutions of the gravity wave drag and surface momentum and energy fluxes for Queney's idealized MW regimes. It emphasized the significance of the subsequent simulations with propagating tropopause depressions and clarified inconsistencies between different linear solutions of \textcite{smith_influence_1979} and \textcite{miranda_non-linear_1992} for the rotating GW regime.
 
-2D analysis
-- A reference wind speed (wind in total column - spped of transient lower boundary) can be used to generate similar wave pattern in stationary reference frame
+Following the proposed excitation mechanism of GWs above propagating tropopause depressions, we assumed that a transient, impermeable, and frictionless lower boundary of the numerical simulations could emulate the tropopause, particularly a propagating tropopause depression. Thus, all simulations presented in Chapters \ref{sec:resultsQ3D} and \ref{sec:results3D} were constrained to the stratosphere and it was adequate to assume a purely zonal ambient airflow.\\
+%%% 2D results %%%
+Under these assumptions, a fundamental result of Chapter \ref{sec:resultsQ3D} was that increasing (decreasing) $u_e(z)$ by a constant speed $U_c$ has a similar effect as decreasing (increasing) the tropopause fold's propagation speed by $U_c$. Thus, NOGWs above tropopause depressions behave and propagate just like MWs within the reference frame of the propagating depression for a relative ambient wind $u_{e,MW}$ (Equation (\ref{equ:MW_forcing})). Furthermore, Chapter \ref{sec:resultsQ3D} showed that a local wind minimum in the vertical profile $u_e(z)$ constrains the GW activity to a zonally narrower region above the tropopause depression. In the presence of a so-called valve layer, inertia-gravity waves look like hydrostatic non-rotating GWs and similar to GWs in the vertical cross-sections of ERA5 temperature perturbations from \textcite[]{dornbrack_stratospheric_2022} (Figure \ref{fig:RF25_era5_vertical}), where the main wave activity is also centered directly above the depression.\\
+% propagate vertically and not into the lee of their source region.  
+%%% 3D results %%%
+In addition, Chapter \ref{sec:results3D} demonstrated that GWs above propagating tropopause depressions could mimic the zonally elongated phase line pattern in the horizontal cross-sections of ERA5 temperature perturbations from \textcite[]{dornbrack_stratospheric_2022} (Figure \ref{fig:RF25_era5_horizonal}). The necessary conditions to observe such a GW pattern are a strong PNJ and the southward position of the PNJ's center relative to the tropopause depression. A counterintuitive conclusion of Chapter \ref{sec:results3D} was that rotating the depression relative to the zonal background flow (N-S orientation to NW-SE orientation) decreased the meridional momentum flux in the presence of meridional wind shear because the depression's zonal width increased. For a meridionally constant background wind, rotating the depression had the opposite effect.
 
-- conclusion from 2D cases -> transfer of stationary mountain wave analysis
+%%% lidar results %%%
+Chapter \ref{cha:lidar} revealed that GWs above propagating tropopause folds have a recognisable pattern in time-height diagrams of ground-based lidar measurements. Phase lines of GWs from a propagating source (like a tropopause depression) tilt upward in these measurements in contrast to horizontal phase lines from stationary MWs. On some occasions, this signature is also found in observations of the ground-based Rayleigh lidar CORAL at the southern tip of South America. However, ERA5 analyses of two case studies suggest that in those cases, upward-tilted phase lines are linked to MWs and transient flow conditions, particularly to a turning of the tropospheric wind. The investigation of the ERA5 data for the second case (Aug 7th, 2020) also shows GWs above a propagating tropopause fold to the west of CORAL's location over the Pacific Ocean, which look similar to those observed by \textcite[]{dornbrack_stratospheric_2022} in Figure \ref{fig:RF25_era5_vertical}. Consequently, the vertical cross-section in Figure \ref{fig:era5_2020}b contrasts NOGWs above the tropopause fold to MWs above the Southern Andes and illustrates that temperature amplitudes of the NOGWs are significantly smaller and that it will be difficult to identify these waves in the MW-dominated measurements of CORAL.
 
-3D analysis
-- Background conditions in stratosphere can result in wave pattern observed in Figure from intro the case study by \cite{dornbrack_stratospheric_2022} during RF 25 of the DEEPWAVE campaign.
-- Spectrum fits in terms of observed wavelenghts
+%%% outlook %%%
+In the context of CORAL's measurements, more sophisticated filtering methods like the WAVELET-SCAN or two-dimensional wavelet analysis by \textcite{reichert_highcadence_2021} could help to identify NOGWs in other cases than presented in Chapter \ref{cha:lidar}. It could be instructive to consider another location for a ground-based lidar in the future. Without a doubt, a lidar location less influenced by MWs would facilitate the identification of NOGWs. As stated in the summary of Chapter \ref{cha:lidar}, a flat island would provide an ideal environment.
 
-% Wavelength discussion:
-% AIRS data:
-% Sensitivity is close to 100 percent for waves with wavelengths between 35 and 45 km in the vertical and less than around 500 km in the horizontal, and around 50 percent for wavelengths greater than 17 km in the vertical and less than 1000 km in the horizontal. The majority of our measured wavelengths in the results of this study fall within this 50 percent sensitivity region (as we would expect),
+Regarding the idealized numerical simulations, it is clear that the next step involves a complete simulation of tropospheric and stratospheric airflows without any major restrictions. In this way, we could drop the assumption of an impermeable tropopause and generalize the conclusions above.\\
+The proposed simulations can be seen as an extension of simulations by \textcite{bush_tropopause_1994}, \textcite{zhang_generation_2004} or \textcite{menchaca_impact_2018}, who simulated baroclinic instabilities. They focused on processes at tropopause level and used a model top of \SI{21.6}{\kilo\meter} in the case of \textcite{zhang_generation_2004}. To facilitate the excitation and propagation of GWs above the developing baroclinic instabilities and associated tropopause folds, we propose the simulation of these baroclinic instabilities in the presence of a PNJ in the upper stratosphere. Prescribed ambient wind and potential temperature fields have to mimic the Southern Hemisphere winter stratosphere and simultaneously allow the development of baroclinic instabilities at tropopause level. An adaptation of the equations for a geostrophically balanced parallel shear flow (e.g. \cite[]{bush_tropopause_1994} or \cite{rotunno_analysis_1994}) typically used to set up simulations of baroclinic instabilities would be necessary.
 
-% Regarding the GW belt we have to consider that AIRS is mainly sensitive to vertical wavelengths larger than 17km. These wavelengths almost exclusively occure in the vicinity of the northern or southern PNJ due to the refraction of MWs or NOGWs into the jet. The jet favors the propagation of GWs towards higher altitudes (stratosphere/mesosphere), but on the other side the transformation of the wave properties leads to a significant influence of the istrument's observational filter.
-% \textcite[]{hindley_gravity_2019} show that  
+Another possibility to proceed could be a more detailed investigation based on ERA5 or IFS data. The conducted ERA5 analyses in Chapter \ref{cha:lidar} and by \textcite{dornbrack_stratospheric_2022} suggest that relevant processes leading to NOGWs above propagating tropopause depressions seem to be sufficiently represented by the underlying IFS model. A different perspective on the dataset might be instructive and potentially reveals differences or similarities to other sources of NOGWs linked to baroclinic life cycles like jet streams or fronts (\cite{plougonven_internal_2014}).
 
-
-Same conclusion as many studies that oblique propagation of GW is significant and has to be improved in GCMs. Parameterisations like recent from Eichinger,...
-
-
-% However, the belt of increased flux over the Southern Ocean shown in Ern et al. (2018) appears to be compara- tively more pronounced during June to August in their study than we observe here in AIRS measurements. The observa- tional filter of limb-sounding instruments means that they are more sensitive to gravity waves with relatively short ver- tical wavelengths (∼ 3–15 km) and relatively long horizon- tal wavelengths (∼ 500–5000 km). This suggests that a sig- nificant part of the oceanic section of the belt of enhanced gravity wave activity at 60◦ S is made up of long-horizontal wavelength waves, to which AIRS is less sensitive. \cite[]{hindley_gravity_2019}
+% Belt consists of rather long-horizontal wavelength waves
+% \cite[]{hindley_gravity_2019}
+% However, the belt of increased flux over the Southern Ocean shown in Ern et al. (2018) appears to be compara- tively more pronounced during June to August in their study than we observe here in AIRS measurements. The observa- tional filter of limb-sounding instruments means that they are more sensitive to gravity waves with relatively short ver- tical wavelengths (∼ 3–15 km) and relatively long horizon- tal wavelengths (∼ 500–5000 km). This suggests that a sig- nificant part of the oceanic section of the belt of enhanced gravity wave activity at 60◦ S is made up of long-horizontal wavelength waves, to which AIRS is less sensitive.
 
 % Critical assumption 
 % Ina (ECMWF 1km simulation) suggests that gravity wave belt difference is associated with <100km waves
 % What wavelengths are suggested based on AIRS data
 
+%%%%%%%%% other stuff %%%%%%%%%
 
-%%%%%%%%%%%%% \chapter{Outlook} %%%%%%%%%%%%%%
+% simulations of Mechada & Durran 2017 and 2018 with WRF!!!
 
-Outlook
+% This fold passes CORAL at 05:00$ \, \textrm{UTC}$ on the 8th of AUG
 
-- Further analysis of ground-based lidar data
+% Same conclusion as many studies that oblique propagation of GW is significant and has to be improved in GCMs. Parameterisations like recent from Eichinger,...
 
-- full 3D simulations (cite zhang.. 2005 together with Alexander/Durran...) extend those simulations to upper stratosphere.
-
-- tropospheric and stratospheric flows
-
+%
+% AIRS data:
+% Sensitivity is close to 100 percent for waves with wavelengths between 35 and 45 km in the vertical and less than around 500 km in the horizontal, and around 50 percent for wavelengths greater than 17 km in the vertical and less than 1000 km in the horizontal. The majority of our measured wavelengths in the results of this study fall within this 50 percent sensitivity region (as we would expect),
+% Regarding the GW belt we have to consider that AIRS is mainly sensitive to vertical wavelengths larger than 17km. These wavelengths almost exclusively occure in the vicinity of the northern or southern PNJ due to the refraction of MWs or NOGWs into the jet. The jet favors the propagation of GWs towards higher altitudes (stratosphere/mesosphere), but on the other side the transformation of the wave properties leads to a significant influence of the istrument's observational filter.
+% \textcite[]{hindley_gravity_2019} show that  
